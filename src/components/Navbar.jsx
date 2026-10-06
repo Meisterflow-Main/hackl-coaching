@@ -37,7 +37,7 @@ export default function Navbar() {
       }`}
     >
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
-        <div className="flex h-18 md:h-20 items-center justify-between py-3">
+        <div className="flex h-16 md:h-20 items-center justify-between py-3">
           <Link to="/" className="flex items-center gap-3 group">
             <span className="flex h-10 w-10 items-center justify-center rounded-full bg-primary text-white font-heading font-bold text-lg shadow-md">
               LH
