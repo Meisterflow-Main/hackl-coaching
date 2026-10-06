@@ -20,6 +20,8 @@ import Kontakt from '@/pages/Kontakt';
 import AuftragBewerten from '@/pages/AuftragBewerten';
 import Impressum from '@/pages/Impressum';
 import Datenschutz from '@/pages/Datenschutz';
+import Regionen from '@/pages/Regionen';
+import RegionPage from '@/pages/RegionPage';
 
 const AuthenticatedApp = () => {
   const { isLoadingAuth, isLoadingPublicSettings, authError, navigateToLogin } = useAuth();
@@ -55,6 +57,8 @@ const AuthenticatedApp = () => {
         <Route path="/kontakt" element={<Kontakt />} />
         <Route path="/impressum" element={<Impressum />} />
         <Route path="/datenschutz" element={<Datenschutz />} />
+        <Route path="/regionen" element={<Regionen />} />
+        <Route path="/regionen/:slug" element={<RegionPage />} />
       </Route>
       {/* Standalone page (no shared layout) */}
       <Route path="/auftrag-bewerten" element={<AuftragBewerten />} />

@@ -1,12 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Phone, Mail, MapPin, Star } from "lucide-react";
+import { regions } from "@/data/regions";
 
 export default function Footer() {
   return (
     <footer className="bg-navy text-white">
       <div className="mx-auto max-w-7xl px-5 lg:px-8 py-16">
-        <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-5">
           <div className="lg:col-span-2">
             <div className="flex items-center gap-3 mb-5">
               <span className="flex h-11 w-11 items-center justify-center rounded-full bg-white text-primary font-heading font-bold text-lg">
@@ -76,6 +77,22 @@ export default function Footer() {
               <li><Link to="/ueber-mich" className="hover:text-white">Über mich</Link></li>
               <li><Link to="/erfahrungsberichte" className="hover:text-white">Erfahrungsberichte</Link></li>
               <li><Link to="/kontakt" className="hover:text-white">Kontakt</Link></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="font-heading font-semibold text-sm uppercase tracking-wider text-white/60 mb-4">
+              Regionen
+            </h4>
+            <ul className="space-y-2 text-sm text-white/80">
+              <li><Link to="/regionen" className="hover:text-white font-semibold">Alle Regionen</Link></li>
+              {regions.map((r) => (
+                <li key={r.slug}>
+                  <Link to={`/regionen/${r.slug}`} className="hover:text-white">
+                    {r.ort}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
         </div>

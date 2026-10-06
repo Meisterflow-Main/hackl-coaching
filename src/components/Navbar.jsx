@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, Phone } from "lucide-react";
+import { Menu, X, Phone, ChevronDown, MapPin } from "lucide-react";
+import { regions } from "@/data/regions";
 
 const NAV_LINKS = [
   { label: "Start", to: "/" },
@@ -16,6 +17,8 @@ const NAV_LINKS = [
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
+  const [regionenOpen, setRegionenOpen] = useState(false);
+  const [mobileRegionen, setMobileRegionen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const location = useLocation();
 
@@ -70,6 +73,47 @@ export default function Navbar() {
                 </Link>
               );
             })}
+            {/* Regionen Dropdown */}
+            <div
+              className="relative"
+              onMouseEnter={() => setRegionenOpen(true)}
+              onMouseLeave={() => setRegionenOpen(false)}
+            >
+              <button
+                className={`relative flex items-center gap-1 px-3 py-2 text-sm font-medium rounded-md transition-colors ${
+                  location.pathname.startsWith("/regionen") ? "text-primary" : "text-foreground/80 hover:text-primary"
+                }`}
+                onClick={() => setRegionenOpen((v) => !v)}
+              >
+                Regionen
+                <ChevronDown className={`h-3.5 w-3.5 transition-transform ${regionenOpen ? "rotate-180" : ""}`} />
+                {location.pathname.startsWith("/regionen") && (
+                  <span className="absolute left-3 right-3 -bottom-0.5 h-0.5 bg-accent rounded-full" />
+                )}
+              </button>
+              {regionenOpen && (
+                <div className="absolute right-0 top-full pt-2 w-64 z-50">
+                  <div className="rounded-2xl glass border border-border shadow-xl p-2 max-h-[70vh] overflow-y-auto">
+                    <Link
+                      to="/regionen"
+                      className="flex items-center gap-2 px-3 py-2.5 rounded-lg text-sm font-semibold text-primary hover:bg-primary/10 transition-colors"
+                    >
+                      <MapPin className="h-4 w-4" /> Alle Regionen
+                    </Link>
+                    <div className="my-1 h-px bg-border" />
+                    {regions.map((r) => (
+                      <Link
+                        key={r.slug}
+                        to={`/regionen/${r.slug}`}
+                        className="flex items-center gap-2 px-3 py-2.5 rounded-lg text-sm text-foreground/80 hover:bg-primary/10 hover:text-primary transition-colors"
+                      >
+                        <MapPin className="h-3.5 w-3.5 text-muted-foreground" /> {r.ort}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </div>
           </nav>
 
           <div className="hidden lg:flex items-center gap-3">
@@ -118,6 +162,35 @@ export default function Navbar() {
               {l.label}
             </Link>
           ))}
+          {/* Regionen mobile */}
+          <button
+            onClick={() => setMobileRegionen((v) => !v)}
+            className={`flex items-center justify-between px-4 py-3 rounded-lg text-base font-medium transition-colors ${
+              location.pathname.startsWith("/regionen") ? "bg-primary/10 text-primary" : "text-foreground/80 hover:bg-muted"
+            }`}
+          >
+            Regionen
+            <ChevronDown className={`h-4 w-4 transition-transform ${mobileRegionen ? "rotate-180" : ""}`} />
+          </button>
+          {mobileRegionen && (
+            <div className="ml-3 pl-3 border-l-2 border-border flex flex-col gap-0.5">
+              <Link
+                to="/regionen"
+                className="px-4 py-2.5 rounded-lg text-sm font-semibold text-primary hover:bg-primary/10 transition-colors"
+              >
+                Alle Regionen
+              </Link>
+              {regions.map((r) => (
+                <Link
+                  key={r.slug}
+                  to={`/regionen/${r.slug}`}
+                  className="px-4 py-2.5 rounded-lg text-sm text-foreground/70 hover:bg-muted hover:text-primary transition-colors"
+                >
+                  {r.ort}
+                </Link>
+              ))}
+            </div>
+          )}
           <Link
             to="/kontakt"
             className="mt-2 inline-flex items-center justify-center rounded-full bg-accent px-5 py-3 text-base font-semibold text-white"
