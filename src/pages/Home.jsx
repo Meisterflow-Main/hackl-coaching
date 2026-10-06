@@ -4,6 +4,7 @@ import { ArrowRight, Phone, Brain, ShieldCheck, Moon, Flame, Compass, HeartHands
 import ScrollReveal from "@/components/ScrollReveal";
 import ServiceCard from "@/components/ServiceCard";
 import CTASection from "@/components/CTASection";
+import ReelsSection from "@/components/ReelsSection";
 
 const SERVICES = [
   {
@@ -128,11 +129,13 @@ export default function Home() {
               <div className="relative mx-auto max-w-md lg:max-w-none">
                 <div className="absolute -inset-4 rounded-[2rem] bg-gradient-to-tr from-accent/30 to-primary/30 blur-2xl" />
                 <div className="relative overflow-hidden rounded-[2rem] border border-white/10 shadow-2xl">
-                  <img
-                    src="https://www.hacklcoaching.ch/wp-content/uploads/2014/11/Leo-Hackl-CD.jpg"
-                    alt="Leo Hackl, Psychologische Beratung Thalwil"
+                  <video
+                    src="https://media.base44.com/videos/public/6ac4ae046d53c41e9b937a32/f9c040118_Hero_Video.mp4"
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
                     className="w-full h-[420px] md:h-[520px] object-cover"
-                    loading="eager"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-navy/60 via-transparent to-transparent" />
                 </div>
@@ -161,6 +164,9 @@ export default function Home() {
           </ScrollReveal>
         </div>
       </section>
+
+      {/* REELS */}
+      <ReelsSection />
 
       {/* SERVICES */}
       <section className="py-20 md:py-28">
