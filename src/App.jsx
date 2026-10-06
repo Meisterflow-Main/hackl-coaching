@@ -7,11 +7,23 @@ import { AuthProvider, useAuth } from '@/lib/AuthContext';
 import UserNotRegisteredError from '@/components/UserNotRegisteredError';
 import ScrollToTop from './components/ScrollToTop';
 // Add page imports here
+import SiteLayout from '@/components/SiteLayout';
+import Home from '@/pages/Home';
+import Aengste from '@/pages/Aengste';
+import Verhaltensmuster from '@/pages/Verhaltensmuster';
+import Burnout from '@/pages/Burnout';
+import Beziehungskonflikte from '@/pages/Beziehungskonflikte';
+import UeberMich from '@/pages/UeberMich';
+import Erfahrungsberichte from '@/pages/Erfahrungsberichte';
+import Prinzip from '@/pages/Prinzip';
+import Kontakt from '@/pages/Kontakt';
+import AuftragBewerten from '@/pages/AuftragBewerten';
+import Impressum from '@/pages/Impressum';
+import Datenschutz from '@/pages/Datenschutz';
 
 const AuthenticatedApp = () => {
   const { isLoadingAuth, isLoadingPublicSettings, authError, navigateToLogin } = useAuth();
 
-  // Show loading spinner while checking app public settings or auth
   if (isLoadingPublicSettings || isLoadingAuth) {
     return (
       <div className="fixed inset-0 flex items-center justify-center">
@@ -20,21 +32,32 @@ const AuthenticatedApp = () => {
     );
   }
 
-  // Handle authentication errors
   if (authError) {
     if (authError.type === 'user_not_registered') {
       return <UserNotRegisteredError />;
     } else if (authError.type === 'auth_required') {
-      // Redirect to login automatically
       navigateToLogin();
       return null;
     }
   }
 
-  // Render the main app
   return (
     <Routes>
-      {/* Add your page Route elements here */}
+      <Route element={<SiteLayout />}>
+        <Route path="/" element={<Home />} />
+        <Route path="/aengste" element={<Aengste />} />
+        <Route path="/verhaltensmuster" element={<Verhaltensmuster />} />
+        <Route path="/burnout" element={<Burnout />} />
+        <Route path="/beziehungskonflikte" element={<Beziehungskonflikte />} />
+        <Route path="/ueber-mich" element={<UeberMich />} />
+        <Route path="/erfahrungsberichte" element={<Erfahrungsberichte />} />
+        <Route path="/prinzip-der-aufloesung" element={<Prinzip />} />
+        <Route path="/kontakt" element={<Kontakt />} />
+        <Route path="/impressum" element={<Impressum />} />
+        <Route path="/datenschutz" element={<Datenschutz />} />
+      </Route>
+      {/* Standalone page (no shared layout) */}
+      <Route path="/auftrag-bewerten" element={<AuftragBewerten />} />
       <Route path="*" element={<PageNotFound />} />
     </Routes>
   );
@@ -42,7 +65,6 @@ const AuthenticatedApp = () => {
 
 
 function App() {
-
   return (
     <AuthProvider>
       <QueryClientProvider client={queryClientInstance}>
