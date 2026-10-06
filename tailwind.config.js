@@ -76,5 +76,6 @@ module.exports = {
   		}
   	}
   },
+  safelist: ['bg-navy', 'text-navy', 'border-navy', 'glass-navy'],
   plugins: [require("tailwindcss-animate")],
 }
