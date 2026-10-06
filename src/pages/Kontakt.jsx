@@ -1,0 +1,90 @@
+import React from "react";
+import { Phone, MapPin, Clock, Mail } from "lucide-react";
+import PageHeader from "@/components/PageHeader";
+import ContactForm from "@/components/ContactForm";
+import ScrollReveal from "@/components/ScrollReveal";
+
+export default function Kontakt() {
+  return (
+    <>
+      <PageHeader
+        eyebrow="Kontakt"
+        title="Jetzt Termin anfragen"
+        subtitle="Melden Sie sich gleich hier an – oder rufen Sie an. Ich freue mich auf Ihre Anfrage und melde mich so bald wie möglich bei Ihnen."
+      />
+
+      <section className="py-20 md:py-28">
+        <div className="mx-auto max-w-7xl px-5 lg:px-8">
+          <div className="grid gap-12 lg:grid-cols-5 lg:gap-16">
+            <ScrollReveal className="lg:col-span-2">
+              <h2 className="font-heading text-2xl md:text-3xl font-bold text-primary">Kontaktdaten</h2>
+              <p className="mt-4 text-foreground/70 leading-relaxed">
+                Leo Hackl Coaching – Psychologische Beratung in Thalwil. Vereinbaren Sie Ihren
+                Termin telefonisch oder über das Kontaktformular.
+              </p>
+              <div className="mt-8 space-y-5">
+                <a href="tel:0447728979" className="flex items-start gap-4 group">
+                  <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+                    <Phone className="h-5 w-5" />
+                  </span>
+                  <span>
+                    <span className="block text-sm text-foreground/60">Telefon</span>
+                    <span className="font-semibold text-primary">044 772 89 79</span>
+                  </span>
+                </a>
+                <a href="tel:0794335072" className="flex items-start gap-4 group">
+                  <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+                    <Phone className="h-5 w-5" />
+                  </span>
+                  <span>
+                    <span className="block text-sm text-foreground/60">Mobil</span>
+                    <span className="font-semibold text-primary">079 433 50 72</span>
+                  </span>
+                </a>
+                <div className="flex items-start gap-4">
+                  <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-primary/10 text-primary">
+                    <MapPin className="h-5 w-5" />
+                  </span>
+                  <span>
+                    <span className="block text-sm text-foreground/60">Adresse</span>
+                    <span className="font-semibold text-primary">Zehntenstrasse 17, 8800 Thalwil</span>
+                  </span>
+                </div>
+                <div className="flex items-start gap-4">
+                  <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-primary/10 text-primary">
+                    <Clock className="h-5 w-5" />
+                  </span>
+                  <span>
+                    <span className="block text-sm text-foreground/60">Termine nach Vereinbarung</span>
+                    <span className="font-semibold text-primary">Individuelle Terminplanung</span>
+                  </span>
+                </div>
+              </div>
+
+              <div className="mt-8 overflow-hidden rounded-2xl border border-border shadow-sm">
+                <iframe
+                  title="Standort Leo Hackl Coaching"
+                  src="https://www.openstreetmap.org/export/embed.html?bbox=8.5686%2C47.2879%2C8.5726%2C47.2899&layer=mapnik&marker=47.2889%2C8.5706"
+                  className="w-full h-56"
+                  loading="lazy"
+                />
+              </div>
+            </ScrollReveal>
+
+            <ScrollReveal delay={0.1} className="lg:col-span-3">
+              <div className="rounded-2xl border border-border bg-white p-7 md:p-10 shadow-sm">
+                <h2 className="font-heading text-2xl font-bold text-primary">Anfrage senden</h2>
+                <p className="mt-2 text-sm text-foreground/60">
+                  Felder mit * sind Pflichtfelder. Ihre Daten werden vertraulich behandelt.
+                </p>
+                <div className="mt-7">
+                  <ContactForm />
+                </div>
+              </div>
+            </ScrollReveal>
+          </div>
+        </div>
+      </section>
+    </>
+  );
+}

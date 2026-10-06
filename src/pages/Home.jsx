@@ -1,0 +1,333 @@
+import React from "react";
+import { Link } from "react-router-dom";
+import { ArrowRight, Phone, Brain, ShieldCheck, Moon, Flame, Compass, HeartHandshake, Quote, Star } from "lucide-react";
+import ScrollReveal from "@/components/ScrollReveal";
+import ServiceCard from "@/components/ServiceCard";
+import CTASection from "@/components/CTASection";
+
+const SERVICES = [
+  {
+    icon: Brain,
+    title: "Verhaltensmuster & Selbstsabotage",
+    to: "/verhaltensmuster",
+    description:
+      "Unerwünschte Verhaltensweisen, die sich hartnäckig wiederholen – hypnosystemisch in einer intensiven Sitzung dauerhaft aufgelöst.",
+  },
+  {
+    icon: ShieldCheck,
+    title: "Ängste & Phobien",
+    to: "/aengste",
+    description:
+      "Flugangst, Prüfungsangst, Panikattacken, Platzangst – erstaunlich schnell und nachhaltig auflösbar.",
+  },
+  {
+    icon: Moon,
+    title: "Schlafstörungen",
+    to: "/aengste",
+    description:
+      "Wenn die Nacht zur Belastung wird – wir finden und lösen die Ursache, nicht nur die Symptome.",
+  },
+  {
+    icon: Flame,
+    title: "Burnout & Belastungsdepression",
+    to: "/burnout",
+    description:
+      "Wenn Energie und Freude verschwinden. Authentische Lösungen statt blosser Auszeit.",
+  },
+  {
+    icon: Compass,
+    title: "Standortbestimmung (Passion Test)",
+    to: "/prinzip-der-aufloesung",
+    description:
+      "Viele Menschen wissen gar nicht, was sie eigentlich wollen. Klarheit über das innerste Wesen.",
+  },
+  {
+    icon: HeartHandshake,
+    title: "Beziehungskonflikte",
+    to: "/beziehungskonflikte",
+    description:
+      "Verständnisvolle Begleitung – für dauerhafte Lösungen in Partnerschaft, Familie und Beruf.",
+  },
+];
+
+const STATS = [
+  { value: "2'000+", label: "Gelöste Fälle" },
+  { value: "30", label: "Jahre Erfahrung" },
+  { value: "90%", label: "Erfolgsquote bei Phobien" },
+  { value: "2–3", label: "Sitzungen bei spezifischen Ängsten" },
+];
+
+const TESTIMONIALS = [
+  {
+    text: "Nach langer Zeit mit starken Panik- und Angstattacken konnten wir nach wenigen Sitzungen alles verändern. Einfach Lebensqualität pur.",
+    author: "N.B. (w, 44), Wohlen",
+    tag: "Panikattacken",
+  },
+  {
+    text: "Das Coaching von Leo Hackl war erstaunlich, wie es mein Leben verändert hat. Ich fühle mich ganzheitlich und viel zufriedener mit mir selbst.",
+    author: "A.M. (w, 53), Aarau",
+    tag: "Hypnose / Verhaltensmuster",
+  },
+  {
+    text: "Heute lebe ich freier als je zuvor. Endlich kann ich das sein, was ich immer sein wollte! Leo, ich werde dir für immer dankbar sein.",
+    author: "M.A. (w, 25), Zug",
+    tag: "Verhaltensmuster",
+  },
+];
+
+export default function Home() {
+  return (
+    <>
+      {/* HERO */}
+      <section className="relative overflow-hidden bg-navy text-white pt-32 pb-20 md:pt-44 md:pb-32">
+        <div className="absolute inset-0 opacity-[0.06]" style={{ backgroundImage: "radial-gradient(circle at 80% 10%, white 1px, transparent 1px)", backgroundSize: "40px 40px" }} />
+        <div className="absolute -left-32 top-20 h-96 w-96 rounded-full bg-primary/40 blur-3xl" />
+        <div className="absolute right-0 bottom-0 h-96 w-96 rounded-full bg-accent/20 blur-3xl" />
+        <div className="relative mx-auto max-w-7xl px-5 lg:px-8">
+          <div className="grid items-center gap-12 lg:grid-cols-2">
+            <div>
+              <ScrollReveal>
+                <span className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/5 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.2em] text-white/80 mb-6">
+                  <span className="h-2 w-2 rounded-full bg-accent" /> Psychologische Beratung · Thalwil
+                </span>
+              </ScrollReveal>
+              <ScrollReveal delay={0.1}>
+                <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-[1.04] text-balance">
+                  Werde frei davon.
+                </h1>
+                <p className="mt-3 font-heading text-2xl md:text-3xl font-semibold text-accent">
+                  Ängste & Verhaltensmuster auflösen.
+                </p>
+              </ScrollReveal>
+              <ScrollReveal delay={0.2}>
+                <p className="mt-6 text-lg text-white/70 max-w-xl leading-relaxed">
+                  Psychologische Beratung in Thalwil – mit über 2'000 gelösten Fällen. Eine
+                  Kombination aus jüngster Hirnforschung und bewährter psychologischer Methode.
+                  Nachhaltig. Wirksam. Menschlich.
+                </p>
+              </ScrollReveal>
+              <ScrollReveal delay={0.3}>
+                <div className="mt-9 flex flex-wrap gap-4">
+                  <Link
+                    to="/kontakt"
+                    className="inline-flex items-center gap-2 rounded-full bg-accent px-7 py-3.5 text-sm font-semibold shadow-lg shadow-accent/30 hover:-translate-y-0.5 transition-all"
+                  >
+                    Jetzt Termin anfragen <ArrowRight className="h-4 w-4" />
+                  </Link>
+                  <a
+                    href="tel:0447728979"
+                    className="inline-flex items-center gap-2 rounded-full border border-white/30 px-7 py-3.5 text-sm font-semibold hover:bg-white/10 transition-colors"
+                  >
+                    <Phone className="h-4 w-4" /> 044 772 89 79
+                  </a>
+                </div>
+              </ScrollReveal>
+            </div>
+
+            <ScrollReveal delay={0.2} className="relative">
+              <div className="relative mx-auto max-w-md lg:max-w-none">
+                <div className="absolute -inset-4 rounded-[2rem] bg-gradient-to-tr from-accent/30 to-primary/30 blur-2xl" />
+                <div className="relative overflow-hidden rounded-[2rem] border border-white/10 shadow-2xl">
+                  <img
+                    src="https://www.hacklcoaching.ch/wp-content/uploads/2014/11/Leo-Hackl-CD.jpg"
+                    alt="Leo Hackl, Psychologische Beratung Thalwil"
+                    className="w-full h-[420px] md:h-[520px] object-cover"
+                    loading="eager"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-navy/60 via-transparent to-transparent" />
+                </div>
+                <div className="absolute -bottom-6 -left-6 hidden md:block rounded-2xl glass border border-white/20 px-6 py-4 shadow-xl">
+                  <div className="flex items-center gap-1 text-accent mb-1">
+                    {[...Array(5)].map((_, i) => (
+                      <Star key={i} className="h-4 w-4 fill-current" />
+                    ))}
+                  </div>
+                  <p className="text-sm font-semibold text-navy">Über 2'000 Klienten geholfen</p>
+                </div>
+              </div>
+            </ScrollReveal>
+          </div>
+
+          {/* Stats */}
+          <ScrollReveal delay={0.2}>
+            <div className="mt-16 md:mt-24 grid grid-cols-2 md:grid-cols-4 gap-px overflow-hidden rounded-2xl border border-white/10 bg-white/5">
+              {STATS.map((s) => (
+                <div key={s.label} className="bg-white/5 px-6 py-7 text-center">
+                  <div className="font-heading text-3xl md:text-4xl font-bold text-accent">{s.value}</div>
+                  <div className="mt-1 text-xs md:text-sm text-white/60 uppercase tracking-wider">{s.label}</div>
+                </div>
+              ))}
+            </div>
+          </ScrollReveal>
+        </div>
+      </section>
+
+      {/* SERVICES */}
+      <section className="py-20 md:py-28">
+        <div className="mx-auto max-w-7xl px-5 lg:px-8">
+          <ScrollReveal>
+            <div className="max-w-2xl">
+              <span className="text-sm font-semibold uppercase tracking-[0.2em] text-accent">Wo ich helfen kann</span>
+              <h2 className="mt-3 font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-primary leading-tight">
+                Mein Leistungsangebot
+              </h2>
+              <p className="mt-4 text-lg text-foreground/70">
+                Das Leben funktioniert in gewissen Bereichen nicht? Unerwünschte Verhaltensweisen
+                wiederholen sich hartnäckig? Hier finden Sie den Weg zur dauerhaften Lösung.
+              </p>
+            </div>
+          </ScrollReveal>
+          <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {SERVICES.map((s, i) => (
+              <ServiceCard key={s.title} {...s} delay={i * 0.05} />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ABOUT TEASER */}
+      <section className="bg-secondary/40 py-20 md:py-28">
+        <div className="mx-auto max-w-7xl px-5 lg:px-8">
+          <div className="grid items-center gap-12 lg:grid-cols-2">
+            <ScrollReveal className="relative order-2 lg:order-1">
+              <div className="absolute -inset-3 rounded-[2rem] bg-gradient-to-br from-primary/20 to-accent/20 blur-2xl" />
+              <div className="relative overflow-hidden rounded-[2rem] shadow-xl">
+                <img
+                  src="https://www.hacklcoaching.ch/wp-content/uploads/2010/10/Leone.jpeg"
+                  alt="Leo Hackl"
+                  className="w-full h-[460px] object-cover"
+                  loading="lazy"
+                />
+              </div>
+            </ScrollReveal>
+            <div className="order-1 lg:order-2">
+              <ScrollReveal>
+                <span className="text-sm font-semibold uppercase tracking-[0.2em] text-accent">Über mich</span>
+                <h2 className="mt-3 font-heading text-3xl md:text-4xl font-bold text-primary leading-tight">
+                  Leo Hackl
+                </h2>
+                <p className="mt-2 font-heading text-xl text-foreground/80">
+                  Psychologische Beratung · 30 Jahre Erfahrung
+                </p>
+              </ScrollReveal>
+              <ScrollReveal delay={0.1}>
+                <div className="mt-6 space-y-4 text-foreground/70 leading-relaxed">
+                  <p>
+                    Ich kenne das, wenn die Dinge nicht funktionieren, wie man es sich wünscht. Ich
+                    habe das meiste selbst erlebt. Ich bin Vater von fünf Kindern und hatte acht
+                    Berufe.
+                  </p>
+                  <p>
+                    Etwas von meiner Erfahrung weiterzugeben ist meine Passion. Ich durfte bis heute
+                    schon über 2'000 Betroffenen beistehen. Dabei helfen mir mein Psychologiestudium,
+                    die Ausbildung in systemischer Hypnotherapie sowie 30 Jahre praktischer Erfahrung.
+                  </p>
+                  <p className="font-semibold text-primary">
+                    Es gibt für mich nichts Schöneres, als jemanden glücklich meine Praxis verlassen zu sehen.
+                  </p>
+                </div>
+              </ScrollReveal>
+              <ScrollReveal delay={0.2}>
+                <Link
+                  to="/ueber-mich"
+                  className="mt-8 inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-semibold text-white hover:bg-accent transition-colors"
+                >
+                  Mehr über Leo Hackl <ArrowRight className="h-4 w-4" />
+                </Link>
+              </ScrollReveal>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* METHOD TEASER */}
+      <section className="py-20 md:py-28">
+        <div className="mx-auto max-w-7xl px-5 lg:px-8">
+          <ScrollReveal>
+            <div className="grid gap-10 lg:grid-cols-2 lg:gap-20 items-center">
+              <div>
+                <span className="text-sm font-semibold uppercase tracking-[0.2em] text-accent">Die Methode</span>
+                <h2 className="mt-3 font-heading text-3xl md:text-4xl font-bold text-primary leading-tight">
+                  Hirnforschung trifft bewährte Psychologie
+                </h2>
+                <p className="mt-5 text-lg text-foreground/70 leading-relaxed">
+                  Das Gehirn hat die Fähigkeit, sich sehr schnell umzuorganisieren, neu zu verdrahten.
+                  Durch diese neuronale Plastizität lassen sich irreale Ängste – vor allem Phobien –
+                  restlos und dauerhaft auflösen. Ohne Leiden, ohne Konfrontationstherapie.
+                </p>
+                <Link
+                  to="/prinzip-der-aufloesung"
+                  className="mt-8 inline-flex items-center gap-2 text-sm font-semibold text-accent hover:gap-3 transition-all"
+                >
+                  Das Prinzip der Auflösung <ArrowRight className="h-4 w-4" />
+                </Link>
+              </div>
+              <div className="grid gap-4">
+                {[
+                  { n: "01", t: "Analyse", d: "Klarheit über Ursache, Auslöser und das zugrundeliegende Muster." },
+                  { n: "02", t: "Auflösung", d: "Hypnosystemische Intervention verdrahtet neuronale Netzwerke neu." },
+                  { n: "03", t: "Integration", d: "Sie handeln situationsgerecht – ohne inneren Kampf, dauerhaft." },
+                ].map((step, i) => (
+                  <ScrollReveal key={step.n} delay={i * 0.1}>
+                    <div className="flex gap-5 rounded-2xl border border-border bg-white p-6 shadow-sm">
+                      <span className="font-heading text-3xl font-bold text-accent/40">{step.n}</span>
+                      <div>
+                        <h3 className="font-heading font-bold text-primary">{step.t}</h3>
+                        <p className="text-sm text-foreground/70 mt-1">{step.d}</p>
+                      </div>
+                    </div>
+                  </ScrollReveal>
+                ))}
+              </div>
+            </div>
+          </ScrollReveal>
+        </div>
+      </section>
+
+      {/* TESTIMONIALS */}
+      <section className="bg-navy py-20 md:py-28 text-white">
+        <div className="mx-auto max-w-7xl px-5 lg:px-8">
+          <ScrollReveal>
+            <div className="max-w-2xl">
+              <span className="text-sm font-semibold uppercase tracking-[0.2em] text-accent">Erfahrungsberichte</span>
+              <h2 className="mt-3 font-heading text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
+                Was Klienten erlebt haben
+              </h2>
+            </div>
+          </ScrollReveal>
+          <div className="mt-12 grid gap-6 md:grid-cols-3">
+            {TESTIMONIALS.map((t, i) => (
+              <ScrollReveal key={t.author} delay={i * 0.1}>
+                <figure className="flex h-full flex-col rounded-2xl border border-white/10 bg-white/5 p-7 backdrop-blur">
+                  <Quote className="h-8 w-8 text-accent mb-4" />
+                  <blockquote className="text-white/80 leading-relaxed flex-1">"{t.text}"</blockquote>
+                  <figcaption className="mt-5 pt-5 border-t border-white/10">
+                    <div className="flex items-center gap-1 text-accent mb-1">
+                      {[...Array(5)].map((_, j) => (
+                        <Star key={j} className="h-3.5 w-3.5 fill-current" />
+                      ))}
+                    </div>
+                    <p className="text-sm font-semibold text-white">{t.author}</p>
+                    <p className="text-xs text-white/50 mt-0.5">{t.tag}</p>
+                  </figcaption>
+                </figure>
+              </ScrollReveal>
+            ))}
+          </div>
+          <ScrollReveal delay={0.3}>
+            <div className="mt-10 text-center">
+              <Link
+                to="/erfahrungsberichte"
+                className="inline-flex items-center gap-2 rounded-full border border-white/30 px-6 py-3 text-sm font-semibold hover:bg-white/10 transition-colors"
+              >
+                Alle Erfahrungsberichte <ArrowRight className="h-4 w-4" />
+              </Link>
+            </div>
+          </ScrollReveal>
+        </div>
+      </section>
+
+      <CTASection />
+    </>
+  );
+}
