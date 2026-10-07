@@ -55,14 +55,14 @@ export default function Navbar() {
             </span>
           </Link>
 
-          <nav className="hidden lg:flex items-center gap-1">
+          <nav className="hidden lg:flex items-center gap-0.5">
             {NAV_LINKS.map((l) => {
               const active = location.pathname === l.to;
               return (
                 <Link
                   key={l.to}
                   to={l.to}
-                  className={`relative px-3 py-2 text-sm font-medium rounded-md transition-colors ${
+                  className={`relative whitespace-nowrap px-2 py-2 text-sm font-medium rounded-md transition-colors ${
                     active ? "text-primary" : "text-foreground/80 hover:text-primary"
                   }`}
                 >
@@ -80,7 +80,7 @@ export default function Navbar() {
               onMouseLeave={() => setRegionenOpen(false)}
             >
               <button
-                className={`relative flex items-center gap-1 px-3 py-2 text-sm font-medium rounded-md transition-colors ${
+                className={`relative flex items-center gap-1 whitespace-nowrap px-2 py-2 text-sm font-medium rounded-md transition-colors ${
                   location.pathname.startsWith("/regionen") ? "text-primary" : "text-foreground/80 hover:text-primary"
                 }`}
                 onClick={() => setRegionenOpen((v) => !v)}
@@ -119,7 +119,7 @@ export default function Navbar() {
           <div className="hidden lg:flex items-center gap-3">
             <a
               href="tel:0447728979"
-              className="flex items-center gap-2 text-sm font-semibold text-primary hover:text-accent transition-colors"
+              className="flex items-center gap-2 whitespace-nowrap text-sm font-semibold text-primary hover:text-accent transition-colors"
             >
               <Phone className="h-4 w-4" />
               044 772 89 79
