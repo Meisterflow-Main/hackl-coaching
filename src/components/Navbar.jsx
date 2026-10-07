@@ -46,10 +46,10 @@ export default function Navbar() {
               LH
             </span>
             <span className="flex flex-col leading-tight">
-              <span className="font-heading font-bold text-primary text-lg tracking-tight">
+              <span className={`font-heading font-bold text-lg tracking-tight ${scrolled ? "text-primary" : "text-white"}`}>
                 Leo Hackl
               </span>
-              <span className="text-[11px] uppercase tracking-[0.22em] text-muted-foreground font-medium">
+              <span className={`text-[11px] uppercase tracking-[0.22em] font-medium ${scrolled ? "text-muted-foreground" : "text-white/70"}`}>
                 Coaching · Thalwil
               </span>
             </span>
@@ -63,7 +63,7 @@ export default function Navbar() {
                   key={l.to}
                   to={l.to}
                   className={`relative whitespace-nowrap px-2 py-2 text-sm font-medium rounded-md transition-colors ${
-                    active ? "text-primary" : "text-foreground/80 hover:text-primary"
+                    active ? (scrolled ? "text-primary" : "text-white") : (scrolled ? "text-foreground/80 hover:text-primary" : "text-white/80 hover:text-white")
                   }`}
                 >
                   {l.label}
@@ -81,7 +81,7 @@ export default function Navbar() {
             >
               <button
                 className={`relative flex items-center gap-1 whitespace-nowrap px-2 py-2 text-sm font-medium rounded-md transition-colors ${
-                  location.pathname.startsWith("/regionen") ? "text-primary" : "text-foreground/80 hover:text-primary"
+                  location.pathname.startsWith("/regionen") ? (scrolled ? "text-primary" : "text-white") : (scrolled ? "text-foreground/80 hover:text-primary" : "text-white/80 hover:text-white")
                 }`}
                 onClick={() => setRegionenOpen((v) => !v)}
               >
@@ -119,7 +119,9 @@ export default function Navbar() {
           <div className="hidden lg:flex items-center gap-3">
             <a
               href="tel:0447728979"
-              className="flex items-center gap-2 whitespace-nowrap text-sm font-semibold text-primary hover:text-accent transition-colors"
+              className={`flex items-center gap-2 whitespace-nowrap text-sm font-semibold transition-colors ${
+                scrolled ? "text-primary hover:text-accent" : "text-white hover:text-accent"
+              }`}
             >
               <Phone className="h-4 w-4" />
               044 772 89 79
@@ -133,7 +135,7 @@ export default function Navbar() {
           </div>
 
           <button
-            className="lg:hidden inline-flex items-center justify-center h-11 w-11 rounded-full text-primary"
+            className={`lg:hidden inline-flex items-center justify-center h-11 w-11 rounded-full ${scrolled ? "text-primary" : "text-white"}`}
             onClick={() => setOpen((v) => !v)}
             aria-label="Menü"
           >
