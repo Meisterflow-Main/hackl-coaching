@@ -335,7 +335,7 @@ export function breadcrumbSchema(items) {
   };
 }
 
-export function reviewSchema(testimonials) {
+export function reviewSchema() {
   return {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
@@ -359,16 +359,5 @@ export function reviewSchema(testimonials) {
       bestRating: "5",
       worstRating: "1",
     },
-    review: testimonials.map((t) => ({
-      "@type": "Review",
-      reviewBody: t.text,
-      author: { "@type": "Person", name: t.author },
-      reviewRating: {
-        "@type": "Rating",
-        ratingValue: "5",
-        bestRating: "5",
-        worstRating: "1",
-      },
-    })),
   };
 }

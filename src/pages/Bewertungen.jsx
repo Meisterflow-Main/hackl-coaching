@@ -16,7 +16,7 @@ export default function Bewertungen() {
     <>
       <Seo
         {...PAGE_META["/bewertungen"]}
-        schema={[localBusinessSchema(), reviewSchema([])]}
+        schema={[localBusinessSchema(), reviewSchema()]}
       />
       <PageHeader
         eyebrow="Bewertungen"

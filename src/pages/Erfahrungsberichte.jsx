@@ -1,5 +1,6 @@
 import React from "react";
-import { Quote, Star } from "lucide-react";
+import { Quote } from "lucide-react";
+import { Link } from "react-router-dom";
 import PageHeader from "@/components/PageHeader";
 import CTASection from "@/components/CTASection";
 import ScrollReveal from "@/components/ScrollReveal";
@@ -73,7 +74,7 @@ const REPORTS = [
 export default function Erfahrungsberichte() {
   return (
     <>
-      <Seo {...PAGE_META["/erfahrungsberichte"]} schema={[reviewSchema(REPORTS)]} />
+      <Seo {...PAGE_META["/erfahrungsberichte"]} schema={[reviewSchema()]} />
       <PageHeader
         eyebrow="Erfahrungsberichte"
         title="Wie Klienten mich erlebt haben"
@@ -86,6 +87,16 @@ export default function Erfahrungsberichte() {
           <div className="mb-12 max-w-2xl">
             <GoogleReviewCard />
           </div>
+          <ScrollReveal delay={0.05}>
+            <p className="text-sm text-muted-foreground mb-10 max-w-2xl">
+              Die folgenden Erfahrungsberichte wurden von Klienten persönlich zur Verfügung
+              gestellt. Für verifizierte Google-Bewertungen besuchen Sie unsere{" "}
+              <Link to="/bewertungen" className="text-accent font-semibold hover:underline">
+                Bewertungsseite
+              </Link>
+              .
+            </p>
+          </ScrollReveal>
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {REPORTS.map((r, i) => (
               <ScrollReveal key={i} delay={(i % 3) * 0.05}>
@@ -100,11 +111,6 @@ export default function Erfahrungsberichte() {
                     {r.text}
                   </blockquote>
                   <figcaption className="mt-5 pt-5 border-t border-border">
-                    <div className="flex items-center gap-1 text-accent mb-1">
-                      {[...Array(5)].map((_, j) => (
-                        <Star key={j} className="h-3.5 w-3.5 fill-current" />
-                      ))}
-                    </div>
                     <p className="text-sm font-semibold text-primary">{r.author}</p>
                   </figcaption>
                 </figure>

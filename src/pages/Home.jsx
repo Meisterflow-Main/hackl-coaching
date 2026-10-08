@@ -1,12 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { ArrowRight, Phone, Brain, ShieldCheck, Moon, Flame, Compass, HeartHandshake, Quote, Star } from "lucide-react";
+import { ArrowRight, Phone, Brain, ShieldCheck, Moon, Flame, Compass, HeartHandshake, Star } from "lucide-react";
 import ScrollReveal from "@/components/ScrollReveal";
 import ServiceCard from "@/components/ServiceCard";
 import CTASection from "@/components/CTASection";
 import ReelsSection from "@/components/ReelsSection";
 import Seo from "@/components/Seo";
-import { GoogleReviewBadge } from "@/components/GoogleReviewWidget";
+import { GoogleReviewBadge, GoogleReviewCard } from "@/components/GoogleReviewWidget";
 import { PAGE_META, localBusinessSchema, organizationSchema, websiteSchema } from "@/data/seoConfig";
 
 const SERVICES = [
@@ -61,23 +61,7 @@ const STATS = [
   { value: "2–3", label: "Sitzungen bei spezifischen Ängsten" },
 ];
 
-const TESTIMONIALS = [
-  {
-    text: "Nach langer Zeit mit starken Panik- und Angstattacken konnten wir nach wenigen Sitzungen alles verändern. Einfach Lebensqualität pur.",
-    author: "N.B. (w, 44), Wohlen",
-    tag: "Panikattacken",
-  },
-  {
-    text: "Das Coaching von Leo Hackl war erstaunlich, wie es mein Leben verändert hat. Ich fühle mich ganzheitlich und viel zufriedener mit mir selbst.",
-    author: "A.M. (w, 53), Aarau",
-    tag: "Hypnose / Verhaltensmuster",
-  },
-  {
-    text: "Heute lebe ich freier als je zuvor. Endlich kann ich das sein, was ich immer sein wollte! Leo, ich werde dir für immer dankbar sein.",
-    author: "M.A. (w, 25), Zug",
-    tag: "Verhaltensmuster",
-  },
-];
+// Testimonials removed per Google Reviews Compliance — only real Google reviews displayed
 
 export default function Home() {
   return (
@@ -297,43 +281,39 @@ export default function Home() {
         </div>
       </section>
 
-      {/* TESTIMONIALS */}
+      {/* GOOGLE REVIEWS */}
       <section className="bg-navy py-20 md:py-28 text-white">
         <div className="mx-auto max-w-7xl px-5 lg:px-8">
           <ScrollReveal>
             <div className="max-w-2xl">
-              <span className="text-sm font-semibold uppercase tracking-[0.2em] text-accent">Erfahrungsberichte</span>
-              <h2 className="mt-3 font-heading text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
-                Was Klienten erlebt haben
+              <span className="text-sm font-semibold uppercase tracking-[0.2em] text-accent">Google Bewertungen</span>
+              <h2 className="mt-3 font-heading text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-white">
+                Was Klienten auf Google berichten
               </h2>
+              <p className="mt-4 text-lg text-white/70">
+                Leo Hackl Coaching hat 17 verifizierte Google-Bewertungen mit 5,0 Sternen.
+                Lesen Sie, was echte Klienten auf Google berichten.
+              </p>
             </div>
           </ScrollReveal>
-          <div className="mt-12 grid gap-6 md:grid-cols-3">
-            {TESTIMONIALS.map((t, i) => (
-              <ScrollReveal key={t.author} delay={i * 0.1}>
-                <figure className="flex h-full flex-col rounded-2xl border border-white/10 bg-white/5 p-7 backdrop-blur">
-                  <Quote className="h-8 w-8 text-accent mb-4" />
-                  <blockquote className="text-white/80 leading-relaxed flex-1">"{t.text}"</blockquote>
-                  <figcaption className="mt-5 pt-5 border-t border-white/10">
-                    <div className="flex items-center gap-1 text-accent mb-1">
-                      {[...Array(5)].map((_, j) => (
-                        <Star key={j} className="h-3.5 w-3.5 fill-current" />
-                      ))}
-                    </div>
-                    <p className="text-sm font-semibold text-white">{t.author}</p>
-                    <p className="text-xs text-white/50 mt-0.5">{t.tag}</p>
-                  </figcaption>
-                </figure>
-              </ScrollReveal>
-            ))}
-          </div>
+          <ScrollReveal delay={0.1}>
+            <div className="mt-10 max-w-2xl">
+              <GoogleReviewCard />
+            </div>
+          </ScrollReveal>
           <ScrollReveal delay={0.3}>
-            <div className="mt-10 text-center">
+            <div className="mt-10 flex flex-wrap gap-4">
+              <Link
+                to="/bewertungen"
+                className="inline-flex items-center gap-2 rounded-full bg-accent px-6 py-3 text-sm font-semibold hover:opacity-90 transition-opacity"
+              >
+                Alle Bewertungen <ArrowRight className="h-4 w-4" />
+              </Link>
               <Link
                 to="/erfahrungsberichte"
                 className="inline-flex items-center gap-2 rounded-full border border-white/30 px-6 py-3 text-sm font-semibold hover:bg-white/10 transition-colors"
               >
-                Alle Erfahrungsberichte <ArrowRight className="h-4 w-4" />
+                Erfahrungsberichte <ArrowRight className="h-4 w-4" />
               </Link>
             </div>
           </ScrollReveal>
