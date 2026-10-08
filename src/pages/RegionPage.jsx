@@ -10,7 +10,9 @@ import ScrollReveal from "@/components/ScrollReveal";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import Seo from "@/components/Seo";
 import { localBusinessSchema, faqPageSchema } from "@/data/seoConfig";
-import { regions, sharedRegionData } from "@/data/regions";
+import { regions, sharedRegionData, getRegionByOrt } from "@/data/regions";
+import RegionMoneyPages from "@/components/RegionMoneyPages";
+import { GoogleReviewCard } from "@/components/GoogleReviewWidget";
 
 const iconMap = { ShieldCheck, HeartHandshake, Zap, Pill };
 
@@ -222,6 +224,9 @@ export default function RegionPage() {
         </div>
       </section>
 
+      {/* 5b. MONEY PAGES FÜR DIESE REGION */}
+      <RegionMoneyPages regionSlug={region.slug} />
+
       {/* 6. WARUM UNS */}
       <section className="py-16 lg:py-24 bg-background">
         <div className="mx-auto max-w-5xl px-5 lg:px-8">
@@ -299,35 +304,14 @@ export default function RegionPage() {
       <section className="py-16 lg:py-24 bg-background">
         <div className="mx-auto max-w-4xl px-5 lg:px-8">
           <ScrollReveal>
-            <div className="text-center">
-              <h2 className="font-heading text-3xl md:text-4xl font-bold">Google Bewertungen</h2>
-              <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
-                Über 2'000 Klienten haben ihr Vertrauen gesetzt. Lesen Sie, was sie über ihre Erfahrung bei Leo Hackl Coaching berichten.
-              </p>
-              <div className="mt-8 inline-flex items-center gap-3 rounded-full bg-secondary px-6 py-3">
-                <div className="flex gap-1">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="h-5 w-5 fill-yellow-400 text-yellow-400" />
-                  ))}
-                </div>
-                <span className="font-semibold">5.0 Sterne</span>
-              </div>
-              <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-                <Link
-                  to="/erfahrungsberichte"
-                  className="inline-flex items-center justify-center gap-2 rounded-full bg-primary hover:bg-accent px-7 py-3.5 text-base font-semibold text-white transition-colors"
-                >
-                  Alle Erfahrungsberichte ansehen
-                </Link>
-                <Link
-                  to="/auftrag-bewerten"
-                  className="inline-flex items-center justify-center gap-2 rounded-full border border-border hover:bg-muted px-7 py-3.5 text-base font-semibold transition-colors"
-                >
-                  <Star className="h-5 w-5" /> Bewertung schreiben
-                </Link>
-              </div>
-            </div>
+            <h2 className="font-heading text-3xl md:text-4xl font-bold text-center mb-2">
+              Google Bewertungen
+            </h2>
+            <p className="text-center text-lg text-muted-foreground max-w-2xl mx-auto mb-10">
+              Leo Hackl Coaching hat 17 verifizierte Google-Bewertungen mit 5,0 Sternen.
+            </p>
           </ScrollReveal>
+          <GoogleReviewCard />
         </div>
       </section>
 
@@ -395,14 +379,28 @@ export default function RegionPage() {
               Leo Hackl Coaching betreut Klienten aus {region.ort} und der gesamten {region.region}. Diese Orte gehören zu unserem Einzugsgebiet.
             </p>
             <div className="mt-8 flex flex-wrap justify-center gap-2.5">
-              {region.serviceArea.map((ort, i) => (
-                <span
-                  key={i}
-                  className="inline-flex items-center gap-1.5 rounded-full bg-card border border-border px-4 py-2 text-sm font-medium text-foreground/80"
-                >
-                  <MapPin className="h-3.5 w-3.5 text-primary" /> {ort}
-                </span>
-              ))}
+              {region.serviceArea.map((ort, i) => {
+                const regionForOrt = getRegionByOrt(ort);
+                if (regionForOrt) {
+                  return (
+                    <Link
+                      key={i}
+                      to={`/regionen/${regionForOrt.slug}`}
+                      className="inline-flex items-center gap-1.5 rounded-full bg-card border border-border px-4 py-2 text-sm font-medium text-foreground/80 hover:bg-primary hover:text-white hover:border-primary transition-colors"
+                    >
+                      <MapPin className="h-3.5 w-3.5" /> {ort}
+                    </Link>
+                  );
+                }
+                return (
+                  <span
+                    key={i}
+                    className="inline-flex items-center gap-1.5 rounded-full bg-card border border-border px-4 py-2 text-sm font-medium text-foreground/80"
+                  >
+                    <MapPin className="h-3.5 w-3.5 text-primary" /> {ort}
+                  </span>
+                );
+              })}
             </div>
           </ScrollReveal>
         </div>

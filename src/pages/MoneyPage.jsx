@@ -8,7 +8,7 @@ import ScrollReveal from "@/components/ScrollReveal";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import CTASection from "@/components/CTASection";
 import { getServiceBySlug } from "@/data/services";
-import { getMoneyPageBySlug, getFullRegion, getMoneyPagesForService, moneyPageRegions } from "@/data/moneyPages";
+import { getMoneyPageBySlug, getFullRegion, getMoneyPagesForService, getMoneyPagesForRegion, moneyPageRegions } from "@/data/moneyPages";
 import Seo from "@/components/Seo";
 import { localBusinessSchema, serviceSchema, faqPageSchema } from "@/data/seoConfig";
 
@@ -30,6 +30,9 @@ export default function MoneyPage({ slug }) {
 
   const Icon = iconMap[service.icon] || Circle;
   const relatedMoneyPages = getMoneyPagesForService(mp.serviceSlug).filter((r) => r.slug !== slug);
+  const sameRegionMoneyPages = getMoneyPagesForRegion(mp.regionSlug).filter((r) => r.slug !== slug);
+  const regionFaqs = region.faq.slice(0, 3);
+  const allFaqs = [...service.faq, ...regionFaqs];
 
   return (
     <>
@@ -37,7 +40,7 @@ export default function MoneyPage({ slug }) {
         title={`${service.title} in ${regionName} auflösen | Leo Hackl Coaching`}
         description={`${service.title} in ${regionName}? Leo Hackl löst ${service.shortTitle} nachhaltig auf – mit über 2'000 gelösten Fällen. Praxis in Thalwil, wenige Minuten vom Bahnhof.`}
         canonicalPath={`/${slug}`}
-        schema={[localBusinessSchema(), serviceSchema(service, regionName), faqPageSchema(service.faq)]}
+        schema={[localBusinessSchema(), serviceSchema(service, regionName), faqPageSchema(allFaqs)]}
       />
       {/* HERO */}
       <section className="relative overflow-hidden bg-navy text-white pt-32 pb-20 md:pt-40 md:pb-28">
@@ -177,6 +180,33 @@ export default function MoneyPage({ slug }) {
         </div>
       </section>
 
+      {/* REGION-SPEZIFISCHES FAQ */}
+      <section className="py-20 md:py-28">
+        <div className="mx-auto max-w-4xl px-5 lg:px-8">
+          <ScrollReveal>
+            <div className="mb-10">
+              <span className="text-sm font-semibold uppercase tracking-[0.2em] text-accent">{regionName}</span>
+              <h2 className="mt-3 font-heading text-3xl md:text-4xl font-bold text-primary leading-tight">
+                Häufige Fragen aus {regionName}
+              </h2>
+              <p className="mt-3 text-foreground/60">
+                Lokale Antworten zur psychologischen Beratung in {regionName} und Umgebung.
+              </p>
+            </div>
+          </ScrollReveal>
+          <div className="space-y-3">
+            {regionFaqs.map((item, i) => (
+              <ScrollReveal key={i} delay={i * 0.03}>
+                <div className="rounded-2xl border border-border bg-white p-6 shadow-sm">
+                  <h3 className="font-heading font-semibold text-primary mb-2">{item.question}</h3>
+                  <p className="text-sm text-foreground/70 leading-relaxed">{item.answer}</p>
+                </div>
+              </ScrollReveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* INTERNE VERLINKUNG – Service ↔ Region ↔ Money Pages */}
       <section className="bg-secondary/40 py-20 md:py-28">
         <div className="mx-auto max-w-7xl px-5 lg:px-8">
@@ -232,6 +262,54 @@ export default function MoneyPage({ slug }) {
           </div>
         </div>
       </section>
+
+      {/* WEITERE DIENSTLEISTUNGEN IN DIESER REGION */}
+      {sameRegionMoneyPages.length > 0 && (
+        <section className="bg-secondary/40 py-20 md:py-28">
+          <div className="mx-auto max-w-7xl px-5 lg:px-8">
+            <ScrollReveal>
+              <div className="max-w-2xl mb-10">
+                <span className="text-sm font-semibold uppercase tracking-[0.2em] text-accent">
+                  {regionName}
+                </span>
+                <h2 className="mt-3 font-heading text-3xl md:text-4xl font-bold text-primary leading-tight">
+                  Weitere Dienstleistungen in {regionName}
+                </h2>
+                <p className="mt-4 text-lg text-foreground/70">
+                  Neben {service.title.toLowerCase()} bietet Leo Hackl Coaching in {regionName} weitere Leistungen an.
+                </p>
+              </div>
+            </ScrollReveal>
+            <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              {sameRegionMoneyPages.map((mp2, i) => {
+                const s = getServiceBySlug(mp2.serviceSlug);
+                if (!s) return null;
+                return (
+                  <ScrollReveal key={mp2.slug} delay={i * 0.05}>
+                    <Link
+                      to={`/${mp2.slug}`}
+                      className="group flex items-center gap-3 rounded-2xl border border-border bg-white p-5 shadow-sm hover:shadow-lg hover:-translate-y-0.5 transition-all"
+                    >
+                      <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary">
+                        <MapPin className="h-5 w-5" />
+                      </div>
+                      <div className="flex-1">
+                        <h3 className="font-heading font-semibold text-primary">
+                          {s.shortTitle} {regionName}
+                        </h3>
+                        <p className="text-xs text-foreground/60 mt-0.5">
+                          {s.title} in {regionName}
+                        </p>
+                      </div>
+                      <ArrowRight className="h-4 w-4 text-accent group-hover:translate-x-1 transition-transform" />
+                    </Link>
+                  </ScrollReveal>
+                );
+              })}
+            </div>
+          </div>
+        </section>
+      )}
 
       <CTASection />
     </>

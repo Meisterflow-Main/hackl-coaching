@@ -6,7 +6,7 @@ export const sharedRegionData = {
   telefonMobil: "079 433 50 72",
   email: "info@hacklcoaching.ch",
   adresse: "Zehntenstrasse 17, 8800 Thalwil",
-  oeffnungszeiten: "Mo–Fr 08:00–19:00, Sa nach Vereinbarung",
+  oeffnungszeiten: "Mo 08:30–19:00, Di 09:00–19:00, Mi–Fr 10:00–19:00, Sa 11:00–15:00, So geschlossen",
   mapsUrl: "https://www.google.com/maps/place/Leo+Hackl+Coaching/@47.2889657,8.5706351,17z",
   trust: [
     { icon: "ShieldCheck", title: "30 Jahre Erfahrung", description: "Über 2'000 gelöste Fälle" },
@@ -385,3 +385,5 @@ export const regions = [
     finalCta: { title: "Der Berg wird leichter", text: "Vereinbaren Sie Ihr kostenloses Erstgespräch in Thalwil – nur fünf Minuten von Langnau am Albis entfernt." }
   }
 ];
+
+export const getRegionByOrt = (ort) => regions.find((r) => r.ort === ort);
