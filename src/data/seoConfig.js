@@ -81,6 +81,11 @@ export const PAGE_META = {
     description: "Die Methode von Leo Hackl: neuronale Plastizität nutzt die Fähigkeit des Gehirns, sich neu zu verdrahten. So lassen sich Ängste und Phobien restlos und dauerhaft auflösen.",
     canonicalPath: "/prinzip-der-aufloesung",
   },
+  "/videos": {
+    title: "Videos – Verhaltensmuster, Ängste & Berufung | Leo Hackl Coaching",
+    description: "14 Videos von Leo Hackl: Entstehung und Auflösung von Verhaltensmuster, Ängste wie Flugangst und Prüfungsangst, Leidenschaft im Beruf, Rauchen aufhören und mehr.",
+    canonicalPath: "/videos",
+  },
   "/kontakt": {
     title: "Kontakt & Termin anfragen | Leo Hackl Coaching Thalwil",
     description: "Vereinbaren Sie Ihr persönliches Erstgespräch in Thalwil. Telefon 044 772 89 79 oder Kontaktformular. Praxis an der Zehntenstrasse 17, wenige Minuten vom Bahnhof.",

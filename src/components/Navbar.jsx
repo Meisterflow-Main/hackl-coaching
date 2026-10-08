@@ -9,6 +9,7 @@ const NAV_LINKS = [
   { label: "Über mich", to: "/ueber-mich" },
   { label: "Erfahrungsberichte", to: "/erfahrungsberichte" },
   { label: "Methode", to: "/prinzip-der-aufloesung" },
+  { label: "Videos", to: "/videos" },
   { label: "Kontakt", to: "/kontakt" },
 ];
 
