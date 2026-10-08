@@ -81,6 +81,7 @@ export default function Footer() {
               <li><Link to="/burnout" className="hover:text-white">Burnout</Link></li>
               <li><Link to="/beziehungskonflikte" className="hover:text-white">Beziehungskonflikte</Link></li>
               <li><Link to="/ueber-mich" className="hover:text-white">Über mich</Link></li>
+              <li><Link to="/blog" className="hover:text-white">Blog</Link></li>
               <li><Link to="/kontakt" className="hover:text-white">Kontakt</Link></li>
             </ul>
           </div>

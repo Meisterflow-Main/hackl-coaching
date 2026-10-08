@@ -100,6 +100,11 @@ export const PAGE_META = {
     description: "Antworten auf häufige Fragen zur psychologischen Beratung bei Leo Hackl: Ablauf, Kosten, Dauer, Vertraulichkeit, Praxis in Thalwil und Online-Beratung.",
     canonicalPath: "/faq",
   },
+  "/blog": {
+    title: "Blog | Leo Hackl Coaching – Ratgeber zu Ängsten, Burnout & Psychologie",
+    description: "Fundierte Ratgeber und Tipps rund um Ängste, Phobien, Burnout, Verhaltensmuster und psychologische Beratung. Einblicke aus 30 Jahren Praxis und 2'000 gelösten Fällen.",
+    canonicalPath: "/blog",
+  },
 };
 
 // ── Schema-Generatoren ────────────────────────────────────────────

@@ -24,6 +24,8 @@ import Regionen from '@/pages/Regionen';
 import RegionPage from '@/pages/RegionPage';
 import Dienstleistungen from '@/pages/Dienstleistungen';
 import FAQ from '@/pages/FAQ';
+import Blog from '@/pages/Blog';
+import BlogArticle from '@/pages/BlogArticle';
 import MoneyPage from '@/pages/MoneyPage';
 import { moneyPages } from '@/data/moneyPages';
 
@@ -65,6 +67,8 @@ const AuthenticatedApp = () => {
         <Route path="/regionen/:slug" element={<RegionPage />} />
         <Route path="/dienstleistungen" element={<Dienstleistungen />} />
         <Route path="/faq" element={<FAQ />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/blog/:slug" element={<BlogArticle />} />
         {moneyPages.map((mp) => (
           <Route key={mp.slug} path={`/${mp.slug}`} element={<MoneyPage slug={mp.slug} />} />
         ))}
