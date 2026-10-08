@@ -220,8 +220,20 @@ export function breadcrumbSchema(items) {
 export function reviewSchema(testimonials) {
   return {
     "@context": "https://schema.org",
-    "@type": "CreativeWorkSeries",
-    name: "Erfahrungsberichte – Leo Hackl Coaching",
+    "@type": "LocalBusiness",
+    name: BUSINESS.name,
+    image: BUSINESS.image,
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: BUSINESS.streetAddress,
+      addressLocality: BUSINESS.addressLocality,
+      postalCode: BUSINESS.postalCode,
+      addressRegion: BUSINESS.addressRegion,
+      addressCountry: BUSINESS.addressCountry,
+    },
+    telephone: BUSINESS.phone,
+    url: BASE_URL,
+    priceRange: BUSINESS.priceRange,
     aggregateRating: {
       "@type": "AggregateRating",
       ratingValue: "5",

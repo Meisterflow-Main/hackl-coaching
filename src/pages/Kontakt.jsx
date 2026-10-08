@@ -54,6 +54,15 @@ export default function Kontakt() {
                     <span className="font-semibold text-primary">Zehntenstrasse 17, 8800 Thalwil</span>
                   </span>
                 </div>
+                <a href="mailto:info@hacklcoaching.ch" className="flex items-start gap-4 group">
+                  <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+                    <Mail className="h-5 w-5" />
+                  </span>
+                  <span>
+                    <span className="block text-sm text-foreground/60">E-Mail</span>
+                    <span className="font-semibold text-primary">info@hacklcoaching.ch</span>
+                  </span>
+                </a>
                 <div className="flex items-start gap-4">
                   <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-primary/10 text-primary">
                     <Clock className="h-5 w-5" />

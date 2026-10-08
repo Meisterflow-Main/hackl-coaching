@@ -26,6 +26,7 @@ export default function Prinzip() {
                 <video
                   controls
                   controlsList="nodownload"
+                  preload="metadata"
                   poster="https://www.hacklcoaching.ch/wp-content/uploads/2014/11/Leo-Hackl-CD.jpg"
                   className="w-full aspect-video object-cover"
                 >

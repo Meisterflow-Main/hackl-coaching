@@ -7,6 +7,7 @@ import {
 import { motion } from "framer-motion";
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/components/ui/accordion";
 import ScrollReveal from "@/components/ScrollReveal";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import Seo from "@/components/Seo";
 import { localBusinessSchema, faqPageSchema } from "@/data/seoConfig";
 import { regions, sharedRegionData } from "@/data/regions";
@@ -44,6 +45,9 @@ export default function RegionPage() {
       <section className="relative overflow-hidden bg-gradient-to-b from-navy via-navy to-primary text-white">
         <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_30%_20%,white,transparent_60%)]" />
         <div className="relative mx-auto max-w-7xl px-5 lg:px-8 py-20 lg:py-28">
+          <div className="mb-6">
+            <Breadcrumbs dark items={[{ label: "Start", to: "/" }, { label: "Regionen", to: "/regionen" }, { label: region.ort }]} />
+          </div>
           <ScrollReveal y={32}>
             <span className="inline-block rounded-full bg-white/15 px-4 py-1.5 text-sm font-semibold uppercase tracking-[0.18em] text-white/90">
               {region.hero.eyebrow}

@@ -4,7 +4,7 @@ import PageHeader from "@/components/PageHeader";
 import CTASection from "@/components/CTASection";
 import ScrollReveal from "@/components/ScrollReveal";
 import Seo from "@/components/Seo";
-import { PAGE_META, localBusinessSchema, reviewSchema } from "@/data/seoConfig";
+import { PAGE_META, reviewSchema } from "@/data/seoConfig";
 
 const REPORTS = [
   {
@@ -72,7 +72,7 @@ const REPORTS = [
 export default function Erfahrungsberichte() {
   return (
     <>
-      <Seo {...PAGE_META["/erfahrungsberichte"]} schema={[localBusinessSchema(), reviewSchema(REPORTS)]} />
+      <Seo {...PAGE_META["/erfahrungsberichte"]} schema={[reviewSchema(REPORTS)]} />
       <PageHeader
         eyebrow="Erfahrungsberichte"
         title="Wie Klienten mich erlebt haben"
