@@ -22,7 +22,7 @@ export const sharedRegionData = {
     },
     {
       title: "Verhaltensmuster & Selbstsabotage",
-      description: "Dekstruktive Gewohnheiten, Prokrastination, emotionales Essen, Kontrollverlust – wir identifizieren das Ursprungsmuster und lösen es an der Wurzel auf, damit neue gesunde Routinen natürlich entstehen können.",
+      description: "Destruktive Gewohnheiten, Prokrastination, emotionales Essen, Kontrollverlust – wir identifizieren das Ursprungsmuster und lösen es an der Wurzel auf, damit neue gesunde Routinen natürlich entstehen können.",
       link: "/verhaltensmuster"
     },
     {

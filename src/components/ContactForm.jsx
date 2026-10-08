@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { Loader2, CheckCircle2, AlertCircle, Send } from "lucide-react";
 
 const WEBHOOK_URL =
@@ -155,7 +156,7 @@ export default function ContactForm({ compact = false }) {
             Ich willige ein, dass meine Daten zur Bearbeitung der Anfrage gespeichert und an unseren
             externen Dienstleister MeisterFlow übermittelt werden. Die Einwilligung kann jederzeit
             widerrufen werden. Details siehe{" "}
-            <a href="/datenschutz" className="text-primary font-semibold underline">Datenschutzerklärung</a>.
+            <Link to="/datenschutz" className="text-primary font-semibold underline">Datenschutzerklärung</Link>.
           </span>
         </label>
         {errors.consent && (

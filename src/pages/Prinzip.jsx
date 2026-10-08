@@ -1,9 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { ArrowRight, Brain, ShieldAlert, ShieldCheck, Video } from "lucide-react";
+import { ArrowRight, Brain, ShieldAlert, ShieldCheck, Video, MapPin, Star, BookOpen } from "lucide-react";
 import PageHeader from "@/components/PageHeader";
 import CTASection from "@/components/CTASection";
 import ScrollReveal from "@/components/ScrollReveal";
+import LinkHub from "@/components/LinkHub";
 import Seo from "@/components/Seo";
 import { PAGE_META, localBusinessSchema } from "@/data/seoConfig";
 
@@ -105,6 +106,42 @@ export default function Prinzip() {
           </ScrollReveal>
         </div>
       </section>
+
+      <LinkHub
+        groups={[
+          {
+            title: "Dienstleistungen",
+            icon: ShieldCheck,
+            links: [
+              { to: "/dienstleistungen", label: "Alle Dienstleistungen im Überblick" },
+              { to: "/aengste", label: "Ängste & Phobien auflösen" },
+              { to: "/verhaltensmuster", label: "Verhaltensmuster & Selbstsabotage" },
+              { to: "/burnout", label: "Burnout & Belastungsdepression behandeln" },
+              { to: "/beziehungskonflikte", label: "Beziehungskonflikte lösen" },
+            ],
+          },
+          {
+            title: "Regionen",
+            icon: MapPin,
+            links: [
+              { to: "/regionen", label: "Psychologische Beratung in Ihrer Region" },
+              { to: "/regionen/psychologische-beratung-thalwil", label: "Psychologische Beratung Thalwil" },
+              { to: "/regionen/psychologische-beratung-zuerich", label: "Psychologische Beratung Zürich" },
+              { to: "/regionen/psychologische-beratung-horgen", label: "Psychologische Beratung Horgen" },
+            ],
+          },
+          {
+            title: "Informationen",
+            icon: BookOpen,
+            links: [
+              { to: "/ueber-mich", label: "Über Leo Hackl – 30 Jahre Erfahrung" },
+              { to: "/blog", label: "Blog – Ratgeber & Artikel" },
+              { to: "/faq", label: "Häufige Fragen (FAQ)" },
+              { to: "/bewertungen", label: "Google Bewertungen (5,0 Sterne)" },
+            ],
+          },
+        ]}
+      />
 
       <CTASection />
     </>
