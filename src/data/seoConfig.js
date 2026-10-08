@@ -148,14 +148,24 @@ export function organizationSchema() {
       addressRegion: BUSINESS.addressRegion,
       addressCountry: BUSINESS.addressCountry,
     },
-    contactPoint: {
-      "@type": "ContactPoint",
-      telephone: BUSINESS.phone,
-      email: BUSINESS.email,
-      contactType: "customer service",
-      areaServed: "CH",
-      availableLanguage: ["German"],
-    },
+    contactPoint: [
+      {
+        "@type": "ContactPoint",
+        telephone: BUSINESS.phone,
+        email: BUSINESS.email,
+        contactType: "customer service",
+        areaServed: "CH",
+        availableLanguage: ["German"],
+      },
+      {
+        "@type": "ContactPoint",
+        telephone: "+41794335072",
+        contactType: "customer service",
+        areaServed: "CH",
+        availableLanguage: ["German"],
+        url: BUSINESS.whatsappUrl,
+      },
+    ],
     sameAs: BUSINESS.sameAs,
     founder: {
       "@type": "Person",
@@ -198,6 +208,14 @@ export function websiteSchema() {
         url: BUSINESS.logo,
       },
     },
+    potentialAction: {
+      "@type": "SearchAction",
+      target: {
+        "@type": "EntryPoint",
+        urlTemplate: `${BASE_URL}/blog?search={search_term_string}`,
+      },
+      "query-input": "required name=search_term_string",
+    },
   };
 }
 
@@ -209,7 +227,10 @@ export function personSchema() {
     jobTitle: "Psychologischer Berater & Systemischer Hypnotherapeut",
     description:
       "Psychologe und systemischer Hypnotherapeut mit über 30 Jahren praktischer Erfahrung. Hat über 2'000 Klienten bei der Auflösung von Ängsten, Phobien, Verhaltensmustern und Burnout begleitet.",
-    image: "https://www.hacklcoaching.ch/wp-content/uploads/2010/10/Leone.jpeg",
+    image: {
+      "@type": "ImageObject",
+      url: "https://www.hacklcoaching.ch/wp-content/uploads/2010/10/Leone.jpeg",
+    },
     url: `${BASE_URL}/ueber-mich`,
     worksFor: {
       "@type": "Organization",
@@ -276,6 +297,89 @@ export function localBusinessSchema() {
     ],
     sameAs: BUSINESS.sameAs,
     hasMap: BUSINESS.mapsUrl,
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: "5",
+      reviewCount: "17",
+      bestRating: "5",
+      worstRating: "1",
+    },
+  };
+}
+
+export function blogPostingSchema(post) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: post.title,
+    description: post.metaDescription,
+    image: {
+      "@type": "ImageObject",
+      url: post.heroImage,
+    },
+    datePublished: post.date,
+    dateModified: post.date,
+    author: {
+      "@type": "Person",
+      name: post.author,
+      url: `${BASE_URL}/ueber-mich`,
+    },
+    publisher: {
+      "@type": "Organization",
+      name: BUSINESS.name,
+      logo: {
+        "@type": "ImageObject",
+        url: BUSINESS.logo,
+      },
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `${BASE_URL}/blog/${post.slug}`,
+    },
+    inLanguage: "de-CH",
+  };
+}
+
+export function blogSchema(posts) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    name: `${BUSINESS.name} Blog`,
+    description: "Ratgeber und Tipps zu Ängsten, Phobien, Burnout, Verhaltensmustern und psychologischer Beratung.",
+    url: `${BASE_URL}/blog`,
+    inLanguage: "de-CH",
+    publisher: {
+      "@type": "Organization",
+      name: BUSINESS.name,
+      logo: {
+        "@type": "ImageObject",
+        url: BUSINESS.logo,
+      },
+    },
+    blogPost: posts.map((post) => ({
+      "@type": "BlogPosting",
+      headline: post.title,
+      url: `${BASE_URL}/blog/${post.slug}`,
+      datePublished: post.date,
+      author: {
+        "@type": "Person",
+        name: post.author,
+      },
+    })),
+  };
+}
+
+export function itemListSchema(items, name) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: name,
+    itemListElement: items.map((item, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      name: item.name,
+      url: item.url,
+    })),
   };
 }
 

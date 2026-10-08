@@ -5,7 +5,7 @@ import CTASection from "@/components/CTASection";
 import ScrollReveal from "@/components/ScrollReveal";
 import ServiceMoneyPages from "@/components/ServiceMoneyPages";
 import Seo from "@/components/Seo";
-import { PAGE_META, localBusinessSchema, serviceSchema } from "@/data/seoConfig";
+import { PAGE_META, localBusinessSchema, serviceSchema, faqPageSchema } from "@/data/seoConfig";
 import { getServiceBySlug } from "@/data/services";
 
 const GRUENDE = [
@@ -19,7 +19,7 @@ const GRUENDE = [
 export default function Beziehungskonflikte() {
   return (
     <>
-      <Seo {...PAGE_META["/beziehungskonflikte"]} schema={[localBusinessSchema(), serviceSchema(getServiceBySlug("beziehungskonflikte"))]} />
+      <Seo {...PAGE_META["/beziehungskonflikte"]} schema={[localBusinessSchema(), serviceSchema(getServiceBySlug("beziehungskonflikte")), faqPageSchema(getServiceBySlug("beziehungskonflikte").faq)]} />
       <PageHeader
         eyebrow="Beziehungskonflikte"
         title="Vielfältige Konflikte, gemeinsame Schwierigkeit."

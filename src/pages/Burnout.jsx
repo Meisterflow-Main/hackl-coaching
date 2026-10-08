@@ -5,7 +5,7 @@ import CTASection from "@/components/CTASection";
 import ScrollReveal from "@/components/ScrollReveal";
 import ServiceMoneyPages from "@/components/ServiceMoneyPages";
 import Seo from "@/components/Seo";
-import { PAGE_META, localBusinessSchema, serviceSchema } from "@/data/seoConfig";
+import { PAGE_META, localBusinessSchema, serviceSchema, faqPageSchema } from "@/data/seoConfig";
 import { getServiceBySlug } from "@/data/services";
 
 const URSACHEN = [
@@ -26,7 +26,7 @@ const URSACHEN = [
 export default function Burnout() {
   return (
     <>
-      <Seo {...PAGE_META["/burnout"]} schema={[localBusinessSchema(), serviceSchema(getServiceBySlug("burnout"))]} />
+      <Seo {...PAGE_META["/burnout"]} schema={[localBusinessSchema(), serviceSchema(getServiceBySlug("burnout")), faqPageSchema(getServiceBySlug("burnout").faq)]} />
       <PageHeader
         eyebrow="Burnout · Belastungsdepression"
         title="Burnout ist die populäre Bezeichnung für Belastungsdepression."

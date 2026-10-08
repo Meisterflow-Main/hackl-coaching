@@ -8,7 +8,7 @@ import CTASection from "@/components/CTASection";
 import { services } from "@/data/services";
 import { getMoneyPagesForService, moneyPageRegions } from "@/data/moneyPages";
 import Seo from "@/components/Seo";
-import { PAGE_META, localBusinessSchema } from "@/data/seoConfig";
+import { PAGE_META, localBusinessSchema, itemListSchema, BASE_URL } from "@/data/seoConfig";
 
 const iconMap = {
   ShieldCheck,
@@ -18,9 +18,10 @@ const iconMap = {
 };
 
 export default function Dienstleistungen() {
+  const serviceItems = services.map((s) => ({ name: s.title, url: `${BASE_URL}${s.link}` }));
   return (
     <>
-      <Seo {...PAGE_META["/dienstleistungen"]} schema={[localBusinessSchema()]} />
+      <Seo {...PAGE_META["/dienstleistungen"]} schema={[localBusinessSchema(), itemListSchema(serviceItems, "Dienstleistungen von Leo Hackl Coaching")]} />
       <PageHeader
         eyebrow="Leistungen"
         title="Psychologische Beratung – meine Dienstleistungen"

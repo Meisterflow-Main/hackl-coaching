@@ -10,7 +10,7 @@ import ArticleCTA from "@/components/blog/ArticleCTA";
 import BlogSidebar from "@/components/blog/BlogSidebar";
 import BlogCard from "@/components/blog/BlogCard";
 import { getPostBySlug, getRelatedPosts } from "@/data/blogPosts";
-import { localBusinessSchema, faqPageSchema, BASE_URL } from "@/data/seoConfig";
+import { localBusinessSchema, faqPageSchema, blogPostingSchema, BASE_URL } from "@/data/seoConfig";
 
 // ── Inline-Link-Parser: [[Text|/pfad]] → <Link> ────────────────────
 function renderInlineText(text) {
@@ -252,32 +252,6 @@ export default function BlogArticle() {
 
   const related = getRelatedPosts(slug, 2);
 
-  const articleSchema = {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    headline: post.title,
-    description: post.metaDescription,
-    image: post.heroImage,
-    datePublished: post.date,
-    dateModified: post.date,
-    author: {
-      "@type": "Person",
-      name: post.author,
-    },
-    publisher: {
-      "@type": "Organization",
-      name: "Leo Hackl Coaching",
-      logo: {
-        "@type": "ImageObject",
-        url: "https://media.base44.com/images/public/6ac4ae046d53c41e9b937a32/bb186175f_logo.png",
-      },
-    },
-    mainEntityOfPage: {
-      "@type": "WebPage",
-      "@id": `${BASE_URL}/blog/${post.slug}`,
-    },
-  };
-
   return (
     <>
       <Seo
@@ -288,7 +262,7 @@ export default function BlogArticle() {
         ogType="article"
         schema={[
           localBusinessSchema(),
-          articleSchema,
+          blogPostingSchema(post),
           faqPageSchema(post.faq),
         ]}
       />

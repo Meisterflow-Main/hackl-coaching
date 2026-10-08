@@ -4,13 +4,14 @@ import { MapPin, ArrowRight } from "lucide-react";
 import ScrollReveal from "@/components/ScrollReveal";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import Seo from "@/components/Seo";
-import { PAGE_META, localBusinessSchema } from "@/data/seoConfig";
+import { PAGE_META, localBusinessSchema, itemListSchema, BASE_URL } from "@/data/seoConfig";
 import { regions } from "@/data/regions";
 
 export default function Regionen() {
+  const regionItems = regions.map((r) => ({ name: r.ort, url: `${BASE_URL}/regionen/${r.slug}` }));
   return (
     <div className="bg-background">
-      <Seo {...PAGE_META["/regionen"]} schema={[localBusinessSchema()]} />
+      <Seo {...PAGE_META["/regionen"]} schema={[localBusinessSchema(), itemListSchema(regionItems, "Regionen von Leo Hackl Coaching")]} />
 
       {/* Hero */}
       <section className="relative overflow-hidden bg-gradient-to-b from-navy via-navy to-primary text-white">

@@ -6,7 +6,7 @@ import CTASection from "@/components/CTASection";
 import ScrollReveal from "@/components/ScrollReveal";
 import Seo from "@/components/Seo";
 import GoogleReviewWidget from "@/components/GoogleReviewWidget";
-import { PAGE_META, localBusinessSchema, reviewSchema } from "@/data/seoConfig";
+import { PAGE_META, localBusinessSchema } from "@/data/seoConfig";
 
 const GOOGLE_PROFILE_URL =
   "https://www.google.com/maps/place/Leo+Hackl+Coaching/@47.2889657,8.5706351,17z/data=!3m1!4b1!4m6!3m5!1s0x479aa881fc3855a5:0x4b08a8aa8cc1de1e!8m2!3d47.2889657!4d8.5706351!16s%2Fg%2F1tcv0ddk";
@@ -16,7 +16,7 @@ export default function Bewertungen() {
     <>
       <Seo
         {...PAGE_META["/bewertungen"]}
-        schema={[localBusinessSchema(), reviewSchema()]}
+        schema={[localBusinessSchema()]}
       />
       <PageHeader
         eyebrow="Bewertungen"

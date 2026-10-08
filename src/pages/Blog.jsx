@@ -7,7 +7,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import BlogCard from "@/components/blog/BlogCard";
 import BlogSidebar from "@/components/blog/BlogSidebar";
 import { blogPosts, getUsedCategories } from "@/data/blogPosts";
-import { PAGE_META, localBusinessSchema } from "@/data/seoConfig";
+import { PAGE_META, localBusinessSchema, blogSchema } from "@/data/seoConfig";
 
 const SORT_OPTIONS = [
   { value: "newest", label: "Neueste Beiträge" },
@@ -69,7 +69,7 @@ export default function Blog() {
     <>
       <Seo
         {...PAGE_META["/blog"]}
-        schema={[localBusinessSchema()]}
+        schema={[localBusinessSchema(), blogSchema(blogPosts)]}
       />
       <Breadcrumbs
         items={[{ label: "Start", to: "/" }, { label: "Blog" }]}

@@ -4,7 +4,7 @@ import ScrollReveal from "@/components/ScrollReveal";
 import PageHeader from "@/components/PageHeader";
 import CTASection from "@/components/CTASection";
 import Seo from "@/components/Seo";
-import { PAGE_META, faqPageSchema } from "@/data/seoConfig";
+import { PAGE_META, faqPageSchema, localBusinessSchema } from "@/data/seoConfig";
 
 const FAQ_ITEMS = [
   {
@@ -85,7 +85,7 @@ export default function FAQ() {
 
   return (
     <>
-      <Seo {...PAGE_META["/faq"]} schema={[faqPageSchema(allFaqItems)]} />
+      <Seo {...PAGE_META["/faq"]} schema={[localBusinessSchema(), faqPageSchema(allFaqItems)]} />
       <PageHeader
         eyebrow="Häufige Fragen"
         title="FAQ – Antworten auf Ihre Fragen"
