@@ -88,7 +88,7 @@ export const PAGE_META = {
   },
   "/impressum": {
     title: "Impressum | Leo Hackl Coaching",
-    description: "Impressum und Anbieterkennzeichnung von Leo Hackl Coaching, Thalwil.",
+    description: "Impressum von Leo Hackl Coaching. Kontaktdaten, Unternehmensinformationen und rechtliche Angaben.",
     canonicalPath: "/impressum",
   },
   "/datenschutz": {
