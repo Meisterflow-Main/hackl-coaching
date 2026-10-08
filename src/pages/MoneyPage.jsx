@@ -66,10 +66,7 @@ export default function MoneyPage({ slug }) {
               {service.title} in {regionName} auflösen
             </h1>
             <p className="mt-6 text-lg md:text-xl text-white/70 max-w-2xl leading-relaxed">
-              Sie leben oder arbeiten in {regionName} und möchten {service.title} auflösen?
-              Bei Leo Hackl Coaching in Thalwil – {region.whyUs[0]?.description} –
-              finden wir gemeinsam die dauerhafte Lösung. Mit über 30 Jahren Erfahrung
-              und mehr als 2'000 gelösten Fällen.
+              {service.moneyPageHero || `Sie leben oder arbeiten in ${regionName} und möchten ${service.title} auflösen? Bei Leo Hackl Coaching in Thalwil – ${region.whyUs[0]?.description} – finden wir gemeinsam die dauerhafte Lösung. Mit über 30 Jahren Erfahrung und mehr als 2'000 gelösten Fällen.`}
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
               <Link
@@ -107,9 +104,7 @@ export default function MoneyPage({ slug }) {
                   {" "}{regionName} aus schnell und bequem erreichbar. {region.whyUs[0]?.description}
                 </p>
                 <p>
-                  Die Methode von Leo Hackl hat in 30 Jahren über 2'000 Menschen geholfen, ihre
-                  Blockaden nachhaltig aufzulösen. Ohne Medikamente, ohne Schmerz, oft in nur
-                  wenigen Sitzungen.
+                  {service.moneyPageIntro || "Die Methode von Leo Hackl hat in 30 Jahren über 2'000 Menschen geholfen, ihre Blockaden nachhaltig aufzulösen. Ohne Medikamente, ohne Schmerz, oft in nur wenigen Sitzungen."}
                 </p>
               </div>
             </ScrollReveal>
