@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Phone, Mail, MapPin, Star } from "lucide-react";
+import { Image } from "@/components/ui/image";
 import { regions } from "@/data/regions";
 
 export default function Footer() {
@@ -10,9 +11,14 @@ export default function Footer() {
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-5">
           <div className="lg:col-span-2">
             <div className="flex items-center gap-3 mb-5">
-              <span className="flex h-11 w-11 items-center justify-center rounded-full bg-white text-primary font-heading font-bold text-lg">
-                LH
-              </span>
+              <div className="h-12 w-12 shrink-0 overflow-hidden rounded-full bg-white">
+                <Image
+                  src="https://media.base44.com/images/public/6ac4ae046d53c41e9b937a32/bb186175f_logo.png"
+                  alt="Logo Leo Hackl Coaching"
+                  fittingType="fit"
+                  className="h-full w-full object-contain p-1"
+                />
+              </div>
               <div className="leading-tight">
                 <div className="font-heading font-bold text-xl">Leo Hackl Coaching</div>
                 <div className="text-xs uppercase tracking-[0.22em] text-white/60">

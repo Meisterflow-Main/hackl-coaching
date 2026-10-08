@@ -2,12 +2,12 @@ import React from "react";
 import PageHeader from "@/components/PageHeader";
 import ScrollReveal from "@/components/ScrollReveal";
 import Seo from "@/components/Seo";
-import { PAGE_META, localBusinessSchema } from "@/data/seoConfig";
+import { PAGE_META, localBusinessSchema, organizationSchema } from "@/data/seoConfig";
 
 export default function Datenschutz() {
   return (
     <>
-      <Seo {...PAGE_META["/datenschutz"]} schema={[localBusinessSchema()]} />
+      <Seo {...PAGE_META["/datenschutz"]} schema={[localBusinessSchema(), organizationSchema()]} />
       <PageHeader
         eyebrow="Datenschutz"
         title="Haftungsausschluss & Datenschutzerklärung"

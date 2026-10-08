@@ -4,7 +4,7 @@ import PageHeader from "@/components/PageHeader";
 import CTASection from "@/components/CTASection";
 import ScrollReveal from "@/components/ScrollReveal";
 import Seo from "@/components/Seo";
-import { PAGE_META, localBusinessSchema } from "@/data/seoConfig";
+import { PAGE_META, localBusinessSchema, personSchema, organizationSchema } from "@/data/seoConfig";
 
 const PRIVAT = [
   { icon: Mountain, t: "Natur & Berge", d: "Geht gerne in die Berge, ist viel in der Natur." },
@@ -16,7 +16,7 @@ const PRIVAT = [
 export default function UeberMich() {
   return (
     <>
-      <Seo {...PAGE_META["/ueber-mich"]} schema={[localBusinessSchema()]} />
+      <Seo {...PAGE_META["/ueber-mich"]} schema={[localBusinessSchema(), personSchema(), organizationSchema()]} />
       <PageHeader
         eyebrow="Über mich"
         title="Leo Hackl"

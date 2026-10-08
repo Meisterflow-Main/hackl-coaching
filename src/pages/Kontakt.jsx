@@ -4,12 +4,12 @@ import PageHeader from "@/components/PageHeader";
 import ContactForm from "@/components/ContactForm";
 import ScrollReveal from "@/components/ScrollReveal";
 import Seo from "@/components/Seo";
-import { PAGE_META, localBusinessSchema } from "@/data/seoConfig";
+import { PAGE_META, localBusinessSchema, organizationSchema } from "@/data/seoConfig";
 
 export default function Kontakt() {
   return (
     <>
-      <Seo {...PAGE_META["/kontakt"]} schema={[localBusinessSchema()]} />
+      <Seo {...PAGE_META["/kontakt"]} schema={[localBusinessSchema(), organizationSchema()]} />
       <PageHeader
         eyebrow="Kontakt"
         title="Jetzt Termin anfragen"
