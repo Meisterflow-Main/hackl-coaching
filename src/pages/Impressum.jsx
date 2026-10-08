@@ -2,12 +2,12 @@ import React from "react";
 import PageHeader from "@/components/PageHeader";
 import ScrollReveal from "@/components/ScrollReveal";
 import Seo from "@/components/Seo";
-import { PAGE_META } from "@/data/seoConfig";
+import { PAGE_META, localBusinessSchema } from "@/data/seoConfig";
 
 export default function Impressum() {
   return (
     <>
-      <Seo {...PAGE_META["/impressum"]} />
+      <Seo {...PAGE_META["/impressum"]} schema={[localBusinessSchema()]} />
       <PageHeader
         eyebrow="Impressum"
         title="Impressum"
