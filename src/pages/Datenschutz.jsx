@@ -1,14 +1,18 @@
 import React from "react";
 import PageHeader from "@/components/PageHeader";
 import ScrollReveal from "@/components/ScrollReveal";
+import Seo from "@/components/Seo";
+import { PAGE_META } from "@/data/seoConfig";
 
 export default function Datenschutz() {
   return (
     <>
+      <Seo {...PAGE_META["/datenschutz"]} />
       <PageHeader
         eyebrow="Datenschutz"
         title="Haftungsausschluss & Datenschutzerklärung"
         subtitle="Gestützt auf Artikel 13 der Schweizerischen Bundesverfassung und die datenschutzrechtlichen Bestimmungen des Bundes (Datenschutzgesetz, DSG)."
+        breadcrumbs={[{ label: "Start", to: "/" }, { label: "Datenschutz" }]}
       />
       <section className="py-20 md:py-28">
         <div className="mx-auto max-w-3xl px-5 lg:px-8">

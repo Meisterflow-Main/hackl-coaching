@@ -3,6 +3,8 @@ import { Quote, Star } from "lucide-react";
 import PageHeader from "@/components/PageHeader";
 import CTASection from "@/components/CTASection";
 import ScrollReveal from "@/components/ScrollReveal";
+import Seo from "@/components/Seo";
+import { PAGE_META, localBusinessSchema, reviewSchema } from "@/data/seoConfig";
 
 const REPORTS = [
   {
@@ -70,10 +72,12 @@ const REPORTS = [
 export default function Erfahrungsberichte() {
   return (
     <>
+      <Seo {...PAGE_META["/erfahrungsberichte"]} schema={[localBusinessSchema(), reviewSchema(REPORTS)]} />
       <PageHeader
         eyebrow="Erfahrungsberichte"
         title="Wie Klienten mich erlebt haben"
         subtitle="Lesen Sie hier einige Berichte darüber, wie Klienten die Arbeit von Leo Hackl erlebt haben."
+        breadcrumbs={[{ label: "Start", to: "/" }, { label: "Erfahrungsberichte" }]}
       />
 
       <section className="py-20 md:py-28">

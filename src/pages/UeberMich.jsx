@@ -3,6 +3,8 @@ import { Mountain, Music, BookOpen, Microscope } from "lucide-react";
 import PageHeader from "@/components/PageHeader";
 import CTASection from "@/components/CTASection";
 import ScrollReveal from "@/components/ScrollReveal";
+import Seo from "@/components/Seo";
+import { PAGE_META, localBusinessSchema } from "@/data/seoConfig";
 
 const PRIVAT = [
   { icon: Mountain, t: "Natur & Berge", d: "Geht gerne in die Berge, ist viel in der Natur." },
@@ -14,10 +16,12 @@ const PRIVAT = [
 export default function UeberMich() {
   return (
     <>
+      <Seo {...PAGE_META["/ueber-mich"]} schema={[localBusinessSchema()]} />
       <PageHeader
         eyebrow="Über mich"
         title="Leo Hackl"
         subtitle="Psychologische Beratung · 30 Jahre praktische Erfahrung · Über 2'000 Klienten begleitet."
+        breadcrumbs={[{ label: "Start", to: "/" }, { label: "Über mich" }]}
       />
 
       <section className="py-20 md:py-28">

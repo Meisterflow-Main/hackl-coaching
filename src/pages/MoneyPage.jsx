@@ -9,6 +9,8 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import CTASection from "@/components/CTASection";
 import { getServiceBySlug } from "@/data/services";
 import { getMoneyPageBySlug, getFullRegion, getMoneyPagesForService, moneyPageRegions } from "@/data/moneyPages";
+import Seo from "@/components/Seo";
+import { localBusinessSchema, serviceSchema, faqPageSchema } from "@/data/seoConfig";
 
 const iconMap = {
   ShieldCheck,
@@ -31,6 +33,12 @@ export default function MoneyPage({ slug }) {
 
   return (
     <>
+      <Seo
+        title={`${service.title} in ${regionName} auflösen | Leo Hackl Coaching`}
+        description={`${service.title} in ${regionName}? Leo Hackl löst ${service.shortTitle} nachhaltig auf – mit über 2'000 gelösten Fällen. Praxis in Thalwil, wenige Minuten vom Bahnhof.`}
+        canonicalPath={`/${slug}`}
+        schema={[localBusinessSchema(), serviceSchema(service, regionName), faqPageSchema(service.faq)]}
+      />
       {/* HERO */}
       <section className="relative overflow-hidden bg-navy text-white pt-32 pb-20 md:pt-40 md:pb-28">
         <div className="absolute inset-0 opacity-[0.07]" style={{ backgroundImage: "radial-gradient(circle at 20% 20%, white 1px, transparent 1px)", backgroundSize: "32px 32px" }} />

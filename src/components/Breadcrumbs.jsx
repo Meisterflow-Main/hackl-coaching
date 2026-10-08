@@ -1,8 +1,26 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { ChevronRight } from "lucide-react";
+import { breadcrumbSchema } from "@/data/seoConfig";
 
 export default function Breadcrumbs({ items, dark = false }) {
+  useEffect(() => {
+    if (!items || items.length === 0) return;
+    const id = "seo-schema-breadcrumb";
+    let script = document.getElementById(id);
+    if (!script) {
+      script = document.createElement("script");
+      script.type = "application/ld+json";
+      script.id = id;
+      document.head.appendChild(script);
+    }
+    script.textContent = JSON.stringify(breadcrumbSchema(items));
+    return () => {
+      const el = document.getElementById(id);
+      if (el) el.remove();
+    };
+  }, [items]);
+
   if (!items || items.length === 0) return null;
   return (
     <nav aria-label="Breadcrumb" className="relative z-10">

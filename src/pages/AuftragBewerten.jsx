@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Star, CheckCircle2, Loader2, AlertCircle, ExternalLink } from "lucide-react";
 import ScrollReveal from "@/components/ScrollReveal";
+import Seo from "@/components/Seo";
 
 const WEBHOOK_URL =
   "https://app.meisterflow.ch/api/webhooks/enquiries/a902bb23d7e98901900e3750083b670344a14683633ae15f";
@@ -57,6 +58,8 @@ export default function AuftragBewerten() {
   };
 
   return (
+    <>
+    <Seo title="Bewertung abgeben | Leo Hackl Coaching" description="Bewerten Sie Ihre Erfahrung mit Leo Hackl Coaching." noindex />
     <section className="relative overflow-hidden bg-navy text-white pt-32 pb-24 md:pt-40 md:pb-32 min-h-screen">
       <div className="absolute -right-24 -top-24 h-96 w-96 rounded-full bg-accent/20 blur-3xl" />
       <div className="absolute -left-24 bottom-0 h-96 w-96 rounded-full bg-primary/30 blur-3xl" />
@@ -242,5 +245,6 @@ export default function AuftragBewerten() {
         )}
       </div>
     </section>
+    </>
   );
 }

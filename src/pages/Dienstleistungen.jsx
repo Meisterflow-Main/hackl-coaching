@@ -7,6 +7,8 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import CTASection from "@/components/CTASection";
 import { services } from "@/data/services";
 import { getMoneyPagesForService, moneyPageRegions } from "@/data/moneyPages";
+import Seo from "@/components/Seo";
+import { PAGE_META, localBusinessSchema } from "@/data/seoConfig";
 
 const iconMap = {
   ShieldCheck,
@@ -18,6 +20,7 @@ const iconMap = {
 export default function Dienstleistungen() {
   return (
     <>
+      <Seo {...PAGE_META["/dienstleistungen"]} schema={[localBusinessSchema()]} />
       <PageHeader
         eyebrow="Leistungen"
         title="Psychologische Beratung – meine Dienstleistungen"

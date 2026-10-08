@@ -7,7 +7,8 @@ import {
 import { motion } from "framer-motion";
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/components/ui/accordion";
 import ScrollReveal from "@/components/ScrollReveal";
-import RegionSEO from "@/components/RegionSEO";
+import Seo from "@/components/Seo";
+import { localBusinessSchema, faqPageSchema } from "@/data/seoConfig";
 import { regions, sharedRegionData } from "@/data/regions";
 
 const iconMap = { ShieldCheck, HeartHandshake, Zap, Pill };
@@ -32,7 +33,12 @@ export default function RegionPage() {
 
   return (
     <div className="bg-background">
-      <RegionSEO title={region.metaTitle} description={region.metaDescription} h1={region.h1} />
+      <Seo
+        title={region.metaTitle}
+        description={region.metaDescription}
+        canonicalPath={`/regionen/${region.slug}`}
+        schema={[localBusinessSchema(), faqPageSchema(region.faq)]}
+      />
 
       {/* 1. HERO */}
       <section className="relative overflow-hidden bg-gradient-to-b from-navy via-navy to-primary text-white">

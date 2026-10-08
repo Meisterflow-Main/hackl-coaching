@@ -3,14 +3,18 @@ import { Phone, MapPin, Clock, Mail } from "lucide-react";
 import PageHeader from "@/components/PageHeader";
 import ContactForm from "@/components/ContactForm";
 import ScrollReveal from "@/components/ScrollReveal";
+import Seo from "@/components/Seo";
+import { PAGE_META, localBusinessSchema } from "@/data/seoConfig";
 
 export default function Kontakt() {
   return (
     <>
+      <Seo {...PAGE_META["/kontakt"]} schema={[localBusinessSchema()]} />
       <PageHeader
         eyebrow="Kontakt"
         title="Jetzt Termin anfragen"
         subtitle="Melden Sie sich gleich hier an – oder rufen Sie an. Ich freue mich auf Ihre Anfrage und melde mich so bald wie möglich bei Ihnen."
+        breadcrumbs={[{ label: "Start", to: "/" }, { label: "Kontakt" }]}
       />
 
       <section className="py-20 md:py-28">

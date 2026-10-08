@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Review-Seite nicht indexieren
+Disallow: /auftrag-bewerten
+
+# Sitemap
+Sitemap: https://hacklcoaching.meister-flow.ch/sitemap.xml

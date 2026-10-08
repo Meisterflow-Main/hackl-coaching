@@ -5,6 +5,9 @@ import PageHeader from "@/components/PageHeader";
 import CTASection from "@/components/CTASection";
 import ScrollReveal from "@/components/ScrollReveal";
 import ServiceMoneyPages from "@/components/ServiceMoneyPages";
+import Seo from "@/components/Seo";
+import { PAGE_META, localBusinessSchema, serviceSchema } from "@/data/seoConfig";
+import { getServiceBySlug } from "@/data/services";
 
 const PHOBIAS = [
   "Flugangst", "Prüfungsangst", "Redeangst / Vortragsangst", "Auto fahren",
@@ -15,6 +18,7 @@ const PHOBIAS = [
 export default function Aengste() {
   return (
     <>
+      <Seo {...PAGE_META["/aengste"]} schema={[localBusinessSchema(), serviceSchema(getServiceBySlug("aengste"))]} />
       <PageHeader
         eyebrow="Ängste & Phobien"
         title="Ängste loszuwerden ist erstaunlich schnell möglich."

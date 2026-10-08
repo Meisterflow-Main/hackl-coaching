@@ -5,6 +5,8 @@ import ScrollReveal from "@/components/ScrollReveal";
 import ServiceCard from "@/components/ServiceCard";
 import CTASection from "@/components/CTASection";
 import ReelsSection from "@/components/ReelsSection";
+import Seo from "@/components/Seo";
+import { PAGE_META, localBusinessSchema, organizationSchema } from "@/data/seoConfig";
 
 const SERVICES = [
   {
@@ -79,6 +81,7 @@ const TESTIMONIALS = [
 export default function Home() {
   return (
     <>
+      <Seo {...PAGE_META["/"]} schema={[localBusinessSchema(), organizationSchema()]} />
       {/* HERO */}
       <section className="relative overflow-hidden bg-navy text-white pt-32 pb-20 md:pt-44 md:pb-32">
         <div className="absolute inset-0 opacity-[0.06]" style={{ backgroundImage: "radial-gradient(circle at 80% 10%, white 1px, transparent 1px)", backgroundSize: "40px 40px" }} />

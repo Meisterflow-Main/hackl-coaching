@@ -2,16 +2,14 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { MapPin, ArrowRight } from "lucide-react";
 import ScrollReveal from "@/components/ScrollReveal";
-import RegionSEO from "@/components/RegionSEO";
+import Seo from "@/components/Seo";
+import { PAGE_META, localBusinessSchema } from "@/data/seoConfig";
 import { regions } from "@/data/regions";
 
 export default function Regionen() {
   return (
     <div className="bg-background">
-      <RegionSEO
-        title="Regionen | Leo Hackl Coaching – Psychologische Beratung"
-        description="Psychologische Beratung in Ihrer Region: Thalwil, Zürich, Horgen, Meilen, Wädenswil, Kilchberg, Rüschlikon, Adliswil, Erlenbach, Langnau am Albis."
-      />
+      <Seo {...PAGE_META["/regionen"]} schema={[localBusinessSchema()]} />
 
       {/* Hero */}
       <section className="relative overflow-hidden bg-gradient-to-b from-navy via-navy to-primary text-white">

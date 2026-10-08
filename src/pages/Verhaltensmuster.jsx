@@ -4,6 +4,9 @@ import PageHeader from "@/components/PageHeader";
 import CTASection from "@/components/CTASection";
 import ScrollReveal from "@/components/ScrollReveal";
 import ServiceMoneyPages from "@/components/ServiceMoneyPages";
+import Seo from "@/components/Seo";
+import { PAGE_META, localBusinessSchema, serviceSchema } from "@/data/seoConfig";
+import { getServiceBySlug } from "@/data/services";
 
 const MUSTER = [
   "Es allen recht machen, aber nie Wertschätzung bekommen",
@@ -16,6 +19,7 @@ const MUSTER = [
 export default function Verhaltensmuster() {
   return (
     <>
+      <Seo {...PAGE_META["/verhaltensmuster"]} schema={[localBusinessSchema(), serviceSchema(getServiceBySlug("verhaltensmuster"))]} />
       <PageHeader
         eyebrow="Verhaltensmuster · Selbstsabotage"
         title="Selbstsabotage erkennen und auflösen – nachhaltig und wirksam."

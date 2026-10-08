@@ -1,14 +1,18 @@
 import React from "react";
 import PageHeader from "@/components/PageHeader";
 import ScrollReveal from "@/components/ScrollReveal";
+import Seo from "@/components/Seo";
+import { PAGE_META } from "@/data/seoConfig";
 
 export default function Impressum() {
   return (
     <>
+      <Seo {...PAGE_META["/impressum"]} />
       <PageHeader
         eyebrow="Impressum"
         title="Impressum"
         subtitle="Angaben gemäss Schweizer Recht zur Anbieterkennzeichnung."
+        breadcrumbs={[{ label: "Start", to: "/" }, { label: "Impressum" }]}
       />
       <section className="py-20 md:py-28">
         <div className="mx-auto max-w-3xl px-5 lg:px-8">

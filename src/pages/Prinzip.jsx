@@ -4,14 +4,18 @@ import { ArrowRight, Brain, ShieldAlert, ShieldCheck, Video } from "lucide-react
 import PageHeader from "@/components/PageHeader";
 import CTASection from "@/components/CTASection";
 import ScrollReveal from "@/components/ScrollReveal";
+import Seo from "@/components/Seo";
+import { PAGE_META, localBusinessSchema } from "@/data/seoConfig";
 
 export default function Prinzip() {
   return (
     <>
+      <Seo {...PAGE_META["/prinzip-der-aufloesung"]} schema={[localBusinessSchema()]} />
       <PageHeader
         eyebrow="Die Methode"
         title="Das Prinzip der Auflösung"
         subtitle="Das Prinzip ist einfach zu verstehen: Das Gehirn hat die Fähigkeit, sich sehr schnell umzuorganisieren, neu zu verdrahten. Angst-Netzwerke werden durch Neuverdrahtung zum kompletten Verschwinden gebracht."
+        breadcrumbs={[{ label: "Start", to: "/" }, { label: "Methode" }]}
       />
 
       <section className="py-20 md:py-28">

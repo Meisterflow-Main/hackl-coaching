@@ -3,6 +3,8 @@ import { ChevronDown } from "lucide-react";
 import ScrollReveal from "@/components/ScrollReveal";
 import PageHeader from "@/components/PageHeader";
 import CTASection from "@/components/CTASection";
+import Seo from "@/components/Seo";
+import { PAGE_META, faqPageSchema } from "@/data/seoConfig";
 
 const FAQ_ITEMS = [
   {
@@ -79,9 +81,11 @@ const FAQ_ITEMS = [
 
 export default function FAQ() {
   const [openIndex, setOpenIndex] = useState("0-0");
+  const allFaqItems = FAQ_ITEMS.flatMap((cat) => cat.questions);
 
   return (
     <>
+      <Seo {...PAGE_META["/faq"]} schema={[faqPageSchema(allFaqItems)]} />
       <PageHeader
         eyebrow="Häufige Fragen"
         title="FAQ – Antworten auf Ihre Fragen"
