@@ -384,7 +384,7 @@ export const blogPosts = [
           "Ja, die Beratung ist auch online ueber Video moeglich. Die hypnosystemische Methode funktioniert unabhaengig von einer persoenlichen Anwesenheit. Klienten aus der ganzen Schweiz nutzen diese Moeglichkeit. Fuer persoenliche Gespraeche steht die Praxis in Thalwil zur Verfuegung.",
       },
     ],
-    relatedSlugs: ["wie-lange-dauert-phobie-aufloesen", "selbstsabotage-ueberwinden"],
+    relatedSlugs: ["wie-lange-dauert-phobie-aufloesen", "selbstsabotage-ueberwinden", "kosten-psychologische-beratung-schweiz"],
   },
 
   {
@@ -574,7 +574,7 @@ export const blogPosts = [
           "Die hypnosystemische Methode verbindet Erkenntnisse der Hirnforschung zur neuronalen Plastizitaet mit bewaehrter psychologischer Methodik. Die Grundlage, dass das Gehirn sich durch gezielte Intervention umstrukturieren laesst, ist neurologisch gut belegt. In meiner Praxis mit ueber 2'000 geloesten Faellen hat sich die Methode ueber 30 Jahre bewaehrt. Mehr zur Methode finden Sie auf der Seite [[Prinzip der Auflösung|/prinzip-der-aufloesung]].",
       },
     ],
-    relatedSlugs: ["wie-lange-dauert-phobie-aufloesen", "burnout-erkennen-7-warnsignale"],
+    relatedSlugs: ["wie-lange-dauert-phobie-aufloesen", "burnout-erkennen-7-warnsignale", "beziehungskonflikte-loesen"],
   },
 
   {
@@ -925,14 +925,14 @@ export const blogPosts = [
           "Wenn die Angst Ihren Alltag einschränkt – sei es durch Vermeidungsverhalten, körperliche Symptome oder ständiges Grübeln –, ist der richtige Zeitpunkt für professionelle Hilfe gekommen. Je früher Sie handeln, desto schneller ist die Angst aufgelöst. Ein kostenloses Erstgespräch auf der [[Kontaktseite|/kontakt]] hilft Ihnen, die nächsten Schritte zu klären.",
       },
     ],
-    relatedSlugs: ["wie-lange-dauert-phobie-aufloesen", "burnout-erkennen-7-warnsignale", "selbstsabotage-ueberwinden"],
+    relatedSlugs: ["wie-lange-dauert-phobie-aufloesen", "burnout-erkennen-7-warnsignale", "selbstsabotage-ueberwinden", "hypnose-in-der-psychologischen-beratung"],
   },
 
   {
     slug: "beziehungskonflikte-loesen",
-    title: "Beziehungskonflikte loesen: Wenn die Kommunikation festgefahren ist",
+    title: "Beziehungskonflikte lösen: Wenn die Kommunikation festgefahren ist",
     excerpt:
-      "Beziehungskonflikte in Partnerschaft, Familie und Beruf entstehen oft durch unbewusste Muster. Erfahren Sie, wie diese Muster entstehen, warum sie sich wiederholen und wie sie sich dauerhaft aufloesen lassen.",
+      "Beziehungskonflikte in Partnerschaft, Familie und Beruf entstehen oft durch unbewusste Muster. Erfahren Sie, wie diese Muster entstehen, warum sie sich wiederholen und wie sie sich dauerhaft auflösen lassen.",
     category: "ratgeber",
     categoryName: "Ratgeber",
     date: "2025-10-15",
@@ -941,9 +941,9 @@ export const blogPosts = [
     readingTime: 11,
     heroImage:
       "https://media.base44.com/images/public/6ac4ae046d53c41e9b937a32/7c64b8ca1_generated_image.png",
-    seoTitle: "Beziehungskonflikte loesen | Hypnosystemische Methode | Leo Hackl Coaching",
+    seoTitle: "Beziehungskonflikte lösen | Hypnosystemische Methode | Leo Hackl Coaching",
     metaDescription:
-      "Beziehungskonflikte dauerhaft loesen: Wie unbewusste Muster Konflikte erzeugen und wie die hypnosystemische Methode sie an der Wurzel aufloest. Mit ueber 2'000 geloesten Faellen in Thalwil.",
+      "Beziehungskonflikte dauerhaft lösen: Wie unbewusste Muster Konflikte erzeugen und wie die hypnosystemische Methode sie an der Wurzel auflöst. Mit über 2'000 gelösten Fällen in Thalwil.",
     popular: false,
     sections: [
       { type: "h2", id: "einleitung", text: "Wenn man sich im Kreis dreht" },
@@ -1082,9 +1082,9 @@ export const blogPosts = [
 
   {
     slug: "was-passiert-im-erstgespraech",
-    title: "Was passiert im Erstgespraech: Ablauf einer psychologischen Beratung",
+    title: "Was passiert im Erstgespräch: Ablauf einer psychologischen Beratung",
     excerpt:
-      "Das Erstgespraech ist der erste Schritt zur Loesung. Erfahren Sie, was Sie erwartet, wie Sie sich vorbereiten und welche Fragen Sie stellen sollten. Mit Tipps von Leo Hackl aus 30 Jahren Praxis.",
+      "Das Erstgespräch ist der erste Schritt zur Lösung. Erfahren Sie, was Sie erwartet, wie Sie sich vorbereiten und welche Fragen Sie stellen sollten. Mit Tipps von Leo Hackl aus 30 Jahren Praxis.",
     category: "ratgeber",
     categoryName: "Ratgeber",
     date: "2025-10-25",
@@ -1093,9 +1093,9 @@ export const blogPosts = [
     readingTime: 9,
     heroImage:
       "https://media.base44.com/images/public/6ac4ae046d53c41e9b937a32/655fa47ce_generated_image.png",
-    seoTitle: "Was passiert im Erstgespraech? | Ablauf & Tipps | Leo Hackl Coaching",
+    seoTitle: "Was passiert im Erstgespräch? | Ablauf & Tipps | Leo Hackl Coaching",
     metaDescription:
-      "Was passiert im Erstgespraech einer psychologischen Beratung? Ablauf, Vorbereitung, Fragen und Kosten. Erfahren Sie, was Sie in Thalwil erwartet und wie Sie sich optimal vorbereiten.",
+      "Was passiert im Erstgespräch einer psychologischen Beratung? Ablauf, Vorbereitung, Fragen und Kosten. Erfahren Sie, was Sie in Thalwil erwartet und wie Sie sich optimal vorbereiten.",
     popular: true,
     sections: [
       { type: "h2", id: "einleitung", text: "Der erste Schritt ist der wichtigste" },
