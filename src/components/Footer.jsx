@@ -124,6 +124,7 @@ export default function Footer() {
             <Link to="/impressum" className="hover:text-white">Impressum</Link>
             <Link to="/datenschutz" className="hover:text-white">Datenschutzerklärung</Link>
             <Link to="/faq" className="hover:text-white">FAQ</Link>
+            <Link to="/bewertungen" className="hover:text-white">Bewertungen</Link>
             <Link to="/auftrag-bewerten" className="hover:text-white">Bewertung abgeben</Link>
           </div>
         </div>

@@ -4,6 +4,7 @@ import PageHeader from "@/components/PageHeader";
 import CTASection from "@/components/CTASection";
 import ScrollReveal from "@/components/ScrollReveal";
 import Seo from "@/components/Seo";
+import { GoogleReviewCard } from "@/components/GoogleReviewWidget";
 import { PAGE_META, reviewSchema } from "@/data/seoConfig";
 
 const REPORTS = [
@@ -82,6 +83,9 @@ export default function Erfahrungsberichte() {
 
       <section className="py-20 md:py-28">
         <div className="mx-auto max-w-7xl px-5 lg:px-8">
+          <div className="mb-12 max-w-2xl">
+            <GoogleReviewCard />
+          </div>
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {REPORTS.map((r, i) => (
               <ScrollReveal key={i} delay={(i % 3) * 0.05}>

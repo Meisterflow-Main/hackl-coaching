@@ -6,6 +6,7 @@ import ServiceCard from "@/components/ServiceCard";
 import CTASection from "@/components/CTASection";
 import ReelsSection from "@/components/ReelsSection";
 import Seo from "@/components/Seo";
+import { GoogleReviewBadge } from "@/components/GoogleReviewWidget";
 import { PAGE_META, localBusinessSchema, organizationSchema, websiteSchema } from "@/data/seoConfig";
 
 const SERVICES = [
@@ -124,6 +125,9 @@ export default function Home() {
                   >
                     <Phone className="h-4 w-4" /> 044 772 89 79
                   </a>
+                </div>
+                <div className="mt-6">
+                  <GoogleReviewBadge dark />
                 </div>
               </ScrollReveal>
             </div>

@@ -22,7 +22,7 @@ export const BUSINESS = {
   geo: { lat: 47.2889657, lng: 8.5706351 },
   priceRange: "$$",
   areaServed: "Schweiz",
-  openingHours: "Mo-Fr 08:00-19:00, Sa nach Vereinbarung",
+  openingHours: "Mo 08:30-19:00, Di 09:00-19:00, Mi 10:00-19:00, Do 10:00-19:00, Fr 10:00-19:00, Sa 11:00-15:00, So geschlossen",
   mapsUrl: "https://www.google.com/maps/place/Leo+Hackl+Coaching/@47.2889657,8.5706351,17z",
   whatsappUrl: "https://wa.me/41794335072",
   sameAs: [
@@ -32,6 +32,12 @@ export const BUSINESS = {
 };
 
 export const DEFAULT_OG_IMAGE = BUSINESS.image;
+
+export const GOOGLE_REVIEWS = {
+  rating: "5,0",
+  count: 17,
+  url: "https://www.google.com/maps/place/Leo+Hackl+Coaching/@47.2889657,8.5706351,17z/data=!3m1!4b1!4m6!3m5!1s0x479aa881fc3855a5:0x4b08a8aa8cc1de1e!8m2!3d47.2889657!4d8.5706351!16s%2Fg%2F1tcv0ddk",
+};
 
 // ── Seiten-Meta-Daten (statische Seiten) ──────────────────────────
 export const PAGE_META = {
@@ -104,6 +110,11 @@ export const PAGE_META = {
     title: "FAQ – Häufige Fragen | Leo Hackl Coaching",
     description: "Antworten auf häufige Fragen zur psychologischen Beratung bei Leo Hackl: Ablauf, Kosten, Dauer, Vertraulichkeit, Praxis in Thalwil und Online-Beratung.",
     canonicalPath: "/faq",
+  },
+  "/bewertungen": {
+    title: "Bewertungen | Leo Hackl Coaching – 5,0 Sterne auf Google",
+    description: "Leo Hackl Coaching hat 17 Google-Bewertungen mit 5,0 Sternen. Lesen Sie, was Klienten über die psychologische Beratung in Thalwil berichten.",
+    canonicalPath: "/bewertungen",
   },
   "/blog": {
     title: "Blog | Leo Hackl Coaching – Ratgeber zu Ängsten, Burnout & Psychologie",
@@ -257,12 +268,12 @@ export function localBusinessSchema() {
     url: BASE_URL,
     priceRange: BUSINESS.priceRange,
     areaServed: BUSINESS.areaServed,
-    openingHoursSpecification: {
-      "@type": "OpeningHoursSpecification",
-      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-      opens: "08:00",
-      closes: "19:00",
-    },
+    openingHoursSpecification: [
+      { "@type": "OpeningHoursSpecification", dayOfWeek: "Monday", opens: "08:30", closes: "19:00" },
+      { "@type": "OpeningHoursSpecification", dayOfWeek: "Tuesday", opens: "09:00", closes: "19:00" },
+      { "@type": "OpeningHoursSpecification", dayOfWeek: ["Wednesday", "Thursday", "Friday"], opens: "10:00", closes: "19:00" },
+      { "@type": "OpeningHoursSpecification", dayOfWeek: "Saturday", opens: "11:00", closes: "15:00" },
+    ],
     sameAs: BUSINESS.sameAs,
     hasMap: BUSINESS.mapsUrl,
   };
@@ -344,7 +355,7 @@ export function reviewSchema(testimonials) {
     aggregateRating: {
       "@type": "AggregateRating",
       ratingValue: "5",
-      reviewCount: String(testimonials.length),
+      reviewCount: "17",
       bestRating: "5",
       worstRating: "1",
     },

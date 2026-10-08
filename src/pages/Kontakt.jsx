@@ -4,6 +4,7 @@ import PageHeader from "@/components/PageHeader";
 import ContactForm from "@/components/ContactForm";
 import ScrollReveal from "@/components/ScrollReveal";
 import Seo from "@/components/Seo";
+import { GoogleReviewCard } from "@/components/GoogleReviewWidget";
 import { PAGE_META, localBusinessSchema, organizationSchema } from "@/data/seoConfig";
 
 export default function Kontakt() {
@@ -81,6 +82,9 @@ export default function Kontakt() {
                   className="w-full h-56"
                   loading="lazy"
                 />
+              </div>
+              <div className="mt-6">
+                <GoogleReviewCard />
               </div>
             </ScrollReveal>
 
