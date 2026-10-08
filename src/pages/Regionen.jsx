@@ -3,7 +3,9 @@ import { Link } from "react-router-dom";
 import { MapPin, ArrowRight } from "lucide-react";
 import ScrollReveal from "@/components/ScrollReveal";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import LinkHub from "@/components/LinkHub";
 import Seo from "@/components/Seo";
+import { ShieldCheck, Star, BookOpen, Phone } from "lucide-react";
 import { PAGE_META, localBusinessSchema, itemListSchema, BASE_URL } from "@/data/seoConfig";
 import { regions } from "@/data/regions";
 
@@ -67,6 +69,42 @@ export default function Regionen() {
           </div>
         </div>
       </section>
+
+      <LinkHub
+        groups={[
+          {
+            title: "Dienstleistungen",
+            icon: ShieldCheck,
+            links: [
+              { to: "/dienstleistungen", label: "Alle Dienstleistungen im Überblick" },
+              { to: "/aengste", label: "Ängste & Phobien auflösen" },
+              { to: "/verhaltensmuster", label: "Verhaltensmuster & Selbstsabotage" },
+              { to: "/burnout", label: "Burnout & Belastungsdepression behandeln" },
+              { to: "/beziehungskonflikte", label: "Beziehungskonflikte lösen" },
+            ],
+          },
+          {
+            title: "Bewertungen & Kontakt",
+            icon: Star,
+            links: [
+              { to: "/bewertungen", label: "Google Bewertungen (5,0 Sterne)" },
+              { to: "/erfahrungsberichte", label: "Erfahrungsberichte von Klienten" },
+              { to: "/kontakt", label: "Kontakt & Terminvereinbarung" },
+              { to: "/auftrag-bewerten", label: "Bewertung abgeben" },
+            ],
+          },
+          {
+            title: "Informationen",
+            icon: BookOpen,
+            links: [
+              { to: "/ueber-mich", label: "Über Leo Hackl – 30 Jahre Erfahrung" },
+              { to: "/blog", label: "Blog – Ratgeber & Artikel" },
+              { to: "/faq", label: "Häufige Fragen (FAQ)" },
+              { to: "/prinzip-der-aufloesung", label: "Das Prinzip der hypnosystemischen Methode" },
+            ],
+          },
+        ]}
+      />
     </div>
   );
 }

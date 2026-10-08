@@ -4,7 +4,9 @@ import PageHeader from "@/components/PageHeader";
 import CTASection from "@/components/CTASection";
 import ScrollReveal from "@/components/ScrollReveal";
 import ServiceMoneyPages from "@/components/ServiceMoneyPages";
+import LinkHub from "@/components/LinkHub";
 import Seo from "@/components/Seo";
+import { ShieldCheck, HeartHandshake, Brain, Star, BookOpen, HelpCircle } from "lucide-react";
 import { PAGE_META, localBusinessSchema, serviceSchema, faqPageSchema } from "@/data/seoConfig";
 import { getServiceBySlug } from "@/data/services";
 
@@ -115,6 +117,42 @@ export default function Burnout() {
       </section>
 
       <ServiceMoneyPages serviceSlug="burnout" />
+
+      <LinkHub
+        groups={[
+          {
+            title: "Verwandte Dienstleistungen",
+            icon: Brain,
+            links: [
+              { to: "/verhaltensmuster", label: "Verhaltensmuster & Selbstsabotage auflösen" },
+              { to: "/aengste", label: "Ängste & Phobien auflösen" },
+              { to: "/beziehungskonflikte", label: "Beziehungskonflikte lösen" },
+              { to: "/prinzip-der-aufloesung", label: "Das Prinzip der hypnosystemischen Methode" },
+            ],
+          },
+          {
+            title: "Regionen & Bewertungen",
+            icon: Star,
+            links: [
+              { to: "/regionen", label: "Psychologische Beratung in Ihrer Region" },
+              { to: "/regionen/psychologische-beratung-zuerich", label: "Burnout-Beratung in Zürich" },
+              { to: "/regionen/psychologische-beratung-thalwil", label: "Burnout-Beratung in Thalwil" },
+              { to: "/bewertungen", label: "Google Bewertungen (5,0 Sterne)" },
+            ],
+          },
+          {
+            title: "Informationen",
+            icon: BookOpen,
+            links: [
+              { to: "/ueber-mich", label: "Über Leo Hackl – 30 Jahre Erfahrung" },
+              { to: "/blog", label: "Blog – Ratgeber & Artikel" },
+              { to: "/faq", label: "Häufige Fragen zur psychologischen Beratung" },
+              { to: "/kontakt", label: "Kontakt & Terminvereinbarung" },
+            ],
+          },
+        ]}
+      />
+
       <CTASection />
     </>
   );

@@ -6,6 +6,8 @@ import ScrollReveal from "@/components/ScrollReveal";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import BlogCard from "@/components/blog/BlogCard";
 import BlogSidebar from "@/components/blog/BlogSidebar";
+import LinkHub from "@/components/LinkHub";
+import { ShieldCheck, MapPin, Star, HelpCircle } from "lucide-react";
 import { blogPosts, getUsedCategories } from "@/data/blogPosts";
 import { PAGE_META, localBusinessSchema, blogSchema } from "@/data/seoConfig";
 
@@ -212,6 +214,42 @@ export default function Blog() {
           </div>
         </div>
       </section>
+
+      <LinkHub
+        groups={[
+          {
+            title: "Dienstleistungen",
+            icon: ShieldCheck,
+            links: [
+              { to: "/dienstleistungen", label: "Alle Dienstleistungen im Überblick" },
+              { to: "/aengste", label: "Ängste & Phobien auflösen" },
+              { to: "/verhaltensmuster", label: "Verhaltensmuster & Selbstsabotage" },
+              { to: "/burnout", label: "Burnout & Belastungsdepression behandeln" },
+              { to: "/beziehungskonflikte", label: "Beziehungskonflikte lösen" },
+            ],
+          },
+          {
+            title: "Regionen",
+            icon: MapPin,
+            links: [
+              { to: "/regionen", label: "Psychologische Beratung in Ihrer Region" },
+              { to: "/regionen/psychologische-beratung-thalwil", label: "Psychologische Beratung Thalwil" },
+              { to: "/regionen/psychologische-beratung-zuerich", label: "Psychologische Beratung Zürich" },
+              { to: "/regionen/psychologische-beratung-horgen", label: "Psychologische Beratung Horgen" },
+            ],
+          },
+          {
+            title: "Bewertungen & FAQ",
+            icon: Star,
+            links: [
+              { to: "/bewertungen", label: "Google Bewertungen (5,0 Sterne)" },
+              { to: "/faq", label: "Häufige Fragen (FAQ)" },
+              { to: "/ueber-mich", label: "Über Leo Hackl" },
+              { to: "/kontakt", label: "Kontakt & Terminvereinbarung" },
+            ],
+          },
+        ]}
+      />
     </>
   );
 }

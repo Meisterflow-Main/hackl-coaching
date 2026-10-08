@@ -12,7 +12,9 @@ import Seo from "@/components/Seo";
 import { localBusinessSchema, faqPageSchema } from "@/data/seoConfig";
 import { regions, sharedRegionData, getRegionByOrt } from "@/data/regions";
 import RegionMoneyPages from "@/components/RegionMoneyPages";
+import LinkHub from "@/components/LinkHub";
 import { GoogleReviewCard } from "@/components/GoogleReviewWidget";
+import { BookOpen, HelpCircle, User } from "lucide-react";
 
 const iconMap = { ShieldCheck, HeartHandshake, Zap, Pill };
 
@@ -216,7 +218,7 @@ export default function RegionPage() {
                   to={service.link}
                   className="mt-6 inline-flex items-center gap-2 text-primary font-semibold text-sm group-hover:gap-3 transition-all"
                 >
-                  Mehr erfahren <ArrowRight className="h-4 w-4" />
+                  {service.title} in {region.ort} <ArrowRight className="h-4 w-4" />
                 </Link>
               </motion.div>
             ))}
@@ -405,6 +407,44 @@ export default function RegionPage() {
           </ScrollReveal>
         </div>
       </section>
+
+      {/* 11b. INTERNE VERLINKUNG */}
+      <LinkHub
+        bg="bg-background"
+        groups={[
+          {
+            title: "Über mich & Informationen",
+            icon: User,
+            links: [
+              { to: "/ueber-mich", label: "Über Leo Hackl – 30 Jahre Erfahrung" },
+              { to: "/blog", label: "Blog – Ratgeber & Artikel" },
+              { to: "/faq", label: "Häufige Fragen (FAQ)" },
+              { to: "/prinzip-der-aufloesung", label: "Das Prinzip der hypnosystemischen Methode" },
+            ],
+          },
+          {
+            title: "Dienstleistungen",
+            icon: ShieldCheck,
+            links: [
+              { to: "/dienstleistungen", label: "Alle Dienstleistungen im Überblick" },
+              { to: "/aengste", label: "Ängste & Phobien auflösen" },
+              { to: "/verhaltensmuster", label: "Verhaltensmuster & Selbstsabotage" },
+              { to: "/burnout", label: "Burnout & Belastungsdepression behandeln" },
+              { to: "/beziehungskonflikte", label: "Beziehungskonflikte lösen" },
+            ],
+          },
+          {
+            title: "Bewertungen & Kontakt",
+            icon: Star,
+            links: [
+              { to: "/bewertungen", label: "Google Bewertungen (5,0 Sterne)" },
+              { to: "/erfahrungsberichte", label: "Erfahrungsberichte von Klienten" },
+              { to: "/kontakt", label: "Kontakt & Terminvereinbarung" },
+              { to: "/auftrag-bewerten", label: "Bewertung abgeben" },
+            ],
+          },
+        ]}
+      />
 
       {/* 12. ABSCHLUSS CTA */}
       <section className="py-20 lg:py-28 bg-gradient-to-b from-navy to-primary text-white">

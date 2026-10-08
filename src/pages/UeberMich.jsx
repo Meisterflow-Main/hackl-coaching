@@ -3,7 +3,9 @@ import { Mountain, Music, BookOpen, Microscope } from "lucide-react";
 import PageHeader from "@/components/PageHeader";
 import CTASection from "@/components/CTASection";
 import ScrollReveal from "@/components/ScrollReveal";
+import LinkHub from "@/components/LinkHub";
 import Seo from "@/components/Seo";
+import { ShieldCheck, Brain, Flame, HeartHandshake, Star, MapPin } from "lucide-react";
 import { PAGE_META, localBusinessSchema, personSchema, organizationSchema } from "@/data/seoConfig";
 
 const PRIVAT = [
@@ -101,6 +103,42 @@ export default function UeberMich() {
           </ScrollReveal>
         </div>
       </section>
+
+      <LinkHub
+        groups={[
+          {
+            title: "Dienstleistungen",
+            icon: ShieldCheck,
+            links: [
+              { to: "/dienstleistungen", label: "Alle Dienstleistungen im Überblick" },
+              { to: "/aengste", label: "Ängste & Phobien auflösen" },
+              { to: "/verhaltensmuster", label: "Verhaltensmuster & Selbstsabotage" },
+              { to: "/burnout", label: "Burnout & Belastungsdepression behandeln" },
+              { to: "/beziehungskonflikte", label: "Beziehungskonflikte lösen" },
+            ],
+          },
+          {
+            title: "Regionen",
+            icon: MapPin,
+            links: [
+              { to: "/regionen", label: "Psychologische Beratung in Ihrer Region" },
+              { to: "/regionen/psychologische-beratung-thalwil", label: "Psychologische Beratung Thalwil" },
+              { to: "/regionen/psychologische-beratung-zuerich", label: "Psychologische Beratung Zürich" },
+              { to: "/regionen/psychologische-beratung-horgen", label: "Psychologische Beratung Horgen" },
+            ],
+          },
+          {
+            title: "Bewertungen & Kontakt",
+            icon: Star,
+            links: [
+              { to: "/bewertungen", label: "Google Bewertungen (5,0 Sterne)" },
+              { to: "/erfahrungsberichte", label: "Erfahrungsberichte von Klienten" },
+              { to: "/kontakt", label: "Kontakt & Terminvereinbarung" },
+              { to: "/prinzip-der-aufloesung", label: "Das Prinzip der hypnosystemischen Methode" },
+            ],
+          },
+        ]}
+      />
 
       <CTASection />
     </>

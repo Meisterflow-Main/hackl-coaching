@@ -5,7 +5,9 @@ import ScrollReveal from "@/components/ScrollReveal";
 import ServiceCard from "@/components/ServiceCard";
 import CTASection from "@/components/CTASection";
 import ReelsSection from "@/components/ReelsSection";
+import LinkHub from "@/components/LinkHub";
 import Seo from "@/components/Seo";
+import { MapPin, BookOpen, LayoutGrid } from "lucide-react";
 import { GoogleReviewBadge, GoogleReviewCard } from "@/components/GoogleReviewWidget";
 import { PAGE_META, localBusinessSchema, organizationSchema, websiteSchema } from "@/data/seoConfig";
 
@@ -319,6 +321,45 @@ export default function Home() {
           </ScrollReveal>
         </div>
       </section>
+
+      {/* INTERNE VERLINKUNG – Übersicht & Thematische Hub-Funktion */}
+      <LinkHub
+        groups={[
+          {
+            title: "Dienstleistungen",
+            icon: LayoutGrid,
+            links: [
+              { to: "/dienstleistungen", label: "Alle Dienstleistungen im Überblick" },
+              { to: "/aengste", label: "Ängste & Phobien auflösen" },
+              { to: "/verhaltensmuster", label: "Verhaltensmuster & Selbstsabotage" },
+              { to: "/burnout", label: "Burnout & Belastungsdepression" },
+              { to: "/beziehungskonflikte", label: "Beziehungskonflikte lösen" },
+            ],
+          },
+          {
+            title: "Regionen",
+            icon: MapPin,
+            links: [
+              { to: "/regionen", label: "Psychologische Beratung in Ihrer Region" },
+              { to: "/regionen/psychologische-beratung-thalwil", label: "Psychologische Beratung Thalwil" },
+              { to: "/regionen/psychologische-beratung-zuerich", label: "Psychologische Beratung Zürich" },
+              { to: "/regionen/psychologische-beratung-horgen", label: "Psychologische Beratung Horgen" },
+              { to: "/regionen/psychologische-beratung-waedenswil", label: "Psychologische Beratung Wädenswil" },
+            ],
+          },
+          {
+            title: "Informationen & Kontakt",
+            icon: BookOpen,
+            links: [
+              { to: "/ueber-mich", label: "Über Leo Hackl – 30 Jahre Erfahrung" },
+              { to: "/blog", label: "Blog – Ratgeber & Artikel" },
+              { to: "/faq", label: "Häufige Fragen (FAQ)" },
+              { to: "/bewertungen", label: "Google Bewertungen (5,0 Sterne)" },
+              { to: "/kontakt", label: "Kontakt & Terminvereinbarung" },
+            ],
+          },
+        ]}
+      />
 
       <CTASection />
     </>

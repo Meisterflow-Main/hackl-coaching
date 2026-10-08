@@ -9,6 +9,8 @@ import TableOfContents from "@/components/blog/TableOfContents";
 import ArticleCTA from "@/components/blog/ArticleCTA";
 import BlogSidebar from "@/components/blog/BlogSidebar";
 import BlogCard from "@/components/blog/BlogCard";
+import LinkHub from "@/components/LinkHub";
+import { ShieldCheck, MapPin, Star, HelpCircle } from "lucide-react";
 import { getPostBySlug, getRelatedPosts } from "@/data/blogPosts";
 import { localBusinessSchema, faqPageSchema, blogPostingSchema, BASE_URL } from "@/data/seoConfig";
 
@@ -336,6 +338,43 @@ export default function BlogArticle() {
 
               {/* Related Articles */}
               <RelatedArticles posts={related} />
+
+              {/* Interne Verlinkung zu Money Pages & Services */}
+              <LinkHub
+                bg="bg-white"
+                groups={[
+                  {
+                    title: "Dienstleistungen",
+                    icon: ShieldCheck,
+                    links: [
+                      { to: "/aengste", label: "Ängste & Phobien auflösen" },
+                      { to: "/verhaltensmuster", label: "Verhaltensmuster & Selbstsabotage" },
+                      { to: "/burnout", label: "Burnout & Belastungsdepression behandeln" },
+                      { to: "/beziehungskonflikte", label: "Beziehungskonflikte lösen" },
+                    ],
+                  },
+                  {
+                    title: "Regionen",
+                    icon: MapPin,
+                    links: [
+                      { to: "/regionen", label: "Psychologische Beratung in Ihrer Region" },
+                      { to: "/regionen/psychologische-beratung-thalwil", label: "Psychologische Beratung Thalwil" },
+                      { to: "/regionen/psychologische-beratung-zuerich", label: "Psychologische Beratung Zürich" },
+                      { to: "/regionen/psychologische-beratung-horgen", label: "Psychologische Beratung Horgen" },
+                    ],
+                  },
+                  {
+                    title: "Bewertungen & FAQ",
+                    icon: Star,
+                    links: [
+                      { to: "/bewertungen", label: "Google Bewertungen (5,0 Sterne)" },
+                      { to: "/faq", label: "Häufige Fragen (FAQ)" },
+                      { to: "/ueber-mich", label: "Über Leo Hackl" },
+                      { to: "/kontakt", label: "Kontakt & Terminvereinbarung" },
+                    ],
+                  },
+                ]}
+              />
             </article>
 
             {/* Sidebar (TOC + BlogSidebar) */}

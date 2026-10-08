@@ -5,7 +5,9 @@ import PageHeader from "@/components/PageHeader";
 import CTASection from "@/components/CTASection";
 import ScrollReveal from "@/components/ScrollReveal";
 import ServiceMoneyPages from "@/components/ServiceMoneyPages";
+import LinkHub from "@/components/LinkHub";
 import Seo from "@/components/Seo";
+import { Flame, HeartHandshake, Star, BookOpen } from "lucide-react";
 import { PAGE_META, localBusinessSchema, serviceSchema, faqPageSchema } from "@/data/seoConfig";
 import { getServiceBySlug } from "@/data/services";
 
@@ -95,6 +97,42 @@ export default function Aengste() {
       </section>
 
       <ServiceMoneyPages serviceSlug="aengste" />
+
+      <LinkHub
+        groups={[
+          {
+            title: "Verwandte Dienstleistungen",
+            icon: ShieldCheck,
+            links: [
+              { to: "/verhaltensmuster", label: "Verhaltensmuster & Selbstsabotage auflösen" },
+              { to: "/burnout", label: "Burnout & Belastungsdepression behandeln" },
+              { to: "/beziehungskonflikte", label: "Beziehungskonflikte lösen" },
+              { to: "/prinzip-der-aufloesung", label: "Das Prinzip der hypnosystemischen Methode" },
+            ],
+          },
+          {
+            title: "Regionen & Bewertungen",
+            icon: Star,
+            links: [
+              { to: "/regionen", label: "Psychologische Beratung in Ihrer Region" },
+              { to: "/regionen/psychologische-beratung-zuerich", label: "Ängste auflösen in Zürich" },
+              { to: "/regionen/psychologische-beratung-thalwil", label: "Ängste auflösen in Thalwil" },
+              { to: "/bewertungen", label: "Google Bewertungen (5,0 Sterne)" },
+            ],
+          },
+          {
+            title: "Informationen",
+            icon: BookOpen,
+            links: [
+              { to: "/ueber-mich", label: "Über Leo Hackl – 30 Jahre Erfahrung" },
+              { to: "/blog", label: "Blog – Ratgeber & Artikel" },
+              { to: "/faq", label: "Häufige Fragen zur psychologischen Beratung" },
+              { to: "/kontakt", label: "Kontakt & Terminvereinbarung" },
+            ],
+          },
+        ]}
+      />
+
       <CTASection />
     </>
   );

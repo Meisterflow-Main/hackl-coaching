@@ -7,6 +7,8 @@ import {
 import ScrollReveal from "@/components/ScrollReveal";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import CTASection from "@/components/CTASection";
+import LinkHub from "@/components/LinkHub";
+import { Star, HelpCircle, BookOpen } from "lucide-react";
 import { getServiceBySlug } from "@/data/services";
 import { getMoneyPageBySlug, getFullRegion, getMoneyPagesForService, getMoneyPagesForRegion, moneyPageRegions } from "@/data/moneyPages";
 import Seo from "@/components/Seo";
@@ -305,6 +307,39 @@ export default function MoneyPage({ slug }) {
           </div>
         </section>
       )}
+
+      <LinkHub
+        groups={[
+          {
+            title: "Bewertungen & Vertrauen",
+            icon: Star,
+            links: [
+              { to: "/bewertungen", label: "Google Bewertungen (5,0 Sterne)" },
+              { to: "/erfahrungsberichte", label: "Erfahrungsberichte von Klienten" },
+              { to: "/auftrag-bewerten", label: "Bewertung abgeben" },
+            ],
+          },
+          {
+            title: "Häufige Fragen",
+            icon: HelpCircle,
+            links: [
+              { to: "/faq", label: "Alle häufigen Fragen (FAQ)" },
+              { to: `/regionen/${region.slug}`, label: `FAQ für psychologische Beratung in ${regionName}` },
+              { to: service.link, label: `FAQ zu ${service.title}` },
+            ],
+          },
+          {
+            title: "Informationen",
+            icon: BookOpen,
+            links: [
+              { to: "/ueber-mich", label: "Über Leo Hackl – 30 Jahre Erfahrung" },
+              { to: "/blog", label: "Blog – Ratgeber & Artikel" },
+              { to: "/kontakt", label: "Kontakt & Terminvereinbarung" },
+              { to: "/prinzip-der-aufloesung", label: "Das Prinzip der hypnosystemischen Methode" },
+            ],
+          },
+        ]}
+      />
 
       <CTASection />
     </>

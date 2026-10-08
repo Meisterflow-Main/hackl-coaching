@@ -3,7 +3,9 @@ import { ChevronDown } from "lucide-react";
 import ScrollReveal from "@/components/ScrollReveal";
 import PageHeader from "@/components/PageHeader";
 import CTASection from "@/components/CTASection";
+import LinkHub from "@/components/LinkHub";
 import Seo from "@/components/Seo";
+import { ShieldCheck, MapPin, Star, LayoutGrid } from "lucide-react";
 import { PAGE_META, faqPageSchema, localBusinessSchema } from "@/data/seoConfig";
 
 const FAQ_ITEMS = [
@@ -135,6 +137,42 @@ export default function FAQ() {
           ))}
         </div>
       </section>
+
+      <LinkHub
+        groups={[
+          {
+            title: "Dienstleistungen",
+            icon: LayoutGrid,
+            links: [
+              { to: "/dienstleistungen", label: "Alle Dienstleistungen im Überblick" },
+              { to: "/aengste", label: "Ängste & Phobien auflösen" },
+              { to: "/verhaltensmuster", label: "Verhaltensmuster & Selbstsabotage" },
+              { to: "/burnout", label: "Burnout & Belastungsdepression" },
+              { to: "/beziehungskonflikte", label: "Beziehungskonflikte lösen" },
+            ],
+          },
+          {
+            title: "Regionen",
+            icon: MapPin,
+            links: [
+              { to: "/regionen", label: "Psychologische Beratung in Ihrer Region" },
+              { to: "/regionen/psychologische-beratung-thalwil", label: "Psychologische Beratung Thalwil" },
+              { to: "/regionen/psychologische-beratung-zuerich", label: "Psychologische Beratung Zürich" },
+              { to: "/regionen/psychologische-beratung-horgen", label: "Psychologische Beratung Horgen" },
+            ],
+          },
+          {
+            title: "Weiteres",
+            icon: Star,
+            links: [
+              { to: "/bewertungen", label: "Google Bewertungen (5,0 Sterne)" },
+              { to: "/ueber-mich", label: "Über Leo Hackl" },
+              { to: "/blog", label: "Blog – Ratgeber & Artikel" },
+              { to: "/kontakt", label: "Kontakt & Terminvereinbarung" },
+            ],
+          },
+        ]}
+      />
 
       <CTASection />
     </>

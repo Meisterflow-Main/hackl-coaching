@@ -5,6 +5,8 @@ import ScrollReveal from "@/components/ScrollReveal";
 import PageHeader from "@/components/PageHeader";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import CTASection from "@/components/CTASection";
+import LinkHub from "@/components/LinkHub";
+import { MapPin, Star, BookOpen, User } from "lucide-react";
 import { services } from "@/data/services";
 import { getMoneyPagesForService, moneyPageRegions } from "@/data/moneyPages";
 import Seo from "@/components/Seo";
@@ -103,6 +105,42 @@ export default function Dienstleistungen() {
           </div>
         </div>
       </section>
+
+      <LinkHub
+        groups={[
+          {
+            title: "Regionen",
+            icon: MapPin,
+            links: [
+              { to: "/regionen", label: "Psychologische Beratung in Ihrer Region" },
+              { to: "/regionen/psychologische-beratung-thalwil", label: "Psychologische Beratung Thalwil" },
+              { to: "/regionen/psychologische-beratung-zuerich", label: "Psychologische Beratung Zürich" },
+              { to: "/regionen/psychologische-beratung-horgen", label: "Psychologische Beratung Horgen" },
+              { to: "/regionen/psychologische-beratung-waedenswil", label: "Psychologische Beratung Wädenswil" },
+            ],
+          },
+          {
+            title: "Bewertungen & Über mich",
+            icon: Star,
+            links: [
+              { to: "/bewertungen", label: "Google Bewertungen (5,0 Sterne)" },
+              { to: "/erfahrungsberichte", label: "Erfahrungsberichte von Klienten" },
+              { to: "/ueber-mich", label: "Über Leo Hackl – 30 Jahre Erfahrung" },
+              { to: "/prinzip-der-aufloesung", label: "Das Prinzip der hypnosystemischen Methode" },
+            ],
+          },
+          {
+            title: "Informationen",
+            icon: BookOpen,
+            links: [
+              { to: "/blog", label: "Blog – Ratgeber & Artikel" },
+              { to: "/faq", label: "Häufige Fragen (FAQ)" },
+              { to: "/kontakt", label: "Kontakt & Terminvereinbarung" },
+              { to: "/auftrag-bewerten", label: "Bewertung abgeben" },
+            ],
+          },
+        ]}
+      />
 
       <CTASection />
     </>

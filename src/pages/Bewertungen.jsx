@@ -4,7 +4,9 @@ import { ArrowRight, ExternalLink } from "lucide-react";
 import PageHeader from "@/components/PageHeader";
 import CTASection from "@/components/CTASection";
 import ScrollReveal from "@/components/ScrollReveal";
+import LinkHub from "@/components/LinkHub";
 import Seo from "@/components/Seo";
+import { ShieldCheck, MapPin, LayoutGrid, Brain, Flame, HeartHandshake } from "lucide-react";
 import GoogleReviewWidget from "@/components/GoogleReviewWidget";
 import { PAGE_META, localBusinessSchema } from "@/data/seoConfig";
 
@@ -72,6 +74,42 @@ export default function Bewertungen() {
           </ScrollReveal>
         </div>
       </section>
+
+      <LinkHub
+        groups={[
+          {
+            title: "Dienstleistungen",
+            icon: LayoutGrid,
+            links: [
+              { to: "/dienstleistungen", label: "Alle Dienstleistungen im Überblick" },
+              { to: "/aengste", label: "Ängste & Phobien auflösen" },
+              { to: "/verhaltensmuster", label: "Verhaltensmuster & Selbstsabotage" },
+              { to: "/burnout", label: "Burnout & Belastungsdepression behandeln" },
+              { to: "/beziehungskonflikte", label: "Beziehungskonflikte lösen" },
+            ],
+          },
+          {
+            title: "Regionen",
+            icon: MapPin,
+            links: [
+              { to: "/regionen", label: "Psychologische Beratung in Ihrer Region" },
+              { to: "/regionen/psychologische-beratung-thalwil", label: "Psychologische Beratung Thalwil" },
+              { to: "/regionen/psychologische-beratung-zuerich", label: "Psychologische Beratung Zürich" },
+              { to: "/regionen/psychologische-beratung-horgen", label: "Psychologische Beratung Horgen" },
+            ],
+          },
+          {
+            title: "Weiteres",
+            icon: ShieldCheck,
+            links: [
+              { to: "/", label: "Startseite – Leo Hackl Coaching" },
+              { to: "/erfahrungsberichte", label: "Erfahrungsberichte von Klienten" },
+              { to: "/kontakt", label: "Kontakt & Terminvereinbarung" },
+              { to: "/auftrag-bewerten", label: "Bewertung abgeben" },
+            ],
+          },
+        ]}
+      />
 
       <CTASection />
     </>
