@@ -112,6 +112,12 @@ export default function Footer() {
         <div className="mt-12 pt-8 border-t border-white/10 flex flex-col gap-4 md:flex-row md:justify-between text-xs text-white/50">
           <p>© {new Date().getFullYear()} Leo Hackl Coaching. Alle Rechte vorbehalten.</p>
           <div className="flex flex-wrap gap-x-5 gap-y-2">
+            <button
+              onClick={() => window.dispatchEvent(new Event("reopen-cookie-banner"))}
+              className="hover:text-white text-left"
+            >
+              Cookie-Einstellungen
+            </button>
             <Link to="/impressum" className="hover:text-white">Impressum</Link>
             <Link to="/datenschutz" className="hover:text-white">Datenschutzerklärung</Link>
             <Link to="/faq" className="hover:text-white">FAQ</Link>

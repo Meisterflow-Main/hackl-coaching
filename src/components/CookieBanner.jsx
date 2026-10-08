@@ -28,6 +28,10 @@ export default function CookieBanner() {
     } catch {
       setVisible(true);
     }
+
+    const handleReopen = () => setVisible(true);
+    window.addEventListener("reopen-cookie-banner", handleReopen);
+    return () => window.removeEventListener("reopen-cookie-banner", handleReopen);
   }, []);
 
   const save = (newConsent) => {

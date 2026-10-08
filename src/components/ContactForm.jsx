@@ -8,6 +8,7 @@ export default function ContactForm({ compact = false }) {
   const [form, setForm] = useState({ name: "", email: "", phone: "", description: "" });
   const [status, setStatus] = useState("idle"); // idle | loading | success | error
   const [errors, setErrors] = useState({});
+  const [consent, setConsent] = useState(false);
 
   const validate = () => {
     const e = {};
@@ -15,6 +16,7 @@ export default function ContactForm({ compact = false }) {
     if (!form.email.trim()) e.email = "Bitte geben Sie Ihre E-Mail ein.";
     else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email)) e.email = "Ungültige E-Mail-Adresse.";
     if (!form.description.trim()) e.description = "Bitte beschreiben Sie Ihr Anliegen.";
+    if (!consent) e.consent = "Bitte stimmen Sie der Datenverarbeitung zu.";
     setErrors(e);
     return Object.keys(e).length === 0;
   };
@@ -44,6 +46,7 @@ export default function ContactForm({ compact = false }) {
       if (!res.ok) throw new Error("Network");
       setStatus("success");
       setForm({ name: "", email: "", phone: "", description: "" });
+      setConsent(false);
     } catch {
       setStatus("error");
     }
@@ -137,9 +140,34 @@ export default function ContactForm({ compact = false }) {
         </div>
       )}
 
+      <div>
+        <label className="flex items-start gap-3 cursor-pointer">
+          <input
+            type="checkbox"
+            checked={consent}
+            onChange={(e) => {
+              setConsent(e.target.checked);
+              if (errors.consent) setErrors({ ...errors, consent: undefined });
+            }}
+            className="mt-1 h-4 w-4 shrink-0 rounded border-border text-primary focus:ring-primary"
+          />
+          <span className="text-xs text-muted-foreground leading-relaxed">
+            Ich willige ein, dass meine Daten zur Bearbeitung der Anfrage gespeichert und an unseren
+            externen Dienstleister MeisterFlow übermittelt werden. Die Einwilligung kann jederzeit
+            widerrufen werden. Details siehe{" "}
+            <a href="/datenschutz" className="text-primary font-semibold underline">Datenschutzerklärung</a>.
+          </span>
+        </label>
+        {errors.consent && (
+          <p className="mt-1.5 text-xs text-destructive flex items-center gap-1">
+            <AlertCircle className="h-3.5 w-3.5" /> {errors.consent}
+          </p>
+        )}
+      </div>
+
       <button
         type="submit"
-        disabled={status === "loading"}
+        disabled={status === "loading" || !consent}
         className="inline-flex items-center justify-center gap-2 rounded-full bg-accent px-7 py-3.5 text-sm font-semibold text-white shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all disabled:opacity-60 disabled:hover:translate-y-0"
       >
         {status === "loading" ? (

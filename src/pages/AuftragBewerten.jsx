@@ -240,6 +240,11 @@ export default function AuftragBewerten() {
               >
                 Auf Google bewerten <ExternalLink className="h-4 w-4" />
               </a>
+              <p className="mt-4 text-xs text-white/40 leading-relaxed max-w-md mx-auto">
+                Hinweis: Beim Klick auf „Auf Google bewerten" werden Sie zu Google weitergeleitet.
+                Dabei können Daten (mindestens Ihre IP-Adresse) an Google LLC (USA) übertragen werden.
+                Details siehe Datenschutzerklärung.
+              </p>
             </div>
           </ScrollReveal>
         )}
