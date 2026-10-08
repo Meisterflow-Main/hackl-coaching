@@ -21,15 +21,73 @@ export default function Impressum() {
               <h2 className="font-heading text-xl font-bold text-primary mb-3">Anbieter</h2>
               <p className="text-foreground/70 leading-relaxed">
                 Leo Hackl Coaching<br />
+                Leo Hackl<br />
                 Zehntenstrasse 17<br />
                 8800 Thalwil, Schweiz<br />
-                Telefon: 044 772 89 79 / 079 433 50 72
+                Telefon: 044 772 89 79 / 079 433 50 72<br />
+                E-Mail: info@hacklcoaching.ch
               </p>
             </div>
           </ScrollReveal>
 
           <ScrollReveal delay={0.05}>
             <div className="space-y-8 text-foreground/70 leading-relaxed">
+
+              <div>
+                <h2 className="font-heading text-xl font-bold text-primary mb-3">Rechtsform</h2>
+                <p>
+                  Leo Hackl Coaching wird als Einzelunternehmen geführt. Inhaber: Leo Hackl.
+                </p>
+              </div>
+
+              <div>
+                <h2 className="font-heading text-xl font-bold text-primary mb-3">UID / Unternehmens-Identifikationsnummer</h2>
+                <p>
+                  UID: CHE-XXX.XXX.XXX
+                  <br />
+                  <span className="text-sm text-muted-foreground">
+                    (Die definitive UID-Nummer wird vor dem Go Live ergänzt.)
+                  </span>
+                </p>
+              </div>
+
+              <div>
+                <h2 className="font-heading text-xl font-bold text-primary mb-3">Berufsbezeichnung und berufliche Regelungen</h2>
+                <p className="mb-2">
+                  Berufsbezeichnung: Psychologischer Berater & Systemischer Hypnotherapeut
+                </p>
+                <p>
+                  Die Berufsbezeichnung wurde in der Schweiz verliehen. Für die Ausübung psychologischer
+                  Beratung und systemischer Hypnotherapie gelten die beruflichen und ethischen
+                  Richtlinien der Schweiz.
+                </p>
+                <p className="mt-2">
+                  Zuständige Aufsichtsbehörde:
+                  <br />
+                  <span className="text-sm text-muted-foreground">
+                    (Die zuständige kantonale Gesundheitsbehörde wird vor dem Go Live ergänzt.)
+                  </span>
+                </p>
+              </div>
+
+              <div>
+                <h2 className="font-heading text-xl font-bold text-primary mb-3">Berufshaftpflichtversicherung</h2>
+                <p>
+                  Eine Berufshaftpflichtversicherung besteht.
+                  <br />
+                  <span className="text-sm text-muted-foreground">
+                    (Versicherer und Geltungsbereich werden vor dem Go Live ergänzt.)
+                  </span>
+                </p>
+              </div>
+
+              <div>
+                <h2 className="font-heading text-xl font-bold text-primary mb-3">Verantwortlicher für den Inhalt</h2>
+                <p>
+                  Leo Hackl, Zehntenstrasse 17, 8800 Thalwil, Schweiz.
+                </p>
+              </div>
+
               <div>
                 <h2 className="font-heading text-xl font-bold text-primary mb-3">Inhalt des Onlineangebotes</h2>
                 <p>
@@ -42,6 +100,7 @@ export default function Impressum() {
                   fahrlässiges Verschulden vorliegt. Alle Angebote sind freibleibend und unverbindlich.
                 </p>
               </div>
+
               <div>
                 <h2 className="font-heading text-xl font-bold text-primary mb-3">Verweise und Links</h2>
                 <p>
@@ -54,6 +113,7 @@ export default function Impressum() {
                   Linksetzung verändert wurden.
                 </p>
               </div>
+
               <div>
                 <h2 className="font-heading text-xl font-bold text-primary mb-3">Urheber- und Kennzeichenrecht</h2>
                 <p>
@@ -64,6 +124,7 @@ export default function Impressum() {
                   gedruckten Publikationen ist ohne ausdrückliche Zustimmung des Autors nicht gestattet.
                 </p>
               </div>
+
               <div>
                 <h2 className="font-heading text-xl font-bold text-primary mb-3">Rechtswirksamkeit dieses Haftungsausschlusses</h2>
                 <p>
@@ -74,6 +135,16 @@ export default function Impressum() {
                   davon unberührt.
                 </p>
               </div>
+
+              <div>
+                <h2 className="font-heading text-xl font-bold text-primary mb-3">Streitbeilegung</h2>
+                <p>
+                  Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit:
+                  https://ec.europa.eu/consumers/odr. Wir sind nicht verpflichtet und nicht bereit, an
+                  Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.
+                </p>
+              </div>
+
             </div>
           </ScrollReveal>
         </div>
