@@ -3,6 +3,7 @@ import { Brain, Repeat, Lightbulb, Sparkles } from "lucide-react";
 import PageHeader from "@/components/PageHeader";
 import CTASection from "@/components/CTASection";
 import ScrollReveal from "@/components/ScrollReveal";
+import ServiceMoneyPages from "@/components/ServiceMoneyPages";
 
 const MUSTER = [
   "Es allen recht machen, aber nie Wertschätzung bekommen",
@@ -19,6 +20,7 @@ export default function Verhaltensmuster() {
         eyebrow="Verhaltensmuster · Selbstsabotage"
         title="Selbstsabotage erkennen und auflösen – nachhaltig und wirksam."
         subtitle="Immer wieder in dieselben Fallen tappen? Das sind unbewusste Verhaltensmuster – auch bekannt als Glaubenssätze oder Selbstsabotageprogramme. Sie steuern uns automatisch und lösen Handlungen oder Gefühle aus, die oft schädlich sind."
+        breadcrumbs={[{ label: "Start", to: "/" }, { label: "Dienstleistungen", to: "/dienstleistungen" }, { label: "Verhaltensmuster" }]}
       />
 
       <section className="py-20 md:py-28">
@@ -97,6 +99,7 @@ export default function Verhaltensmuster() {
         </div>
       </section>
 
+      <ServiceMoneyPages serviceSlug="verhaltensmuster" />
       <CTASection />
     </>
   );

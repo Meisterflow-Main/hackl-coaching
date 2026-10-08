@@ -67,15 +67,15 @@ export default function Footer() {
 
           <div>
             <h4 className="font-heading font-semibold text-sm uppercase tracking-wider text-white/60 mb-4">
-              Navigation
+              Dienstleistungen
             </h4>
             <ul className="space-y-2 text-sm text-white/80">
+              <li><Link to="/dienstleistungen" className="hover:text-white font-semibold">Alle Dienstleistungen</Link></li>
               <li><Link to="/aengste" className="hover:text-white">Ängste & Phobien</Link></li>
               <li><Link to="/verhaltensmuster" className="hover:text-white">Verhaltensmuster</Link></li>
               <li><Link to="/burnout" className="hover:text-white">Burnout</Link></li>
               <li><Link to="/beziehungskonflikte" className="hover:text-white">Beziehungskonflikte</Link></li>
               <li><Link to="/ueber-mich" className="hover:text-white">Über mich</Link></li>
-              <li><Link to="/erfahrungsberichte" className="hover:text-white">Erfahrungsberichte</Link></li>
               <li><Link to="/kontakt" className="hover:text-white">Kontakt</Link></li>
             </ul>
           </div>
@@ -102,6 +102,7 @@ export default function Footer() {
           <div className="flex gap-5">
             <Link to="/impressum" className="hover:text-white">Impressum</Link>
             <Link to="/datenschutz" className="hover:text-white">Datenschutzerklärung</Link>
+            <Link to="/faq" className="hover:text-white">FAQ</Link>
             <Link to="/auftrag-bewerten" className="hover:text-white">Bewertung abgeben</Link>
           </div>
         </div>

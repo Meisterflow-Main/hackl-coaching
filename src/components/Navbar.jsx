@@ -2,13 +2,10 @@ import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Phone, ChevronDown, MapPin } from "lucide-react";
 import { regions } from "@/data/regions";
+import { services } from "@/data/services";
 
 const NAV_LINKS = [
   { label: "Start", to: "/" },
-  { label: "Ängste & Phobien", to: "/aengste" },
-  { label: "Verhaltensmuster", to: "/verhaltensmuster" },
-  { label: "Burnout", to: "/burnout" },
-  { label: "Beziehung", to: "/beziehungskonflikte" },
   { label: "Über mich", to: "/ueber-mich" },
   { label: "Erfahrungsberichte", to: "/erfahrungsberichte" },
   { label: "Methode", to: "/prinzip-der-aufloesung" },
@@ -18,7 +15,9 @@ const NAV_LINKS = [
 export default function Navbar() {
   const [open, setOpen] = useState(false);
   const [regionenOpen, setRegionenOpen] = useState(false);
+  const [dienstleistungenOpen, setDienstleistungenOpen] = useState(false);
   const [mobileRegionen, setMobileRegionen] = useState(false);
+  const [mobileDienstleistungen, setMobileDienstleistungen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const location = useLocation();
 
@@ -56,6 +55,46 @@ export default function Navbar() {
           </Link>
 
           <nav className="hidden lg:flex items-center gap-0.5">
+            {/* Dienstleistungen Dropdown */}
+            <div
+              className="relative"
+              onMouseEnter={() => setDienstleistungenOpen(true)}
+              onMouseLeave={() => setDienstleistungenOpen(false)}
+            >
+              <button
+                className={`relative flex items-center gap-1 whitespace-nowrap px-2 py-2 text-sm font-medium rounded-md transition-colors ${
+                  location.pathname === "/dienstleistungen" || ["/aengste", "/verhaltensmuster", "/burnout", "/beziehungskonflikte"].some((p) => location.pathname.startsWith(p))
+                    ? (scrolled ? "text-primary" : "text-white")
+                    : (scrolled ? "text-foreground/80 hover:text-primary" : "text-white/80 hover:text-white")
+                }`}
+                onClick={() => setDienstleistungenOpen((v) => !v)}
+              >
+                Dienstleistungen
+                <ChevronDown className={`h-3.5 w-3.5 transition-transform ${dienstleistungenOpen ? "rotate-180" : ""}`} />
+              </button>
+              {dienstleistungenOpen && (
+                <div className="absolute left-0 top-full pt-2 w-64 z-50">
+                  <div className="rounded-2xl glass border border-border shadow-xl p-2">
+                    <Link
+                      to="/dienstleistungen"
+                      className="flex items-center gap-2 px-3 py-2.5 rounded-lg text-sm font-semibold text-primary hover:bg-primary/10 transition-colors"
+                    >
+                      Alle Dienstleistungen
+                    </Link>
+                    <div className="my-1 h-px bg-border" />
+                    {services.map((s) => (
+                      <Link
+                        key={s.slug}
+                        to={s.link}
+                        className="block px-3 py-2.5 rounded-lg text-sm text-foreground/80 hover:bg-primary/10 hover:text-primary transition-colors"
+                      >
+                        {s.title}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </div>
             {NAV_LINKS.map((l) => {
               const active = location.pathname === l.to;
               return (
@@ -151,6 +190,37 @@ export default function Navbar() {
         } glass border-t border-border`}
       >
         <nav className="mx-auto max-w-7xl px-5 py-4 flex flex-col gap-1">
+          {/* Dienstleistungen mobile */}
+          <button
+            onClick={() => setMobileDienstleistungen((v) => !v)}
+            className={`flex items-center justify-between px-4 py-3 rounded-lg text-base font-medium transition-colors ${
+              location.pathname === "/dienstleistungen" || ["/aengste", "/verhaltensmuster", "/burnout", "/beziehungskonflikte"].some((p) => location.pathname.startsWith(p))
+                ? "bg-primary/10 text-primary"
+                : "text-foreground/80 hover:bg-muted"
+            }`}
+          >
+            Dienstleistungen
+            <ChevronDown className={`h-4 w-4 transition-transform ${mobileDienstleistungen ? "rotate-180" : ""}`} />
+          </button>
+          {mobileDienstleistungen && (
+            <div className="ml-3 pl-3 border-l-2 border-border flex flex-col gap-0.5">
+              <Link
+                to="/dienstleistungen"
+                className="px-4 py-2.5 rounded-lg text-sm font-semibold text-primary hover:bg-primary/10 transition-colors"
+              >
+                Alle Dienstleistungen
+              </Link>
+              {services.map((s) => (
+                <Link
+                  key={s.slug}
+                  to={s.link}
+                  className="px-4 py-2.5 rounded-lg text-sm text-foreground/70 hover:bg-muted hover:text-primary transition-colors"
+                >
+                  {s.title}
+                </Link>
+              ))}
+            </div>
+          )}
           {NAV_LINKS.map((l) => (
             <Link
               key={l.to}

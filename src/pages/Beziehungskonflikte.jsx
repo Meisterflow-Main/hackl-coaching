@@ -3,6 +3,7 @@ import { HeartHandshake, Users, MessageSquare, ListChecks } from "lucide-react";
 import PageHeader from "@/components/PageHeader";
 import CTASection from "@/components/CTASection";
 import ScrollReveal from "@/components/ScrollReveal";
+import ServiceMoneyPages from "@/components/ServiceMoneyPages";
 
 const GRUENDE = [
   "Mangelnde Gesprächsbereitschaft",
@@ -19,6 +20,7 @@ export default function Beziehungskonflikte() {
         eyebrow="Beziehungskonflikte"
         title="Vielfältige Konflikte, gemeinsame Schwierigkeit."
         subtitle="Eine gewisse Blindheit und ein Festgefahren sein hindert uns oft, unsere Beziehungskonflikte sofort, direkt und unkompliziert zu lösen. Hilfe von aussen kann schnell Besserung bewirken."
+        breadcrumbs={[{ label: "Start", to: "/" }, { label: "Dienstleistungen", to: "/dienstleistungen" }, { label: "Beziehungskonflikte" }]}
       />
 
       <section className="py-20 md:py-28">
@@ -95,6 +97,7 @@ export default function Beziehungskonflikte() {
         </div>
       </section>
 
+      <ServiceMoneyPages serviceSlug="beziehungskonflikte" />
       <CTASection />
     </>
   );

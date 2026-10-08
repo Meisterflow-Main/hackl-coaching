@@ -2,13 +2,19 @@ import React from "react";
 import ScrollReveal from "./ScrollReveal";
 import { Link } from "react-router-dom";
 import { ArrowRight, Phone } from "lucide-react";
+import Breadcrumbs from "./Breadcrumbs";
 
-export default function PageHeader({ eyebrow, title, subtitle }) {
+export default function PageHeader({ eyebrow, title, subtitle, breadcrumbs }) {
   return (
     <section className="relative overflow-hidden bg-navy text-white pt-32 pb-20 md:pt-40 md:pb-28">
       <div className="absolute inset-0 opacity-[0.07]" style={{ backgroundImage: "radial-gradient(circle at 20% 20%, white 1px, transparent 1px)", backgroundSize: "32px 32px" }} />
       <div className="absolute -right-24 -top-24 h-96 w-96 rounded-full bg-accent/20 blur-3xl" />
       <div className="relative mx-auto max-w-7xl px-5 lg:px-8">
+          {breadcrumbs && (
+            <div className="mb-6">
+              <Breadcrumbs dark items={breadcrumbs} />
+            </div>
+          )}
         <ScrollReveal>
           {eyebrow && (
             <span className="inline-block rounded-full border border-white/20 bg-white/5 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.2em] text-white/80 mb-5">

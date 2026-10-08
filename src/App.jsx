@@ -22,6 +22,10 @@ import Impressum from '@/pages/Impressum';
 import Datenschutz from '@/pages/Datenschutz';
 import Regionen from '@/pages/Regionen';
 import RegionPage from '@/pages/RegionPage';
+import Dienstleistungen from '@/pages/Dienstleistungen';
+import FAQ from '@/pages/FAQ';
+import MoneyPage from '@/pages/MoneyPage';
+import { moneyPages } from '@/data/moneyPages';
 
 const AuthenticatedApp = () => {
   const { isLoadingAuth, isLoadingPublicSettings, authError, navigateToLogin } = useAuth();
@@ -59,6 +63,11 @@ const AuthenticatedApp = () => {
         <Route path="/datenschutz" element={<Datenschutz />} />
         <Route path="/regionen" element={<Regionen />} />
         <Route path="/regionen/:slug" element={<RegionPage />} />
+        <Route path="/dienstleistungen" element={<Dienstleistungen />} />
+        <Route path="/faq" element={<FAQ />} />
+        {moneyPages.map((mp) => (
+          <Route key={mp.slug} path={`/${mp.slug}`} element={<MoneyPage slug={mp.slug} />} />
+        ))}
       </Route>
       {/* Standalone page (no shared layout) */}
       <Route path="/auftrag-bewerten" element={<AuftragBewerten />} />

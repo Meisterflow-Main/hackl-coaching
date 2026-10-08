@@ -4,6 +4,7 @@ import { ArrowRight, ShieldCheck, Brain, Clock, CheckCircle2 } from "lucide-reac
 import PageHeader from "@/components/PageHeader";
 import CTASection from "@/components/CTASection";
 import ScrollReveal from "@/components/ScrollReveal";
+import ServiceMoneyPages from "@/components/ServiceMoneyPages";
 
 const PHOBIAS = [
   "Flugangst", "Prüfungsangst", "Redeangst / Vortragsangst", "Auto fahren",
@@ -18,6 +19,7 @@ export default function Aengste() {
         eyebrow="Ängste & Phobien"
         title="Ängste loszuwerden ist erstaunlich schnell möglich."
         subtitle="Für spezifische Ängste, also Phobien, braucht es erfahrungsgemäss zwei bis drei Sitzungen innert vier bis zehn Wochen. Diese Angaben beruhen auf Erfahrung mit über 2'000 gelösten Fällen."
+        breadcrumbs={[{ label: "Start", to: "/" }, { label: "Dienstleistungen", to: "/dienstleistungen" }, { label: "Ängste & Phobien" }]}
       />
 
       <section className="py-20 md:py-28">
@@ -88,6 +90,7 @@ export default function Aengste() {
         </div>
       </section>
 
+      <ServiceMoneyPages serviceSlug="aengste" />
       <CTASection />
     </>
   );

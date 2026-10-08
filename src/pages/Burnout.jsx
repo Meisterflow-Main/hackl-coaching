@@ -3,6 +3,7 @@ import { Flame, AlertTriangle, Activity, ListChecks } from "lucide-react";
 import PageHeader from "@/components/PageHeader";
 import CTASection from "@/components/CTASection";
 import ScrollReveal from "@/components/ScrollReveal";
+import ServiceMoneyPages from "@/components/ServiceMoneyPages";
 
 const URSACHEN = [
   {
@@ -26,6 +27,7 @@ export default function Burnout() {
         eyebrow="Burnout · Belastungsdepression"
         title="Burnout ist die populäre Bezeichnung für Belastungsdepression."
         subtitle="Sie beginnt schleichend, ist aber im Endzustand der schweren Depression gleichzusetzen. Oft wird geraten, eine längere Auszeit zu nehmen – ohne an den Umständen etwas zu ändern. Das kann es nicht sein."
+        breadcrumbs={[{ label: "Start", to: "/" }, { label: "Dienstleistungen", to: "/dienstleistungen" }, { label: "Burnout" }]}
       />
 
       <section className="py-20 md:py-28">
@@ -108,6 +110,7 @@ export default function Burnout() {
         </div>
       </section>
 
+      <ServiceMoneyPages serviceSlug="burnout" />
       <CTASection />
     </>
   );
