@@ -93,7 +93,7 @@ export const PAGE_META = {
   },
   "/datenschutz": {
     title: "Datenschutzerklärung | Leo Hackl Coaching",
-    description: "Datenschutzerklärung von Leo Hackl Coaching. Informationen zur Verarbeitung personenbezogener Daten und Ihren Rechten.",
+    description: "Informationen zur Verarbeitung personenbezogener Daten und zum Datenschutz bei Leo Hackl Coaching.",
     canonicalPath: "/datenschutz",
   },
   "/regionen": {
