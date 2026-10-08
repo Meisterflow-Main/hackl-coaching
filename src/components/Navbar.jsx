@@ -185,8 +185,8 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       <div
-        className={`lg:hidden overflow-hidden transition-all duration-300 ${
-          open ? "max-h-[80vh] opacity-100" : "max-h-0 opacity-0"
+        className={`lg:hidden overflow-y-auto overscroll-contain transition-all duration-300 ${
+          open ? "max-h-[calc(100vh-4rem)] opacity-100" : "max-h-0 opacity-0"
         } glass border-t border-border`}
       >
         <nav className="mx-auto max-w-7xl px-5 py-4 flex flex-col gap-1">

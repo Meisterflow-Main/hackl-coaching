@@ -26,10 +26,10 @@ export default function CookieBanner() {
   if (!visible) return null;
 
   return (
-    <div className="fixed bottom-0 inset-x-0 z-[60] p-4">
-      <div className="mx-auto max-w-5xl rounded-2xl glass border border-border shadow-2xl p-5 md:p-6">
-        <div className="flex flex-col md:flex-row md:items-center gap-4">
-          <p className="text-sm text-foreground/80 flex-1 leading-relaxed">
+    <div className="fixed bottom-0 inset-x-0 z-[60] p-3 sm:p-4">
+      <div className="mx-auto max-w-5xl rounded-2xl glass border border-border shadow-2xl p-4 sm:p-5 md:p-6">
+        <div className="flex flex-col md:flex-row md:items-center gap-3 sm:gap-4">
+          <p className="text-xs sm:text-sm text-foreground/80 flex-1 leading-relaxed">
             Wir verwenden Cookies, um Ihre Erfahrung zu verbessern. Mit Klick auf „Alle akzeptieren"
             stimmen Sie der Nutzung zu. Details in unserer{" "}
             <Link to="/datenschutz" className="text-primary font-semibold underline">
@@ -37,16 +37,16 @@ export default function CookieBanner() {
             </Link>
             .
           </p>
-          <div className="flex gap-2 shrink-0">
+          <div className="flex flex-col sm:flex-row gap-2 shrink-0">
             <button
               onClick={decline}
-              className="rounded-full px-4 py-2.5 text-sm font-medium text-foreground/70 border border-border hover:bg-muted transition-colors"
+              className="rounded-full px-4 py-2.5 text-xs sm:text-sm font-medium text-foreground/70 border border-border hover:bg-muted transition-colors text-center"
             >
               Weiter ohne Einwilligung
             </button>
             <button
               onClick={accept}
-              className="rounded-full px-5 py-2.5 text-sm font-semibold text-white bg-primary hover:bg-accent transition-colors"
+              className="rounded-full px-5 py-2.5 text-xs sm:text-sm font-semibold text-white bg-primary hover:bg-accent transition-colors text-center"
             >
               Alle akzeptieren
             </button>

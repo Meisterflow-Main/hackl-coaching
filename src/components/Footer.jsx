@@ -109,9 +109,9 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 pt-8 border-t border-white/10 flex flex-col md:flex-row gap-4 justify-between text-xs text-white/50">
+        <div className="mt-12 pt-8 border-t border-white/10 flex flex-col gap-4 md:flex-row md:justify-between text-xs text-white/50">
           <p>© {new Date().getFullYear()} Leo Hackl Coaching. Alle Rechte vorbehalten.</p>
-          <div className="flex gap-5">
+          <div className="flex flex-wrap gap-x-5 gap-y-2">
             <Link to="/impressum" className="hover:text-white">Impressum</Link>
             <Link to="/datenschutz" className="hover:text-white">Datenschutzerklärung</Link>
             <Link to="/faq" className="hover:text-white">FAQ</Link>

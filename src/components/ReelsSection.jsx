@@ -59,6 +59,7 @@ function ReelCard({ reel, index }) {
           muted
           loop
           playsInline
+          preload="metadata"
           className="absolute inset-0 h-full w-full object-cover"
           onClick={togglePlay}
         />
