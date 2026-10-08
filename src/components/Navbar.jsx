@@ -61,17 +61,17 @@ export default function Navbar() {
               onMouseEnter={() => setDienstleistungenOpen(true)}
               onMouseLeave={() => setDienstleistungenOpen(false)}
             >
-              <button
+              <Link
+                to="/dienstleistungen"
                 className={`relative flex items-center gap-1 whitespace-nowrap px-2 py-2 text-sm font-medium rounded-md transition-colors ${
                   location.pathname === "/dienstleistungen" || ["/aengste", "/verhaltensmuster", "/burnout", "/beziehungskonflikte"].some((p) => location.pathname.startsWith(p))
                     ? (scrolled ? "text-primary" : "text-white")
                     : (scrolled ? "text-foreground/80 hover:text-primary" : "text-white/80 hover:text-white")
                 }`}
-                onClick={() => setDienstleistungenOpen((v) => !v)}
               >
                 Dienstleistungen
                 <ChevronDown className={`h-3.5 w-3.5 transition-transform ${dienstleistungenOpen ? "rotate-180" : ""}`} />
-              </button>
+              </Link>
               {dienstleistungenOpen && (
                 <div className="absolute left-0 top-full pt-2 w-64 z-50">
                   <div className="rounded-2xl glass border border-border shadow-xl p-2">
@@ -118,18 +118,18 @@ export default function Navbar() {
               onMouseEnter={() => setRegionenOpen(true)}
               onMouseLeave={() => setRegionenOpen(false)}
             >
-              <button
+              <Link
+                to="/regionen"
                 className={`relative flex items-center gap-1 whitespace-nowrap px-2 py-2 text-sm font-medium rounded-md transition-colors ${
                   location.pathname.startsWith("/regionen") ? (scrolled ? "text-primary" : "text-white") : (scrolled ? "text-foreground/80 hover:text-primary" : "text-white/80 hover:text-white")
                 }`}
-                onClick={() => setRegionenOpen((v) => !v)}
               >
                 Regionen
                 <ChevronDown className={`h-3.5 w-3.5 transition-transform ${regionenOpen ? "rotate-180" : ""}`} />
                 {location.pathname.startsWith("/regionen") && (
                   <span className="absolute left-3 right-3 -bottom-0.5 h-0.5 bg-accent rounded-full" />
                 )}
-              </button>
+              </Link>
               {regionenOpen && (
                 <div className="absolute right-0 top-full pt-2 w-64 z-50">
                   <div className="rounded-2xl glass border border-border shadow-xl p-2 max-h-[70vh] overflow-y-auto">

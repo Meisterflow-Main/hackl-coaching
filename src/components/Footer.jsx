@@ -86,8 +86,11 @@ export default function Footer() {
               <li><Link to="/verhaltensmuster" className="hover:text-white">Verhaltensmuster</Link></li>
               <li><Link to="/burnout" className="hover:text-white">Burnout</Link></li>
               <li><Link to="/beziehungskonflikte" className="hover:text-white">Beziehungskonflikte</Link></li>
+              <li><Link to="/prinzip-der-aufloesung" className="hover:text-white">Methode</Link></li>
+              <li><Link to="/erfahrungsberichte" className="hover:text-white">Erfahrungsberichte</Link></li>
               <li><Link to="/ueber-mich" className="hover:text-white">Über mich</Link></li>
               <li><Link to="/blog" className="hover:text-white">Blog</Link></li>
+              <li><Link to="/faq" className="hover:text-white">FAQ</Link></li>
               <li><Link to="/kontakt" className="hover:text-white">Kontakt</Link></li>
             </ul>
           </div>
