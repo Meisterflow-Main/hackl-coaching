@@ -22,8 +22,13 @@ export const BUSINESS = {
   geo: { lat: 47.2889657, lng: 8.5706351 },
   priceRange: "$$",
   areaServed: "Schweiz",
-  openingHours: "Mo-Fr 08:00-19:00",
+  openingHours: "Mo-Fr 08:00-19:00, Sa nach Vereinbarung",
   mapsUrl: "https://www.google.com/maps/place/Leo+Hackl+Coaching/@47.2889657,8.5706351,17z",
+  whatsappUrl: "https://wa.me/41794335072",
+  sameAs: [
+    "https://www.google.com/maps/place/Leo+Hackl+Coaching/@47.2889657,8.5706351,17z",
+    "https://wa.me/41794335072",
+  ],
 };
 
 export const DEFAULT_OG_IMAGE = BUSINESS.image;
@@ -114,8 +119,14 @@ export function organizationSchema() {
     "@context": "https://schema.org",
     "@type": "Organization",
     name: BUSINESS.name,
+    legalName: BUSINESS.legalName,
+    description: BUSINESS.description,
     url: BASE_URL,
-    logo: BUSINESS.logo,
+    logo: {
+      "@type": "ImageObject",
+      url: BUSINESS.logo,
+    },
+    image: BUSINESS.image,
     telephone: BUSINESS.phone,
     email: BUSINESS.email,
     address: {
@@ -123,8 +134,100 @@ export function organizationSchema() {
       streetAddress: BUSINESS.streetAddress,
       addressLocality: BUSINESS.addressLocality,
       postalCode: BUSINESS.postalCode,
+      addressRegion: BUSINESS.addressRegion,
       addressCountry: BUSINESS.addressCountry,
     },
+    contactPoint: {
+      "@type": "ContactPoint",
+      telephone: BUSINESS.phone,
+      email: BUSINESS.email,
+      contactType: "customer service",
+      areaServed: "CH",
+      availableLanguage: ["German"],
+    },
+    sameAs: BUSINESS.sameAs,
+    founder: {
+      "@type": "Person",
+      name: "Leo Hackl",
+      jobTitle: "Psychologischer Berater & Systemischer Hypnotherapeut",
+    },
+    employee: {
+      "@type": "Person",
+      name: "Leo Hackl",
+      jobTitle: "Psychologischer Berater & Systemischer Hypnotherapeut",
+    },
+    knowsAbout: [
+      "Psychologische Beratung",
+      "Angstbehandlung",
+      "Phobieauflösung",
+      "Hypnosystemische Therapie",
+      "Burnout-Behandlung",
+      "Verhaltensmuster-Auflösung",
+      "Neuroplastizität",
+      "Systemische Hypnotherapie",
+    ],
+    areaServed: BUSINESS.areaServed,
+  };
+}
+
+export function websiteSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: BUSINESS.name,
+    alternateName: "Hackl Coaching",
+    url: BASE_URL,
+    description: BUSINESS.description,
+    inLanguage: "de-CH",
+    publisher: {
+      "@type": "Organization",
+      name: BUSINESS.name,
+      logo: {
+        "@type": "ImageObject",
+        url: BUSINESS.logo,
+      },
+    },
+  };
+}
+
+export function personSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: "Leo Hackl",
+    jobTitle: "Psychologischer Berater & Systemischer Hypnotherapeut",
+    description:
+      "Psychologe und systemischer Hypnotherapeut mit über 30 Jahren praktischer Erfahrung. Hat über 2'000 Klienten bei der Auflösung von Ängsten, Phobien, Verhaltensmustern und Burnout begleitet.",
+    image: "https://www.hacklcoaching.ch/wp-content/uploads/2010/10/Leone.jpeg",
+    url: `${BASE_URL}/ueber-mich`,
+    worksFor: {
+      "@type": "Organization",
+      name: BUSINESS.name,
+      url: BASE_URL,
+    },
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: BUSINESS.streetAddress,
+      addressLocality: BUSINESS.addressLocality,
+      postalCode: BUSINESS.postalCode,
+      addressRegion: BUSINESS.addressRegion,
+      addressCountry: BUSINESS.addressCountry,
+    },
+    knowsAbout: [
+      "Psychologische Beratung",
+      "Angstbehandlung",
+      "Phobieauflösung",
+      "Hypnosystemische Therapie",
+      "Burnout-Behandlung",
+      "Verhaltensmuster-Auflösung",
+      "Neuroplastizität",
+      "Systemische Hypnotherapie",
+    ],
+    alumniOf: {
+      "@type": "EducationalOrganization",
+      name: "Psychologiestudium",
+    },
+    sameAs: BUSINESS.sameAs,
   };
 }
 
@@ -160,9 +263,8 @@ export function localBusinessSchema() {
       opens: "08:00",
       closes: "19:00",
     },
-    sameAs: [
-      "https://www.google.com/maps/place/Leo+Hackl+Coaching/@47.2889657,8.5706351,17z",
-    ],
+    sameAs: BUSINESS.sameAs,
+    hasMap: BUSINESS.mapsUrl,
   };
 }
 
