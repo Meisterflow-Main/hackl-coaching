@@ -13,22 +13,18 @@ export const moneyPageRegions = {
   kilchberg: { name: "Kilchberg", regionSlug: "psychologische-beratung-kilchberg" },
   waedenswil: { name: "Wädenswil", regionSlug: "psychologische-beratung-waedenswil" },
   meilen: { name: "Meilen", regionSlug: "psychologische-beratung-meilen" },
+  adliswil: { name: "Adliswil", regionSlug: "psychologische-beratung-adliswil" },
+  rueschlikon: { name: "Rüschlikon", regionSlug: "psychologische-beratung-rueschlikon" },
 };
 
-// Wichtige Dienstleistung + Ort Kombinationen (Money Pages)
-// Bewusst selektiv – keine Massenproduktion, nur kaufstarke Kombinationen.
-export const moneyPages = [
-  { slug: "aengste-thalwil", serviceSlug: "aengste", regionSlug: "thalwil" },
-  { slug: "aengste-zuerich", serviceSlug: "aengste", regionSlug: "zuerich" },
-  { slug: "aengste-horgen", serviceSlug: "aengste", regionSlug: "horgen" },
-  { slug: "aengste-kilchberg", serviceSlug: "aengste", regionSlug: "kilchberg" },
-  { slug: "burnout-zuerich", serviceSlug: "burnout", regionSlug: "zuerich" },
-  { slug: "burnout-thalwil", serviceSlug: "burnout", regionSlug: "thalwil" },
-  { slug: "verhaltensmuster-zuerich", serviceSlug: "verhaltensmuster", regionSlug: "zuerich" },
-  { slug: "verhaltensmuster-thalwil", serviceSlug: "verhaltensmuster", regionSlug: "thalwil" },
-  { slug: "beziehungskonflikte-zuerich", serviceSlug: "beziehungskonflikte", regionSlug: "zuerich" },
-  { slug: "beziehungskonflikte-thalwil", serviceSlug: "beziehungskonflikte", regionSlug: "thalwil" },
-];
+// Dienstleistung + Ort Kombinationen (Money Pages)
+// Jede Dienstleistung erhält dieselben 6 Orte.
+const MONEY_PAGE_SERVICES = ["aengste", "verhaltensmuster", "burnout", "beziehungskonflikte"];
+const MONEY_PAGE_ORTE = ["thalwil", "zuerich", "horgen", "adliswil", "rueschlikon", "waedenswil"];
+
+export const moneyPages = MONEY_PAGE_SERVICES.flatMap((serviceSlug) =>
+  MONEY_PAGE_ORTE.map((regionSlug) => ({ slug: `${serviceSlug}-${regionSlug}`, serviceSlug, regionSlug }))
+);
 
 export const getMoneyPageBySlug = (slug) => moneyPages.find((mp) => mp.slug === slug);
 
