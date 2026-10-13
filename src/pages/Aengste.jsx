@@ -24,7 +24,7 @@ export default function Aengste() {
       <PageHeader
         eyebrow="Ängste & Phobien"
         title="Ängste loszuwerden ist erstaunlich schnell möglich."
-        subtitle="Für spezifische Ängste, also Phobien, braucht es erfahrungsgemäss zwei bis drei Sitzungen innert vier bis zehn Wochen. Diese Angaben beruhen auf Erfahrung mit über 4'000 gelösten Fällen."
+        subtitle="Dauer und Anzahl der Sitzungen richten sich nach deinem individuellen Bedarf. Diese Angaben beruhen auf Erfahrung mit über 4'000 gelösten Fällen."
         breadcrumbs={[{ label: "Start", to: "/" }, { label: "Dienstleistungen", to: "/dienstleistungen" }, { label: "Ängste & Phobien" }]}
       />
 
@@ -80,7 +80,7 @@ export default function Aengste() {
 
           <div className="mt-16 grid gap-6 md:grid-cols-3">
             {[
-              { icon: Clock, t: "2–3 Sitzungen", d: "Bei spezifischen Phobien innert 4–10 Wochen." },
+              { icon: Clock, t: "Individuell", d: "Dauer und Anzahl der Sitzungen richten sich nach deinem Bedarf." },
               { icon: Brain, t: "Neuronale Plastizität", d: "Angst-Netzwerke werden neu verdrahtet – restlos und dauerhaft." },
               { icon: ShieldCheck, t: "Über 90% Erfolg", d: "Das Ziel ist in über 90% der Fälle erreicht." },
             ].map((c, i) => (
