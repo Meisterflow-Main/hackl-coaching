@@ -64,11 +64,6 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="tel:0794335072" className="flex items-center gap-3 hover:text-white">
-                  <Phone className="h-4 w-4 shrink-0 text-accent" /> 079 433 50 72
-                </a>
-              </li>
-              <li>
                 <a href="mailto:info@hacklcoaching.ch" className="flex items-center gap-3 hover:text-white">
                   <Mail className="h-4 w-4 shrink-0 text-accent" /> info@hacklcoaching.ch
                 </a>
