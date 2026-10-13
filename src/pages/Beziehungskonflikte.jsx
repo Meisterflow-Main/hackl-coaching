@@ -74,6 +74,35 @@ export default function Beziehungskonflikte() {
           </div>
 
           <ScrollReveal>
+            <div className="mt-16 rounded-2xl border border-border bg-white p-8 shadow-sm">
+              <h3 className="font-heading text-xl font-bold text-primary mb-4 flex items-center gap-2">
+                <HelpCircle className="h-5 w-5 text-accent" /> Was ist eine zirkuläre Transaktion?
+              </h3>
+              <div className="space-y-4 text-foreground/70 leading-relaxed">
+                <p>
+                  Eine <strong>zirkuläre Transaktion</strong> entsteht, wenn beide Seiten einer
+                  Beziehung mit ihrer jeweiligen Reaktion genau das Verhalten des anderen
+                  hervorrufen, das sie selbst kritisieren. Es entsteht ein geschlossener Kreislauf,
+                  in dem Ursache und Wirkung nicht mehr voneinander zu trennen sind.
+                </p>
+                <p>
+                  Ein typisches Beispiel: Ein Partner zieht sich zurück, weil er sich kritisiert
+                  fühlt. Der andere empfindet das Zurückziehen als Desinteresse und kritisiert
+                  deshalb mehr. Die vermehrte Kritik bewirkt noch mehr Rückzug, der Rückzug bewirkt
+                  noch mehr Kritik, und so weiter. Beide sind überzeugt, nur zu reagieren, beide
+                  halten den anderen für den Auslöser.
+                </p>
+                <p>
+                  Weil sich dieser Kreislauf selbst verstärkt, ist er von innen kaum zu durchbrechen.
+                  Jeder Schritt, der als Lösung gemeint ist, wird vom anderen als neuer Angriff
+                  wahrgenommen. Erst eine aussen stehende Person kann den Kreis sichtbar machen und
+                  gemeinsam mit beiden Beteiligten auflösen.
+                </p>
+              </div>
+            </div>
+          </ScrollReveal>
+
+          <ScrollReveal>
             <div className="mt-16 grid gap-6 md:grid-cols-2">
               <div className="rounded-2xl border-l-4 border-accent bg-secondary/40 p-8">
                 <h3 className="font-heading text-xl font-bold text-primary mb-3">Lösung</h3>
