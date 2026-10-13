@@ -116,6 +116,8 @@ export default function Dienstleistungen() {
               { to: "/regionen/psychologische-beratung-thalwil", label: "Psychologische Beratung Thalwil" },
               { to: "/regionen/psychologische-beratung-zuerich", label: "Psychologische Beratung Zürich" },
               { to: "/regionen/psychologische-beratung-horgen", label: "Psychologische Beratung Horgen" },
+              { to: "/regionen/psychologische-beratung-adliswil", label: "Psychologische Beratung Adliswil" },
+              { to: "/regionen/psychologische-beratung-rueschlikon", label: "Psychologische Beratung Rüschlikon" },
               { to: "/regionen/psychologische-beratung-waedenswil", label: "Psychologische Beratung Wädenswil" },
             ],
           },
