@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Phone, ChevronDown, MapPin } from "lucide-react";
 import { regions } from "@/data/regions";
+import { services } from "@/data/services";
 
 const NAV_LINKS = [
   { label: "Über mich", to: "/ueber-mich" },
@@ -9,16 +10,6 @@ const NAV_LINKS = [
   { label: "Hypnose & Methode", to: "/hypnose-thalwil" },
   { label: "Videos", to: "/videos" },
   { label: "Kontakt", to: "/kontakt" },
-];
-
-// 6 Behandlungen – gleiche Reihenfolge wie auf der Startseite
-const NAV_SERVICES = [
-  { title: "Verhaltensmuster & Selbstsabotage", to: "/verhaltensmuster" },
-  { title: "Ängste & Phobien", to: "/aengste" },
-  { title: "Schlafstörungen", to: "/aengste" },
-  { title: "Burnout & Belastungsdepression", to: "/burnout" },
-  { title: "Standortbestimmung (Passion Test)", to: "/prinzip-der-aufloesung" },
-  { title: "Beziehungskonflikte", to: "/beziehungskonflikte" },
 ];
 
 export default function Navbar() {
@@ -91,10 +82,10 @@ export default function Navbar() {
                       Alle Dienstleistungen
                     </Link>
                     <div className="my-1 h-px bg-border" />
-                    {NAV_SERVICES.map((s) => (
+                    {services.map((s) => (
                       <Link
-                        key={s.title}
-                        to={s.to}
+                        key={s.slug}
+                        to={s.link}
                         className="block px-3 py-2.5 rounded-lg text-sm text-foreground/80 hover:bg-primary/10 hover:text-primary transition-colors"
                       >
                         {s.title}
@@ -219,10 +210,10 @@ export default function Navbar() {
               >
                 Alle Dienstleistungen
               </Link>
-              {NAV_SERVICES.map((s) => (
+              {services.map((s) => (
                 <Link
-                  key={s.title}
-                  to={s.to}
+                  key={s.slug}
+                  to={s.link}
                   className="px-4 py-2.5 rounded-lg text-sm text-foreground/70 hover:bg-muted hover:text-primary transition-colors"
                 >
                   {s.title}
