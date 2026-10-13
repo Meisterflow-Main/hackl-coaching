@@ -5,7 +5,6 @@ import { regions } from "@/data/regions";
 import { services } from "@/data/services";
 
 const NAV_LINKS = [
-  { label: "Start", to: "/" },
   { label: "Über mich", to: "/ueber-mich" },
   { label: "Erfahrungsberichte", to: "/erfahrungsberichte" },
   { label: "Hypnose & Methode", to: "/hypnose-thalwil" },
