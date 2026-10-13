@@ -86,6 +86,11 @@ export const PAGE_META = {
     description: "14 Videos von Leo Hackl: Entstehung und Auflösung von Verhaltensmuster, Ängste wie Flugangst und Prüfungsangst, Leidenschaft im Beruf, Rauchen aufhören und mehr.",
     canonicalPath: "/videos",
   },
+  "/hypnose-thalwil": {
+    title: "Hypnose in Thalwil | Leo Hackl Coaching – Hypnosystemische Methode",
+    description: "Hypnose in Thalwil bei Leo Hackl: sanfte, natürliche und dauerhafte Auflösung von Ängsten, Phobien, Verhaltensmustern und Blockaden. Über 4'000 gelöste Fälle in 30 Jahren.",
+    canonicalPath: "/hypnose-thalwil",
+  },
   "/kontakt": {
     title: "Kontakt & Termin anfragen | Leo Hackl Coaching Thalwil",
     description: "Vereinbaren Sie Ihr persönliches Erstgespräch in Thalwil. Telefon 079 433 50 72 oder Kontaktformular. Praxis an der Zehntenstrasse 17, wenige Minuten vom Bahnhof.",

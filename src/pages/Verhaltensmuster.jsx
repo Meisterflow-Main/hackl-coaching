@@ -1,5 +1,6 @@
 import React from "react";
-import { Brain, Repeat, Lightbulb, Sparkles } from "lucide-react";
+import { Link } from "react-router-dom";
+import { Brain, Repeat, Lightbulb, Sparkles, ArrowRight } from "lucide-react";
 import PageHeader from "@/components/PageHeader";
 import CTASection from "@/components/CTASection";
 import ScrollReveal from "@/components/ScrollReveal";
@@ -105,6 +106,67 @@ export default function Verhaltensmuster() {
         </div>
       </section>
 
+      {/* Hypnose-Sektion */}
+      <section className="py-20 md:py-28 bg-secondary/30">
+        <div className="mx-auto max-w-7xl px-5 lg:px-8">
+          <ScrollReveal>
+            <div className="grid gap-10 lg:grid-cols-2 lg:gap-16 items-center">
+              <div>
+                <span className="text-sm font-semibold uppercase tracking-[0.2em] text-accent">
+                  Die Rolle der Hypnose
+                </span>
+                <h2 className="mt-3 font-heading text-3xl md:text-4xl font-bold text-primary leading-tight">
+                  Wie Hypnose Verhaltensmuster auflöst
+                </h2>
+                <p className="mt-5 text-foreground/70 leading-relaxed">
+                  Verhaltensmuster sitzen nicht im bewussten Denken – sie sind im
+                  Unterbewusstsein verankert. Deshalb scheitern Willenskraft, Vorsätze und
+                  gute Ratschläge: Sie greifen an der falschen Stelle an. Hypnose öffnet die
+                  Tür zum Unterbewusstsein.
+                </p>
+                <p className="mt-4 text-foreground/70 leading-relaxed">
+                  In der hypnotischen Entspannung wird das Ursprungsmuster zugänglich, das
+                  das Verhalten steuert. Leo Hackl löst es nicht mit Suggestionen gegen das
+                  Symptom auf, sondern mit systemischen Interventionen an der Wurzel. Das
+                  neuronale Netzwerk, das das Muster erzeugt, wird umstrukturiert – und das
+                  Muster verschwindet dauerhaft.
+                </p>
+                <Link
+                  to="/hypnose-thalwil"
+                  className="mt-7 inline-flex items-center gap-2 rounded-full bg-accent px-6 py-3 text-sm font-semibold text-white hover:opacity-90 transition-opacity"
+                >
+                  Mehr zur Hypnose in Thalwil <ArrowRight className="h-4 w-4" />
+                </Link>
+              </div>
+              <div className="space-y-5">
+                <div className="rounded-2xl border border-border bg-white p-7 shadow-sm">
+                  <Brain className="h-9 w-9 text-accent mb-4" />
+                  <h3 className="font-heading text-xl font-bold text-primary mb-2">
+                    An der Wurzel, nicht am Symptom
+                  </h3>
+                  <p className="text-sm text-foreground/70 leading-relaxed">
+                    Hypnose macht das Muster zugänglich. Die systemische Intervention löst
+                    es auf. So wird die Veränderung dauerhaft – nicht durch Kampf, sondern
+                    durch Auflösung.
+                  </p>
+                </div>
+                <div className="rounded-2xl border border-primary/20 bg-primary/5 p-7">
+                  <Sparkles className="h-9 w-9 text-primary mb-4" />
+                  <h3 className="font-heading text-xl font-bold text-primary mb-2">
+                    Oft in 1 bis 3 Sitzungen
+                  </h3>
+                  <p className="text-sm text-foreground/70 leading-relaxed">
+                    Was Jahre gedauert hat, kann in Stunden aufgelöst werden. Die neuronale
+                    Plastizität des Gehirns macht es möglich – vorausgesetzt, die Wurzel
+                    wird bearbeitet.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </ScrollReveal>
+        </div>
+      </section>
+
       <ServiceMoneyPages serviceSlug="verhaltensmuster" />
 
       <LinkHub
@@ -116,6 +178,7 @@ export default function Verhaltensmuster() {
               { to: "/aengste", label: "Ängste & Phobien auflösen" },
               { to: "/burnout", label: "Burnout & Belastungsdepression behandeln" },
               { to: "/beziehungskonflikte", label: "Beziehungskonflikte lösen" },
+              { to: "/hypnose-thalwil", label: "Hypnose in Thalwil – die hypnosystemische Methode" },
               { to: "/prinzip-der-aufloesung", label: "Das Prinzip der hypnosystemischen Methode" },
             ],
           },

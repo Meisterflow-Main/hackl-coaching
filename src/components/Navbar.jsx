@@ -8,7 +8,7 @@ const NAV_LINKS = [
   { label: "Start", to: "/" },
   { label: "Über mich", to: "/ueber-mich" },
   { label: "Erfahrungsberichte", to: "/erfahrungsberichte" },
-  { label: "Methode", to: "/prinzip-der-aufloesung" },
+  { label: "Hypnose & Methode", to: "/hypnose-thalwil" },
   { label: "Videos", to: "/videos" },
   { label: "Kontakt", to: "/kontakt" },
 ];

@@ -27,6 +27,7 @@ import FAQ from '@/pages/FAQ';
 import Blog from '@/pages/Blog';
 import BlogArticle from '@/pages/BlogArticle';
 import Videos from '@/pages/Videos';
+import Hypnose from '@/pages/Hypnose';
 import Bewertungen from '@/pages/Bewertungen';
 import MoneyPage from '@/pages/MoneyPage';
 import { moneyPages } from '@/data/moneyPages';
@@ -72,6 +73,7 @@ const AuthenticatedApp = () => {
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog/:slug" element={<BlogArticle />} />
         <Route path="/videos" element={<Videos />} />
+        <Route path="/hypnose-thalwil" element={<Hypnose />} />
         <Route path="/bewertungen" element={<Bewertungen />} />
         {moneyPages.map((mp) => (
           <Route key={mp.slug} path={`/${mp.slug}`} element={<MoneyPage slug={mp.slug} />} />
