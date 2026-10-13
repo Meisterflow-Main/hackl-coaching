@@ -75,7 +75,7 @@ const FAQ_ITEMS = [
       {
         question: "Wie vereinbare ich einen Termin?",
         answer:
-          "Rufen Sie uns an unter 044 772 89 79 oder nutzen Sie das Kontaktformular auf unserer Website. Wir vereinbaren ein kostenloses Erstgespräch und besprechen Ihr Anliegen unverbindlich.",
+          "Rufen Sie uns an unter 079 433 50 72 oder nutzen Sie das Kontaktformular auf unserer Website. Wir vereinbaren ein kostenloses Erstgespräch und besprechen Ihr Anliegen unverbindlich.",
       },
     ],
   },

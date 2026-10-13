@@ -29,13 +29,13 @@ export default function Kontakt() {
                 Termin telefonisch oder über das Kontaktformular.
               </p>
               <div className="mt-8 space-y-5">
-                <a href="tel:0447728979" className="flex items-start gap-4 group">
+                <a href="tel:0794335072" className="flex items-start gap-4 group">
                   <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
                     <Phone className="h-5 w-5" />
                   </span>
                   <span>
                     <span className="block text-sm text-foreground/60">Telefon</span>
-                    <span className="font-semibold text-primary">044 772 89 79</span>
+                    <span className="font-semibold text-primary">079 433 50 72</span>
                   </span>
                 </a>
                 <a href="tel:0794335072" className="flex items-start gap-4 group">

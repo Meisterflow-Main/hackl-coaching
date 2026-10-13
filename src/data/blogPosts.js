@@ -33,7 +33,7 @@ export const blogPosts = [
       },
       {
         type: "p",
-        text: "Die meisten spezifischen Phobien lassen sich in [[1 bis 3 Sitzungen|/aengste]] dauerhaft auflösen. Das klingt für viele Menschen fast zu gut, um wahr zu sein. Doch die neurowissenschaftliche Erklärung ist einleuchtend: Eine Phobie ist nichts anderes als ein fehlerhaft verdrahtetes neuronales Netzwerk. Wenn dieses Netzwerk einmal korrekt umstrukturiert ist, kehrt die Angst nicht zurück. In meiner Praxis in Thalwil arbeite ich seit über 30 Jahren mit dieser Methode und durfte mehr als 2'000 Klienten zu einer dauerhaften Lösung verhelfen.",
+        text: "Die meisten spezifischen Phobien lassen sich in [[1 bis 3 Sitzungen|/aengste]] dauerhaft auflösen. Das klingt für viele Menschen fast zu gut, um wahr zu sein. Doch die neurowissenschaftliche Erklärung ist einleuchtend: Eine Phobie ist nichts anderes als ein fehlerhaft verdrahtetes neuronales Netzwerk. Wenn dieses Netzwerk einmal korrekt umstrukturiert ist, kehrt die Angst nicht zurück. In meiner Praxis in Thalwil arbeite ich seit über 30 Jahren mit dieser Methode und durfte mehr als 4'000 Klienten zu einer dauerhaften Lösung verhelfen.",
       },
       {
         type: "p",
@@ -132,7 +132,7 @@ export const blogPosts = [
       },
       {
         type: "p",
-        text: "Mit über 30 Jahren Erfahrung und mehr als 2'000 gelösten Fällen ([[Über Leo Hackl|/ueber-mich]]) kann ich in der Regel sehr gut einschätzen, ob eine Phobie isoliert bearbeitet werden kann oder ob begleitende Muster berücksichtigt werden müssen. Das ist der Unterschied zwischen einer schnellen Lösung und einer dauerhaften Lösung.",
+        text: "Mit über 30 Jahren Erfahrung und mehr als 4'000 gelösten Fällen ([[Über Leo Hackl|/ueber-mich]]) kann ich in der Regel sehr gut einschätzen, ob eine Phobie isoliert bearbeitet werden kann oder ob begleitende Muster berücksichtigt werden müssen. Das ist der Unterschied zwischen einer schnellen Lösung und einer dauerhaften Lösung.",
       },
       {
         type: "h2",
@@ -153,7 +153,7 @@ export const blogPosts = [
       {
         question: "Kann eine Phobie wirklich dauerhaft aufgeloest werden?",
         answer:
-          "Ja. Eine Phobie ist ein fehlerhaft verdrahtetes neuronales Netzwerk. Wenn dieses Netzwerk einmal korrekt umstrukturiert ist, kehrt die Angst nicht zurueck. Voraussetzung ist, dass die Wurzel der Angst bearbeitet wird und nicht nur das Symptom. In meiner Praxis mit ueber 2'000 geloesten Faellen ist die Erfolgsquote bei spezifischen Phobien ueber 90 Prozent.",
+          "Ja. Eine Phobie ist ein fehlerhaft verdrahtetes neuronales Netzwerk. Wenn dieses Netzwerk einmal korrekt umstrukturiert ist, kehrt die Angst nicht zurueck. Voraussetzung ist, dass die Wurzel der Angst bearbeitet wird und nicht nur das Symptom. In meiner Praxis mit ueber 4'000 geloesten Faellen ist die Erfolgsquote bei spezifischen Phobien ueber 90 Prozent.",
       },
       {
         question: "Was passiert in der ersten Sitzung?",
@@ -515,7 +515,7 @@ export const blogPosts = [
       },
       {
         type: "p",
-        text: "Oft genuegen 1 bis 3 intensive Sitzungen, um ein selbstsabotierendes Muster dauerhaft aufzuloesen. Das klingt wenig, ist aber durch die neuronale Plastizitaet des Gehirns ermoeglicht. Was Jahre gedauert hat, kann in Stunden aufgeloest werden. Das ist kein Versprechen, sondern das Ergebnis von ueber 2'000 geloesten Faellen in meiner Praxis.",
+        text: "Oft genuegen 1 bis 3 intensive Sitzungen, um ein selbstsabotierendes Muster dauerhaft aufzuloesen. Das klingt wenig, ist aber durch die neuronale Plastizitaet des Gehirns ermoeglicht. Was Jahre gedauert hat, kann in Stunden aufgeloest werden. Das ist kein Versprechen, sondern das Ergebnis von ueber 4'000 geloesten Faellen in meiner Praxis.",
       },
       {
         type: "quote",
@@ -571,7 +571,7 @@ export const blogPosts = [
       {
         question: "Ist die hypnosystemische Methode wissenschaftlich fundiert?",
         answer:
-          "Die hypnosystemische Methode verbindet Erkenntnisse der Hirnforschung zur neuronalen Plastizitaet mit bewaehrter psychologischer Methodik. Die Grundlage, dass das Gehirn sich durch gezielte Intervention umstrukturieren laesst, ist neurologisch gut belegt. In meiner Praxis mit ueber 2'000 geloesten Faellen hat sich die Methode ueber 30 Jahre bewaehrt. Mehr zur Methode finden Sie auf der Seite [[Prinzip der Auflösung|/prinzip-der-aufloesung]].",
+          "Die hypnosystemische Methode verbindet Erkenntnisse der Hirnforschung zur neuronalen Plastizitaet mit bewaehrter psychologischer Methodik. Die Grundlage, dass das Gehirn sich durch gezielte Intervention umstrukturieren laesst, ist neurologisch gut belegt. In meiner Praxis mit ueber 4'000 geloesten Faellen hat sich die Methode ueber 30 Jahre bewaehrt. Mehr zur Methode finden Sie auf der Seite [[Prinzip der Auflösung|/prinzip-der-aufloesung]].",
       },
     ],
     relatedSlugs: ["wie-lange-dauert-phobie-aufloesen", "burnout-erkennen-7-warnsignale", "beziehungskonflikte-loesen"],
@@ -592,7 +592,7 @@ export const blogPosts = [
       "https://media.base44.com/images/public/6ac4ae046d53c41e9b937a32/8d8f43aad_generated_image.png",
     seoTitle: "Phobie auflösen in Zürich | Angsttherapie ohne Medikamente | Leo Hackl",
     metaDescription:
-      "Phobie in Zürich auflösen: Hypnosystemische Methode ohne Konfrontation. In 1–3 Sitzungen dauerhaft angstfrei. 15 Min. ab Zürich HB. Über 2'000 gelöste Fälle in 30 Jahren.",
+      "Phobie in Zürich auflösen: Hypnosystemische Methode ohne Konfrontation. In 1–3 Sitzungen dauerhaft angstfrei. 15 Min. ab Zürich HB. Über 4'000 gelöste Fälle in 30 Jahren.",
     popular: false,
     sections: [
       {
@@ -606,7 +606,7 @@ export const blogPosts = [
       },
       {
         type: "p",
-        text: "In meiner Praxis in Thalwil, mit der S-Bahn in 15 Minuten ab Zürich Hauptbahnhof erreichbar, arbeite ich seit über 30 Jahren mit dieser Methode. Mehr als 2'000 Klienten – viele davon aus Zürich und Umgebung – konnten ihre Ängste und Phobien dauerhaft überwinden.",
+        text: "In meiner Praxis in Thalwil, mit der S-Bahn in 15 Minuten ab Zürich Hauptbahnhof erreichbar, arbeite ich seit über 30 Jahren mit dieser Methode. Mehr als 4'000 Klienten – viele davon aus Zürich und Umgebung – konnten ihre Ängste und Phobien dauerhaft überwinden.",
       },
       {
         type: "infobox",
@@ -712,7 +712,7 @@ export const blogPosts = [
       {
         type: "infobox",
         title: "Angstfrei in Zürich – in wenigen Sitzungen",
-        text: "Dauerhafte Auflösung ohne Konfrontation. Ohne Medikamente, ohne Schmerz. 15 Minuten mit der S-Bahn ab Zürich HB. Über 2'000 gelöste Fälle in 30 Jahren Praxis.",
+        text: "Dauerhafte Auflösung ohne Konfrontation. Ohne Medikamente, ohne Schmerz. 15 Minuten mit der S-Bahn ab Zürich HB. Über 4'000 gelöste Fälle in 30 Jahren Praxis.",
         to: "/aengste",
         linkText: "Zur Dienstleistungsseite",
       },
@@ -835,7 +835,7 @@ export const blogPosts = [
       },
       {
         type: "p",
-        text: "Mit über 30 Jahren Erfahrung und mehr als 2'000 gelösten Fällen kann ich in der Regel sehr gut einschätzen, ob eine Phobie isoliert bearbeitet werden kann oder ob begleitende Muster berücksichtigt werden müssen. Das ist der Unterschied zwischen einer schnellen Lösung und einer dauerhaften Lösung.",
+        text: "Mit über 30 Jahren Erfahrung und mehr als 4'000 gelösten Fällen kann ich in der Regel sehr gut einschätzen, ob eine Phobie isoliert bearbeitet werden kann oder ob begleitende Muster berücksichtigt werden müssen. Das ist der Unterschied zwischen einer schnellen Lösung und einer dauerhaften Lösung.",
       },
       {
         type: "p",
@@ -912,7 +912,7 @@ export const blogPosts = [
       {
         question: "Ist die Methode wissenschaftlich fundiert?",
         answer:
-          "Die hypnosystemische Methode verbindet Erkenntnisse der Hirnforschung zur neuronalen Plastizität mit bewährter psychologischer Methodik. Die Grundlage, dass das Gehirn sich durch gezielte Intervention umstrukturieren lässt, ist neurologisch gut belegt. In meiner Praxis mit über 2'000 gelösten Fällen hat sich die Methode über 30 Jahre bewährt. Mehr dazu auf der Seite [[Prinzip der Auflösung|/prinzip-der-aufloesung]].",
+          "Die hypnosystemische Methode verbindet Erkenntnisse der Hirnforschung zur neuronalen Plastizität mit bewährter psychologischer Methodik. Die Grundlage, dass das Gehirn sich durch gezielte Intervention umstrukturieren lässt, ist neurologisch gut belegt. In meiner Praxis mit über 4'000 gelösten Fällen hat sich die Methode über 30 Jahre bewährt. Mehr dazu auf der Seite [[Prinzip der Auflösung|/prinzip-der-aufloesung]].",
       },
       {
         question: "Kann ich auch abends oder am Wochenende einen Termin vereinbaren?",
@@ -943,12 +943,12 @@ export const blogPosts = [
       "https://media.base44.com/images/public/6ac4ae046d53c41e9b937a32/7c64b8ca1_generated_image.png",
     seoTitle: "Beziehungskonflikte lösen | Hypnosystemische Methode | Leo Hackl Coaching",
     metaDescription:
-      "Beziehungskonflikte dauerhaft lösen: Wie unbewusste Muster Konflikte erzeugen und wie die hypnosystemische Methode sie an der Wurzel auflöst. Mit über 2'000 gelösten Fällen in Thalwil.",
+      "Beziehungskonflikte dauerhaft lösen: Wie unbewusste Muster Konflikte erzeugen und wie die hypnosystemische Methode sie an der Wurzel auflöst. Mit über 4'000 gelösten Fällen in Thalwil.",
     popular: false,
     sections: [
       { type: "h2", id: "einleitung", text: "Wenn man sich im Kreis dreht" },
       { type: "p", text: "Beziehungskonflikte gehoeren zu den belastendsten Erfahrungen, die ein Mensch machen kann. Ob in der Partnerschaft, in der Familie oder am Arbeitsplatz: Wenn die Kommunikation festgefahren ist, wiederholen sich die gleichen Argumente, die gleichen Vorwuerfe und die gleichen Enttaeuschungen. Man weiss, dass es nicht weitergeht, aber man findet keinen Ausweg. In diesem Artikel erklaere ich, wie Beziehungskonflikte entstehen, warum sie sich so hartnaeckig wiederholen und wie sie sich mit der [[hypnosystemischen Methode|/prinzip-der-aufloesung]] dauerhaft aufloesen lassen." },
-      { type: "p", text: "In meiner Praxis in Thalwil arbeite ich seit ueber 30 Jahren mit Klienten, die unter Beziehungskonflikten leiden. Die Erfahrung aus mehr als 2'000 geloesten Faellen zeigt: Die meisten Beziehungskonflikte sind keine Charakterprobleme. Sie sind unbewusste Muster, die in der Vergangenheit gelernt wurden und sich automatisch wiederholen." },
+      { type: "p", text: "In meiner Praxis in Thalwil arbeite ich seit ueber 30 Jahren mit Klienten, die unter Beziehungskonflikten leiden. Die Erfahrung aus mehr als 4'000 geloesten Faellen zeigt: Die meisten Beziehungskonflikte sind keine Charakterprobleme. Sie sind unbewusste Muster, die in der Vergangenheit gelernt wurden und sich automatisch wiederholen." },
       { type: "infobox", title: "Professionelle Hilfe bei Beziehungskonflikten", text: "Sie stecken in einem Beziehungskonflikt fest? Auf meiner Seite [[Beziehungskonflikte|/beziehungskonflikte]] finden Sie Informationen zur Behandlung, zum Ablauf und zur Praxis in Thalwil.", to: "/beziehungskonflikte", linkText: "Zur Dienstleistungsseite" },
       { type: "h2", id: "entstehung", text: "Wie Beziehungskonflikte entstehen" },
       { type: "p", text: "Beziehungskonflikte entstehen selten durch bewusste Entscheidungen. Meist sind es unbewusste Muster, die das Verhalten steuern. Diese Muster haben sich in der Kindheit oder in frueheren Beziehungen gebildet und sind als neuronale Netzwerke im Gehirn gespeichert. Sie laufen automatisch ab, ohne dass wir es merken." },
@@ -1035,7 +1035,7 @@ export const blogPosts = [
     sections: [
       { type: "h2", id: "einleitung", text: "Hypnose: Missverstanden und doch wirksam" },
       { type: "p", text: "Wenn das Wort Hypnose faellt, denken viele Menschen an Buehnenshows, an pendelnde Uhren oder an Menschen, die willenlos Befehle befolgen. Diese Bilder haben mit der Hypnose in der psychologischen Beratung nichts zu tun. In diesem Artikel erklaere ich, was Hypnose in der [[hypnosystemischen Methode|/prinzip-der-aufloesung]] wirklich ist, wie sie wirkt und warum sie eine der sanftesten und wirksamsten Formen der psychologischen Intervention ist." },
-      { type: "p", text: "Ich arbeite seit ueber 30 Jahren mit hypnosystemischer Hypnose. In dieser Zeit durfte ich ueber 2'000 Klienten begleiten. Die Erfahrung zeigt: Hypnose ist kein Zauber, sondern eine natuerliche Faehigkeit des Gehirns, die jeder Mensch besitzt." },
+      { type: "p", text: "Ich arbeite seit ueber 30 Jahren mit hypnosystemischer Hypnose. In dieser Zeit durfte ich ueber 4'000 Klienten begleiten. Die Erfahrung zeigt: Hypnose ist kein Zauber, sondern eine natuerliche Faehigkeit des Gehirns, die jeder Mensch besitzt." },
       { type: "infobox", title: "Die hypnosystemische Methode", text: "Hypnose ist ein zentraler Bestandteil der Methode, die ich in meiner Praxis anwende. Auf der Seite [[Prinzip der Aufloesung|/prinzip-der-aufloesung]] erklaere ich die wissenschaftliche Grundlage ausfuehrlich.", to: "/prinzip-der-aufloesung", linkText: "Zur Methodenseite" },
       { type: "h2", id: "was-ist-hypnose", text: "Was ist Hypnose wirklich?" },
       { type: "p", text: "Hypnose ist ein Zustand vertiefter Entspannung und fokussierter Aufmerksamkeit. In diesem Zustand ist das Gehirn besonders empfaenglich fuer Veraenderungen auf der unbewussten Ebene. Man schlaeft nicht, man verliert nicht die Kontrolle, man ist nicht willenlos. Man ist in einem Zustand, der natuerlicherweise jeden Tag vorkommt: beim Einschlafen, beim Aufwachen, beim Tagtraeumen, beim Vertiefen in ein Buch oder einen Film." },
@@ -1099,9 +1099,9 @@ export const blogPosts = [
     popular: true,
     sections: [
       { type: "h2", id: "einleitung", text: "Der erste Schritt ist der wichtigste" },
-      { type: "p", text: "Das Erstgespraech ist fuer viele Menschen ein grosser Schritt. Man weiss nicht, was einen erwartet, hat vielleicht Sorge, beurteilt zu werden, oder fragt sich, ob das ueberhaupt hilft. In diesem Artikel erklaere ich, was im Erstgespraech passiert, wie Sie sich vorbereiten und welche Fragen Sie stellen sollten. Nach ueber 30 Jahren Praxis und mehr als 2'000 [[geloesten Faellen|/erfahrungsberichte]] weiss ich: Das Erstgespraech ist der Anfang der Loesung, nicht erst die Behandlung." },
+      { type: "p", text: "Das Erstgespraech ist fuer viele Menschen ein grosser Schritt. Man weiss nicht, was einen erwartet, hat vielleicht Sorge, beurteilt zu werden, oder fragt sich, ob das ueberhaupt hilft. In diesem Artikel erklaere ich, was im Erstgespraech passiert, wie Sie sich vorbereiten und welche Fragen Sie stellen sollten. Nach ueber 30 Jahren Praxis und mehr als 4'000 [[geloesten Faellen|/erfahrungsberichte]] weiss ich: Das Erstgespraech ist der Anfang der Loesung, nicht erst die Behandlung." },
       { type: "p", text: "Das Erstgespraech bei mir in Thalwil ist kostenlos und unverbindlich. Es dient dazu, Ihr Anliegen zu verstehen, die Methode zu erklaeren und gemeinsam zu entscheiden, ob der Weg der richtige ist. Es gibt keinen Druck und keine Verpflichtung." },
-      { type: "infobox", title: "Erstgespraech vereinbaren", text: "Sie moechten ein unverbindliches Erstgespraech vereinbaren? Rufen Sie an unter 044 772 89 79 oder nutzen Sie das [[Kontaktformular|/kontakt]]. Ich freue mich auf Ihre Anfrage.", to: "/kontakt", linkText: "Kontakt aufnehmen" },
+      { type: "infobox", title: "Erstgespraech vereinbaren", text: "Sie moechten ein unverbindliches Erstgespraech vereinbaren? Rufen Sie an unter 079 433 50 72 oder nutzen Sie das [[Kontaktformular|/kontakt]]. Ich freue mich auf Ihre Anfrage.", to: "/kontakt", linkText: "Kontakt aufnehmen" },
       { type: "h2", id: "ablauf", text: "Der Ablauf des Erstgespraechs" },
       { type: "p", text: "Das Erstgespraech folgt einem klaren, aber flexiblen Ablauf. Es dauert in der Regel 30 bis 45 Minuten und besteht aus vier Phasen:" },
       { type: "ol", items: [
@@ -1142,7 +1142,7 @@ export const blogPosts = [
       { type: "p", text: "Wenn Sie sich nach dem Erstgespraech fuer eine Behandlung entscheiden, vereinbaren wir die erste Sitzung. Diese dauert in der Regel 60 bis 90 Minuten. In dieser Sitzung erfolgt die Analyse und oft schon die erste Intervention. Viele Klienten erleben bereits nach der ersten Sitzung eine deutliche Veraenderung." },
       { type: "p", text: "Wenn Sie sich nicht entscheiden, ist das auch in Ordnung. Sie koennen sich jederzeit wieder melden, wenn Sie bereit sind. Es gibt keinen Druck und keine Verpflichtung." },
       { type: "h2", id: "tipps", text: "Tipps aus 30 Jahren Praxis" },
-      { type: "p", text: "Nach ueber 30 Jahren Praxis und mehr als 2'000 geloesten Faellen habe ich einige Beobachtungen gemacht, die Ihnen helfen koennen:" },
+      { type: "p", text: "Nach ueber 30 Jahren Praxis und mehr als 4'000 geloesten Faellen habe ich einige Beobachtungen gemacht, die Ihnen helfen koennen:" },
       { type: "ul", items: [
         "Zoegern Sie nicht. Je frueher Sie Hilfe suchen, desto schneller ist das Problem geloest. Die Zeit ist bei psychischen Belastungen ein schlechter Verbuendeter.",
         "Seien Sie offen. Sie muessen nicht an die Methode glauben, aber Offenheit hilft, sich auf den Prozess einzulassen.",
@@ -1187,7 +1187,7 @@ export const blogPosts = [
       { type: "h2", id: "einleitung", text: "Was kostet psychologische Beratung in der Schweiz?" },
       { type: "p", text: "Die Frage nach den Kosten ist eine der ersten, die mir Klienten stellen. Sie ist berechtigt, denn Transparenz ist wichtig. In diesem Artikel erklaere ich, welche Faktoren die Kosten einer psychologischen Beratung bestimmen, ob die Schweizer Krankenkasse die Kosten uebernimmt und warum eine dauerhafte Loesung oft guenstiger ist als eine langfristige Behandlung, die nur Symptome lindert." },
       { type: "p", text: "Bei Leo Hackl Coaching in Thalwil ist das [[Erstgespraech|/kontakt]] kostenlos und unverbindlich. Im Erstgespraech klaeren wir Ihren Bedarf und erstellen eine transparente Offerte. Es gibt keine versteckten Kosten." },
-      { type: "infobox", title: "Kostenloses Erstgespraech", text: "Sie moechten wissen, was Ihre Behandlung kostet? Im [[kostenlosen Erstgespraech|/kontakt]] analysieren wir Ihr Anliegen und erstellen eine transparente Offerte. Rufen Sie an unter 044 772 89 79.", to: "/kontakt", linkText: "Erstgespraech vereinbaren" },
+      { type: "infobox", title: "Kostenloses Erstgespraech", text: "Sie moechten wissen, was Ihre Behandlung kostet? Im [[kostenlosen Erstgespraech|/kontakt]] analysieren wir Ihr Anliegen und erstellen eine transparente Offerte. Rufen Sie an unter 079 433 50 72.", to: "/kontakt", linkText: "Erstgespraech vereinbaren" },
       { type: "h2", id: "faktoren", text: "Welche Faktoren bestimmen die Kosten?" },
       { type: "p", text: "Die Kosten einer psychologischen Beratung haengen von mehreren Faktoren ab:" },
       { type: "ul", items: [

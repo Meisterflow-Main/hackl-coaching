@@ -57,7 +57,7 @@ const SERVICES = [
 ];
 
 const STATS = [
-  { value: "2'000+", label: "Gelöste Fälle" },
+  { value: "4'000+", label: "Gelöste Fälle" },
   { value: "30", label: "Jahre Erfahrung" },
   { value: "90%", label: "Erfolgsquote bei Phobien" },
   { value: "2–3", label: "Sitzungen bei spezifischen Ängsten" },
@@ -92,7 +92,7 @@ export default function Home() {
               </ScrollReveal>
               <ScrollReveal delay={0.2}>
                 <p className="mt-6 text-lg text-white/70 max-w-xl leading-relaxed">
-                  Psychologische Beratung in Thalwil – mit über 2'000 gelösten Fällen. Eine
+                  Psychologische Beratung in Thalwil – mit über 4'000 gelösten Fällen. Eine
                   Kombination aus jüngster Hirnforschung und bewährter psychologischer Methode.
                   Nachhaltig. Wirksam. Menschlich.
                 </p>
@@ -106,10 +106,10 @@ export default function Home() {
                     Jetzt Termin anfragen <ArrowRight className="h-4 w-4" />
                   </Link>
                   <a
-                    href="tel:0447728979"
+                    href="tel:0794335072"
                     className="inline-flex items-center gap-2 rounded-full border border-white/30 px-7 py-3.5 text-sm font-semibold hover:bg-white/10 transition-colors"
                   >
-                    <Phone className="h-4 w-4" /> 044 772 89 79
+                    <Phone className="h-4 w-4" /> 079 433 50 72
                   </a>
                 </div>
                 <div className="mt-6">
@@ -138,7 +138,7 @@ export default function Home() {
                       <Star key={i} className="h-4 w-4 fill-current" />
                     ))}
                   </div>
-                  <p className="text-sm font-semibold text-navy">Über 2'000 Klienten geholfen</p>
+                  <p className="text-sm font-semibold text-navy">Über 4'000 Klienten geholfen</p>
                 </div>
               </div>
             </ScrollReveal>
@@ -218,7 +218,7 @@ export default function Home() {
                   </p>
                   <p>
                     Etwas von meiner Erfahrung weiterzugeben ist meine Passion. Ich durfte bis heute
-                    schon über 2'000 Betroffenen beistehen. Dabei helfen mir mein Psychologiestudium,
+                    schon über 4'000 Betroffenen beistehen. Dabei helfen mir mein Psychologiestudium,
                     die Ausbildung in systemischer Hypnotherapie sowie 30 Jahre praktischer Erfahrung.
                   </p>
                   <p className="font-semibold text-primary">

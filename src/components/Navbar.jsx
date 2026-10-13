@@ -158,13 +158,13 @@ export default function Navbar() {
 
           <div className="hidden lg:flex items-center gap-3">
             <a
-              href="tel:0447728979"
+              href="tel:0794335072"
               className={`flex items-center gap-2 whitespace-nowrap text-sm font-semibold transition-colors ${
                 scrolled ? "text-primary hover:text-accent" : "text-white hover:text-accent"
               }`}
             >
               <Phone className="h-4 w-4" />
-              044 772 89 79
+              079 433 50 72
             </a>
             <Link
               to="/kontakt"
@@ -271,10 +271,10 @@ export default function Navbar() {
             Termin anfragen
           </Link>
           <a
-            href="tel:0447728979"
+            href="tel:0794335072"
             className="inline-flex items-center justify-center gap-2 px-5 py-3 text-sm font-semibold text-primary"
           >
-            <Phone className="h-4 w-4" /> 044 772 89 79
+            <Phone className="h-4 w-4" /> 079 433 50 72
           </a>
         </nav>
       </div>

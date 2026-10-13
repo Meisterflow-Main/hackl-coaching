@@ -27,7 +27,7 @@ export default function Dienstleistungen() {
       <PageHeader
         eyebrow="Leistungen"
         title="Psychologische Beratung – meine Dienstleistungen"
-        subtitle="Ängste, Verhaltensmuster, Burnout und Beziehungskonflikte nachhaltig auflösen. Mit über 30 Jahren Erfahrung und mehr als 2'000 gelösten Fällen."
+        subtitle="Ängste, Verhaltensmuster, Burnout und Beziehungskonflikte nachhaltig auflösen. Mit über 30 Jahren Erfahrung und mehr als 4'000 gelösten Fällen."
         breadcrumbs={[
           { label: "Start", to: "/" },
           { label: "Dienstleistungen", to: "/dienstleistungen" },

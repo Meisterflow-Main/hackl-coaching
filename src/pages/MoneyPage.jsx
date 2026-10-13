@@ -40,7 +40,7 @@ export default function MoneyPage({ slug }) {
     <>
       <Seo
         title={`${service.title} in ${regionName} auflösen | Leo Hackl Coaching`}
-        description={`${service.title} in ${regionName}? Leo Hackl löst ${service.shortTitle} nachhaltig auf – mit über 2'000 gelösten Fällen. Praxis in Thalwil, wenige Minuten vom Bahnhof.`}
+        description={`${service.title} in ${regionName}? Leo Hackl löst ${service.shortTitle} nachhaltig auf – mit über 4'000 gelösten Fällen. Praxis in Thalwil, wenige Minuten vom Bahnhof.`}
         canonicalPath={`/${slug}`}
         schema={[localBusinessSchema(), serviceSchema(service, regionName), faqPageSchema(allFaqs)]}
       />
@@ -68,7 +68,7 @@ export default function MoneyPage({ slug }) {
               {service.title} in {regionName} auflösen
             </h1>
             <p className="mt-6 text-lg md:text-xl text-white/70 max-w-2xl leading-relaxed">
-              {service.moneyPageHero || `Sie leben oder arbeiten in ${regionName} und möchten ${service.title} auflösen? Bei Leo Hackl Coaching in Thalwil – ${region.whyUs[0]?.description} – finden wir gemeinsam die dauerhafte Lösung. Mit über 30 Jahren Erfahrung und mehr als 2'000 gelösten Fällen.`}
+              {service.moneyPageHero || `Sie leben oder arbeiten in ${regionName} und möchten ${service.title} auflösen? Bei Leo Hackl Coaching in Thalwil – ${region.whyUs[0]?.description} – finden wir gemeinsam die dauerhafte Lösung. Mit über 30 Jahren Erfahrung und mehr als 4'000 gelösten Fällen.`}
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
               <Link
@@ -78,10 +78,10 @@ export default function MoneyPage({ slug }) {
                 Termin anfragen <ArrowRight className="h-4 w-4" />
               </Link>
               <a
-                href="tel:0447728979"
+                href="tel:0794335072"
                 className="inline-flex items-center gap-2 rounded-full border border-white/30 px-6 py-3 text-sm font-semibold hover:bg-white/10 transition-colors"
               >
-                <Phone className="h-4 w-4" /> 044 772 89 79
+                <Phone className="h-4 w-4" /> 079 433 50 72
               </a>
             </div>
           </ScrollReveal>
@@ -106,7 +106,7 @@ export default function MoneyPage({ slug }) {
                   {" "}{regionName} aus schnell und bequem erreichbar. {region.whyUs[0]?.description}
                 </p>
                 <p>
-                  {service.moneyPageIntro || "Die Methode von Leo Hackl hat in 30 Jahren über 2'000 Menschen geholfen, ihre Blockaden nachhaltig aufzulösen. Ohne Medikamente, ohne Schmerz, oft in nur wenigen Sitzungen."}
+                  {service.moneyPageIntro || "Die Methode von Leo Hackl hat in 30 Jahren über 4'000 Menschen geholfen, ihre Blockaden nachhaltig aufzulösen. Ohne Medikamente, ohne Schmerz, oft in nur wenigen Sitzungen."}
                 </p>
               </div>
             </ScrollReveal>

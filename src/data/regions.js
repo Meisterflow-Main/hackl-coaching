@@ -2,14 +2,14 @@
 export const sharedRegionData = {
   firma: "Leo Hackl Coaching",
   hauptleistung: "Psychologische Beratung",
-  telefon: "044 772 89 79",
+  telefon: "079 433 50 72",
   telefonMobil: "079 433 50 72",
   email: "info@hacklcoaching.ch",
   adresse: "Zehntenstrasse 17, 8800 Thalwil",
   oeffnungszeiten: "Mo 08:30–19:00, Di 09:00–19:00, Mi–Fr 10:00–19:00, Sa 11:00–15:00, So geschlossen",
   mapsUrl: "https://www.google.com/maps/place/Leo+Hackl+Coaching/@47.2889657,8.5706351,17z",
   trust: [
-    { icon: "ShieldCheck", title: "30 Jahre Erfahrung", description: "Über 2'000 gelöste Fälle" },
+    { icon: "ShieldCheck", title: "30 Jahre Erfahrung", description: "Über 4'000 gelöste Fälle" },
     { icon: "HeartHandshake", title: "Menschlich & persönlich", description: "Individuelle Beratung, kein Schema F" },
     { icon: "Zap", title: "Schnelle Ergebnisse", description: "Oft nach 1–3 Sitzungen spürbar" },
     { icon: "Pill", title: "Ohne Medikamente", description: "Natürliche Neuroplastizität nutzen" }
@@ -50,11 +50,11 @@ export const regions = [
     ort: "Thalwil",
     region: "Kanton Zürich",
     metaTitle: "Psychologische Beratung Thalwil | Leo Hackl Coaching",
-    metaDescription: "Psychologische Beratung in Thalwil: Ängste, Phobien & Burnout nachhaltig auflösen. 30 Jahre Erfahrung, über 2'000 gelöste Fälle. Termin vereinbaren.",
+    metaDescription: "Psychologische Beratung in Thalwil: Ängste, Phobien & Burnout nachhaltig auflösen. 30 Jahre Erfahrung, über 4'000 gelöste Fälle. Termin vereinbaren.",
     h1: "Psychologische Beratung in Thalwil – frei von Ängsten und Blockaden",
     hero: {
       eyebrow: "Ihre Praxis in Thalwil",
-      description: "Sie wohnen in Thalwil und suchen psychologische Beratung, die wirklich wirkt? Bei Leo Hackl Coaching lösen wir Ängste, Phobien und destruktive Verhaltensmuster nachhaltig – mit über 30 Jahren Erfahrung und mehr als 2'000 gelösten Fällen. Vereinbaren Sie heute Ihr persönliches Erstgespräch an der Zehntenstrasse."
+      description: "Sie wohnen in Thalwil und suchen psychologische Beratung, die wirklich wirkt? Bei Leo Hackl Coaching lösen wir Ängste, Phobien und destruktive Verhaltensmuster nachhaltig – mit über 30 Jahren Erfahrung und mehr als 4'000 gelösten Fällen. Vereinbaren Sie heute Ihr persönliches Erstgespräch an der Zehntenstrasse."
     },
     intro: {
       title: "Psychologische Beratung direkt am Zürichsee",
@@ -62,7 +62,7 @@ export const regions = [
     },
     whyUs: [
       { headline: "Direkt am Bahnhof Thalwil", description: "Praxis an der Zehntenstrasse – wenige Minuten vom Bahnhof entfernt." },
-      { headline: "30 Jahre Erfahrung", description: "Über 2'000 gelöste Fälle in drei Jahrzehnten Praxisarbeit." },
+      { headline: "30 Jahre Erfahrung", description: "Über 4'000 gelöste Fälle in drei Jahrzehnten Praxisarbeit." },
       { headline: "Schnelle, spürbare Ergebnisse", description: "Oft bereits nach ein bis drei Sitzungen erste Veränderungen." },
       { headline: "Persönlich und menschlich", description: "Individuelle Beratung statt Schema F – Sie stehen im Zentrum." },
       { headline: "Nachhaltig ohne Medikamente", description: "Die Methode nutzt die natürliche Neuroplastizität Ihres Gehirns." }
@@ -84,7 +84,7 @@ export const regions = [
     ort: "Zürich",
     region: "Kanton Zürich",
     metaTitle: "Psychologische Beratung Zürich | Leo Hackl Coaching",
-    metaDescription: "Psychologische Beratung für Zürich: Ängste, Burnout & Verhaltensmuster nachhaltig auflösen. 15 Min. ab Zürich HB. Über 2'000 gelöste Fälle.",
+    metaDescription: "Psychologische Beratung für Zürich: Ängste, Burnout & Verhaltensmuster nachhaltig auflösen. 15 Min. ab Zürich HB. Über 4'000 gelöste Fälle.",
     h1: "Psychologische Beratung für Zürich – nachhaltige Lösungen statt Symptombehandlung",
     hero: {
       eyebrow: "15 Minuten ab Zürich HB",
@@ -92,13 +92,13 @@ export const regions = [
     },
     intro: {
       title: "Wenn Zürich Sie fordert",
-      text: "Zürich ist dynamisch, international und schnell. Wer hier arbeitet, leistet oft viel – und zahlt einen Preis. Schlafprobleme, innere Unruhe und Erschöpfung sind in Zürich keine Seltenheit. Vielleicht spüren Sie den Druck, funktionieren zu müssen, während Sie innerlich längst eine Pause bräuchten. Vielleicht vermeiden Sie Präsentationen oder soziale Anlässe, obwohl Sie wissen, dass es Ihre Entwicklung begrenzt. Psychologische Beratung bei Leo Hackl Coaching heisst: Sie müssen nicht ewig daran tragen. Die Praxis in Thalwil ist von Zürich aus schnell und bequem erreichbar – und Sie profitieren von einer Methode, die in 30 Jahren über 2'000 Menschen geholfen hat, ihre Blockaden nachhaltig aufzulösen. Ohne Medikamente, ohne jahrelange Therapie, ohne Schmerz."
+      text: "Zürich ist dynamisch, international und schnell. Wer hier arbeitet, leistet oft viel – und zahlt einen Preis. Schlafprobleme, innere Unruhe und Erschöpfung sind in Zürich keine Seltenheit. Vielleicht spüren Sie den Druck, funktionieren zu müssen, während Sie innerlich längst eine Pause bräuchten. Vielleicht vermeiden Sie Präsentationen oder soziale Anlässe, obwohl Sie wissen, dass es Ihre Entwicklung begrenzt. Psychologische Beratung bei Leo Hackl Coaching heisst: Sie müssen nicht ewig daran tragen. Die Praxis in Thalwil ist von Zürich aus schnell und bequem erreichbar – und Sie profitieren von einer Methode, die in 30 Jahren über 4'000 Menschen geholfen hat, ihre Blockaden nachhaltig aufzulösen. Ohne Medikamente, ohne jahrelange Therapie, ohne Schmerz."
     },
     whyUs: [
       { headline: "Schnell ab Zürich erreichbar", description: "15 Minuten mit der S-Bahn ab Zürich HB bis Thalwil." },
       { headline: "Diskret und vertraulich", description: "Ausserhalb der Zürcher Innenstadt – ohne Bekanntenbegegnungen." },
       { headline: "Flexible Termine", description: "Auch ausserhalb der Bürozeiten für anspruchsvolle Kalender." },
-      { headline: "30 Jahre bewährte Methode", description: "Über 2'000 gelöste Fälle – von Führungskräften bis Studierenden." },
+      { headline: "30 Jahre bewährte Methode", description: "Über 4'000 gelöste Fälle – von Führungskräften bis Studierenden." },
       { headline: "Medikamentenfrei und nachhaltig", description: "Die Methode nutzt die natürliche Plastizität Ihres Gehirns." }
     ],
     faq: [
@@ -118,15 +118,15 @@ export const regions = [
     ort: "Horgen",
     region: "Kanton Zürich",
     metaTitle: "Psychologische Beratung Horgen | Leo Hackl Coaching",
-    metaDescription: "Psychologische Beratung in Horgen: Ängste, Phobien & Burnout nachhaltig auflösen. 5 Min. bis zur Praxis in Thalwil. Über 2'000 gelöste Fälle.",
+    metaDescription: "Psychologische Beratung in Horgen: Ängste, Phobien & Burnout nachhaltig auflösen. 5 Min. bis zur Praxis in Thalwil. Über 4'000 gelöste Fälle.",
     h1: "Psychologische Beratung in Horgen – Ängste und Blockaden auflösen",
     hero: {
       eyebrow: "Nachbarpraxis in Thalwil",
-      description: "Sie leben in Horgen und suchen psychologische Beratung in Ihrer Nähe? Die Praxis von Leo Hackl Coaching in Thalwil ist nur fünf Minuten entfernt. Wir lösen Ängste, Phobien, Burnout und destruktive Verhaltensmuster nachhaltig – mit über 30 Jahren Erfahrung und mehr als 2'000 gelösten Fällen."
+      description: "Sie leben in Horgen und suchen psychologische Beratung in Ihrer Nähe? Die Praxis von Leo Hackl Coaching in Thalwil ist nur fünf Minuten entfernt. Wir lösen Ängste, Phobien, Burnout und destruktive Verhaltensmuster nachhaltig – mit über 30 Jahren Erfahrung und mehr als 4'000 gelösten Fällen."
     },
     intro: {
       title: "Beratung für die Horgener Gemeinschaft",
-      text: "Horgen ist gewachsen. Aus dem einstigen Industrieort am See ist eine lebendige Gemeinde mit Familien, Pendlern und Selbstständigen geworden. Mit dem Wachstum kommen auch neue Belastungen: Leistungsdruck, Familienkonflikte, Existenzsorgen. Vielleicht spüren Sie eine Angst, die Sie nicht erklären können. Vielleicht stecken Sie in einer Lebenskrise, die alle Strukturierungskräfte übersteigt. Vielleicht haben Sie das Gefühl, in einer Schleife festzusitzen, die Sie selbst nicht durchbrechen können. Psychologische Beratung in der Nachbarschaft – in Thalwil, nur wenige Minuten von Horgen entfernt – bedeutet kurze Wege und schnelle Hilfe. Leo Hackl Coaching arbeitet mit einer Methode, die in 30 Jahren über 2'000 Menschen geholfen hat. Die meisten Blockaden lassen sich in wenigen Sitzungen auflösen, ohne Medikamente und ohne jahrelange Therapie."
+      text: "Horgen ist gewachsen. Aus dem einstigen Industrieort am See ist eine lebendige Gemeinde mit Familien, Pendlern und Selbstständigen geworden. Mit dem Wachstum kommen auch neue Belastungen: Leistungsdruck, Familienkonflikte, Existenzsorgen. Vielleicht spüren Sie eine Angst, die Sie nicht erklären können. Vielleicht stecken Sie in einer Lebenskrise, die alle Strukturierungskräfte übersteigt. Vielleicht haben Sie das Gefühl, in einer Schleife festzusitzen, die Sie selbst nicht durchbrechen können. Psychologische Beratung in der Nachbarschaft – in Thalwil, nur wenige Minuten von Horgen entfernt – bedeutet kurze Wege und schnelle Hilfe. Leo Hackl Coaching arbeitet mit einer Methode, die in 30 Jahren über 4'000 Menschen geholfen hat. Die meisten Blockaden lassen sich in wenigen Sitzungen auflösen, ohne Medikamente und ohne jahrelange Therapie."
     },
     whyUs: [
       { headline: "Nur 5 Minuten entfernt", description: "Thalwil liegt direkt neben Horgen – kürzeste Anfahrt am See." },
@@ -152,7 +152,7 @@ export const regions = [
     ort: "Meilen",
     region: "Kanton Zürich",
     metaTitle: "Psychologische Beratung Meilen | Leo Hackl Coaching",
-    metaDescription: "Psychologische Beratung für Meilen: Ängste, Perfektionismus & Burnout nachhaltig auflösen. Über 2'000 gelöste Fälle. Termin vereinbaren.",
+    metaDescription: "Psychologische Beratung für Meilen: Ängste, Perfektionismus & Burnout nachhaltig auflösen. Über 4'000 gelöste Fälle. Termin vereinbaren.",
     h1: "Psychologische Beratung für Meilen – nachhaltig frei von Ängsten",
     hero: {
       eyebrow: "Goldküste & Seestrasse",
@@ -160,7 +160,7 @@ export const regions = [
     },
     intro: {
       title: "Wenn hohe Erwartung zur Last wird",
-      text: "Meilen steht für Lebensqualität am Zürichsee. Doch hinter den schönen Fassaden der Goldküste leben Menschen mit den gleichen Ängsten wie überall: Perfektionsdruck, Leistungsangst, Beziehungskrisen, Erschöpfung. Vielleicht spüren Sie, dass Sie sich selbst immer höhere Massstäbe setzen, bis nichts mehr gut genug ist. Vielleicht vermeiden Sie Situationen, in denen Sie nicht als vollkommen erscheinen. Vielleicht haben Sie das Gefühl, äusserlich zu funktionieren, während Sie innerlich längst erschöpft sind. Psychologische Beratung bei Leo Hackl Coaching in Thalwil – nur wenige Minuten von Meilen entfernt – bietet Ihnen einen geschützten Raum, in dem Sie ohne Masken sein können. Die Methode von Leo Hackl hat in 30 Jahren über 2'000 Menschen geholfen, ihre inneren Blockaden nachhaltig aufzulösen. Ohne Medikamente, ohne Schmerz, oft in nur wenigen Sitzungen."
+      text: "Meilen steht für Lebensqualität am Zürichsee. Doch hinter den schönen Fassaden der Goldküste leben Menschen mit den gleichen Ängsten wie überall: Perfektionsdruck, Leistungsangst, Beziehungskrisen, Erschöpfung. Vielleicht spüren Sie, dass Sie sich selbst immer höhere Massstäbe setzen, bis nichts mehr gut genug ist. Vielleicht vermeiden Sie Situationen, in denen Sie nicht als vollkommen erscheinen. Vielleicht haben Sie das Gefühl, äusserlich zu funktionieren, während Sie innerlich längst erschöpft sind. Psychologische Beratung bei Leo Hackl Coaching in Thalwil – nur wenige Minuten von Meilen entfernt – bietet Ihnen einen geschützten Raum, in dem Sie ohne Masken sein können. Die Methode von Leo Hackl hat in 30 Jahren über 4'000 Menschen geholfen, ihre inneren Blockaden nachhaltig aufzulösen. Ohne Medikamente, ohne Schmerz, oft in nur wenigen Sitzungen."
     },
     whyUs: [
       { headline: "Diskret am Seeufer", description: "Thalwil liegt ausserhalb des direkten Goldküsten-Umlaufs – maximale Diskretion." },
@@ -186,15 +186,15 @@ export const regions = [
     ort: "Wädenswil",
     region: "Kanton Zürich",
     metaTitle: "Psychologische Beratung Wädenswil | Leo Hackl Coaching",
-    metaDescription: "Psychologische Beratung in Wädenswil: Ängste, Blockaden & Burnout nachhaltig auflösen. 10 Min. bis zur Praxis. Über 2'000 gelöste Fälle.",
+    metaDescription: "Psychologische Beratung in Wädenswil: Ängste, Blockaden & Burnout nachhaltig auflösen. 10 Min. bis zur Praxis. Über 4'000 gelöste Fälle.",
     h1: "Psychologische Beratung in Wädenswil – Blockaden überwinden",
     hero: {
       eyebrow: "Am linken Seeufer",
-      description: "Sie wohnen in Wädenswil und suchen psychologische Beratung, die wirklich hilft? Leo Hackl Coaching in Thalwil ist in zehn Minuten erreichbar. Wir lösen Ängste, Phobien, Burnout und destruktive Verhaltensmuster nachhaltig – mit über 30 Jahren Erfahrung und mehr als 2'000 gelösten Fällen."
+      description: "Sie wohnen in Wädenswil und suchen psychologische Beratung, die wirklich hilft? Leo Hackl Coaching in Thalwil ist in zehn Minuten erreichbar. Wir lösen Ängste, Phobien, Burnout und destruktive Verhaltensmuster nachhaltig – mit über 30 Jahren Erfahrung und mehr als 4'000 gelösten Fällen."
     },
     intro: {
       title: "Wenn der Alltag Sie überholt",
-      text: "Wädenswil ist eine wachsende Gemeinde am linken Seeufer. Junge Familien, Pendler, Studierende der ZHAW – die Vielfalt bringt Lebendigkeit, aber auch Belastungen. Vielleicht spüren Sie seit der Geburt Ihres Kindes eine Angst, die Sie sich nicht erklären können. Vielleicht stecken Sie in einer Lebensphase, in der alles gleichzeitig verlangt wird: Beruf, Beziehung, Familie. Vielleicht haben Sie das Gefühl, dass eine innere Stimme Sie immer wieder bremst, obwohl Sie längst wissen, wohin Sie wollen. Psychologische Beratung in der Nachbarschaft – in Thalwil, nur zehn Minuten von Wädenswil entfernt – bedeutet kurze Wege und schnelle Hilfe. Leo Hackl Coaching arbeitet mit einer Methode, die in 30 Jahren über 2'000 Menschen geholfen hat, ihre Blockaden nachhaltig aufzulösen. Ohne Medikamente, ohne Schmerz, oft in nur wenigen Sitzungen."
+      text: "Wädenswil ist eine wachsende Gemeinde am linken Seeufer. Junge Familien, Pendler, Studierende der ZHAW – die Vielfalt bringt Lebendigkeit, aber auch Belastungen. Vielleicht spüren Sie seit der Geburt Ihres Kindes eine Angst, die Sie sich nicht erklären können. Vielleicht stecken Sie in einer Lebensphase, in der alles gleichzeitig verlangt wird: Beruf, Beziehung, Familie. Vielleicht haben Sie das Gefühl, dass eine innere Stimme Sie immer wieder bremst, obwohl Sie längst wissen, wohin Sie wollen. Psychologische Beratung in der Nachbarschaft – in Thalwil, nur zehn Minuten von Wädenswil entfernt – bedeutet kurze Wege und schnelle Hilfe. Leo Hackl Coaching arbeitet mit einer Methode, die in 30 Jahren über 4'000 Menschen geholfen hat, ihre Blockaden nachhaltig aufzulösen. Ohne Medikamente, ohne Schmerz, oft in nur wenigen Sitzungen."
     },
     whyUs: [
       { headline: "10 Minuten entfernt", description: "Thalwil liegt direkt nördlich von Wädenswil am Seeufer." },
@@ -220,7 +220,7 @@ export const regions = [
     ort: "Kilchberg",
     region: "Kanton Zürich",
     metaTitle: "Psychologische Beratung Kilchberg | Leo Hackl Coaching",
-    metaDescription: "Psychologische Beratung für Kilchberg: Ängste, Perfektionismus & Burnout nachhaltig auflösen. 5 Min. bis zur Praxis. Über 2'000 gelöste Fälle.",
+    metaDescription: "Psychologische Beratung für Kilchberg: Ängste, Perfektionismus & Burnout nachhaltig auflösen. 5 Min. bis zur Praxis. Über 4'000 gelöste Fälle.",
     h1: "Psychologische Beratung für Kilchberg – persönliche Lösungen",
     hero: {
       eyebrow: "Exklusiv am See",
@@ -228,7 +228,7 @@ export const regions = [
     },
     intro: {
       title: "Wenn äussere Vollkommenheit nicht genügt",
-      text: "Kilchberg ist eine der begehrtesten Wohnlagen am Zürichsee. Wer hier lebt, hat viel erreicht – und trägt oft eine unsichtbare Last. Hohe Erwartungen an sich selbst, der Druck, alles unter Kontrolle zu haben, die Angst, den Anschein zu verlieren. Vielleicht spüren Sie eine innere Unruhe, die sich nicht mit äusserem Erfolg beruhigen lässt. Vielleicht vermeiden Sie Situationen, in denen Sie verletzlich wirken könnten. Vielleicht haben Sie das Gefühl, dass Ihr Leben von aussen perfekt aussieht, während Sie innerlich längst erschöpft sind. Psychologische Beratung in der Nachbarschaft – in Thalwil, nur fünf Minuten von Kilchberg entfernt – bietet Ihnen einen geschützten Raum, in dem Sie ohne Masken sein können. Die Methode von Leo Hackl hat in 30 Jahren über 2'000 Menschen geholfen, ihre inneren Blockaden nachhaltig aufzulösen. Ohne Medikamente, ohne Schmerz, oft in nur wenigen Sitzungen."
+      text: "Kilchberg ist eine der begehrtesten Wohnlagen am Zürichsee. Wer hier lebt, hat viel erreicht – und trägt oft eine unsichtbare Last. Hohe Erwartungen an sich selbst, der Druck, alles unter Kontrolle zu haben, die Angst, den Anschein zu verlieren. Vielleicht spüren Sie eine innere Unruhe, die sich nicht mit äusserem Erfolg beruhigen lässt. Vielleicht vermeiden Sie Situationen, in denen Sie verletzlich wirken könnten. Vielleicht haben Sie das Gefühl, dass Ihr Leben von aussen perfekt aussieht, während Sie innerlich längst erschöpft sind. Psychologische Beratung in der Nachbarschaft – in Thalwil, nur fünf Minuten von Kilchberg entfernt – bietet Ihnen einen geschützten Raum, in dem Sie ohne Masken sein können. Die Methode von Leo Hackl hat in 30 Jahren über 4'000 Menschen geholfen, ihre inneren Blockaden nachhaltig aufzulösen. Ohne Medikamente, ohne Schmerz, oft in nur wenigen Sitzungen."
     },
     whyUs: [
       { headline: "5 Minuten am Seeufer", description: "Thalwil liegt direkt neben Kilchberg – kürzeste Anfahrt." },
@@ -254,15 +254,15 @@ export const regions = [
     ort: "Rüschlikon",
     region: "Kanton Zürich",
     metaTitle: "Psychologische Beratung Rüschlikon | Leo Hackl Coaching",
-    metaDescription: "Psychologische Beratung in Rüschlikon: Ängste & Blockaden nachhaltig auflösen. 3 Min. bis zur Praxis in Thalwil. Über 2'000 gelöste Fälle.",
+    metaDescription: "Psychologische Beratung in Rüschlikon: Ängste & Blockaden nachhaltig auflösen. 3 Min. bis zur Praxis in Thalwil. Über 4'000 gelöste Fälle.",
     h1: "Psychologische Beratung in Rüschlikon – Ruhe finden",
     hero: {
       eyebrow: "Ruhige Nachbargemeinde",
-      description: "Sie leben in Rüschlikon und suchen psychologische Beratung in unmittelbarer Nähe? Leo Hackl Coaching in Thalwil ist nur drei Minuten entfernt. Wir lösen Ängste, Phobien, Burnout und destruktive Verhaltensmuster nachhaltig – mit über 30 Jahren Erfahrung und mehr als 2'000 gelösten Fällen."
+      description: "Sie leben in Rüschlikon und suchen psychologische Beratung in unmittelbarer Nähe? Leo Hackl Coaching in Thalwil ist nur drei Minuten entfernt. Wir lösen Ängste, Phobien, Burnout und destruktive Verhaltensmuster nachhaltig – mit über 30 Jahren Erfahrung und mehr als 4'000 gelösten Fällen."
     },
     intro: {
       title: "Wenn die Ruhe trügt",
-      text: "Rüschlikon gilt als eine der ruhigsten Gemeinden am Zürichsee. Doch auch im idyllischen Rüschlikon kennen Menschen Ängste, Lebenskrisen und innere Blockaden. Vielleicht spüren Sie seit einer Lebensveränderung – einer Trennung, einem Berufswechsel, einem Verlust – eine Angst, die sich nicht mit Vernunft beruhigen lässt. Vielleicht stecken Sie in einer Phase, in der alles äusserlich stabil wirkt, während Sie innerlich längst erschöpft sind. Vielleicht haben Sie das Gefühl, dass eine innere Stimme Sie immer wieder bremst, obwohl Sie längst wissen, wohin Sie wollen. Psychologische Beratung in der direkten Nachbarschaft – in Thalwil, nur drei Minuten von Rüschlikon entfernt – bedeutet kürzeste Wege und schnelle Hilfe. Leo Hackl Coaching arbeitet mit einer Methode, die in 30 Jahren über 2'000 Menschen geholfen hat, ihre Blockaden nachhaltig aufzulösen. Ohne Medikamente, ohne Schmerz, oft in nur wenigen Sitzungen."
+      text: "Rüschlikon gilt als eine der ruhigsten Gemeinden am Zürichsee. Doch auch im idyllischen Rüschlikon kennen Menschen Ängste, Lebenskrisen und innere Blockaden. Vielleicht spüren Sie seit einer Lebensveränderung – einer Trennung, einem Berufswechsel, einem Verlust – eine Angst, die sich nicht mit Vernunft beruhigen lässt. Vielleicht stecken Sie in einer Phase, in der alles äusserlich stabil wirkt, während Sie innerlich längst erschöpft sind. Vielleicht haben Sie das Gefühl, dass eine innere Stimme Sie immer wieder bremst, obwohl Sie längst wissen, wohin Sie wollen. Psychologische Beratung in der direkten Nachbarschaft – in Thalwil, nur drei Minuten von Rüschlikon entfernt – bedeutet kürzeste Wege und schnelle Hilfe. Leo Hackl Coaching arbeitet mit einer Methode, die in 30 Jahren über 4'000 Menschen geholfen hat, ihre Blockaden nachhaltig aufzulösen. Ohne Medikamente, ohne Schmerz, oft in nur wenigen Sitzungen."
     },
     whyUs: [
       { headline: "3 Minuten entfernt", description: "Thalwil liegt direkt neben Rüschlikon – kürzeste Anfahrt am See." },
@@ -288,15 +288,15 @@ export const regions = [
     ort: "Adliswil",
     region: "Kanton Zürich",
     metaTitle: "Psychologische Beratung Adliswil | Leo Hackl Coaching",
-    metaDescription: "Psychologische Beratung für Adliswil: Stress, Ängste & Burnout nachhaltig auflösen. 5 Min. bis zur Praxis. Über 2'000 gelöste Fälle.",
+    metaDescription: "Psychologische Beratung für Adliswil: Stress, Ängste & Burnout nachhaltig auflösen. 5 Min. bis zur Praxis. Über 4'000 gelöste Fälle.",
     h1: "Psychologische Beratung für Adliswil – Stress und Ängste auflösen",
     hero: {
       eyebrow: "Am Fuss des Albis",
-      description: "Sie leben in Adliswil und suchen psychologische Beratung, die an der Wurzel ansetzt? Leo Hackl Coaching in Thalwil ist in fünf Minuten erreichbar. Wir lösen Ängste, Phobien, Burnout und destruktive Verhaltensmuster nachhaltig – mit über 30 Jahren Erfahrung und mehr als 2'000 gelösten Fällen."
+      description: "Sie leben in Adliswil und suchen psychologische Beratung, die an der Wurzel ansetzt? Leo Hackl Coaching in Thalwil ist in fünf Minuten erreichbar. Wir lösen Ängste, Phobien, Burnout und destruktive Verhaltensmuster nachhaltig – mit über 30 Jahren Erfahrung und mehr als 4'000 gelösten Fällen."
     },
     intro: {
       title: "Wenn der Berg nicht reicht",
-      text: "Adliswil liegt am Fuss des Albis – nah an der Natur und doch nah an der Stadt. Wer hier wohnt, schätzt die Balance – und spürt dennoch den Druck des modernen Lebens. Stress, Schlafprobleme, innere Unruhe, Ängste, die sich schleichend aufbauen. Vielleicht spüren Sie eine Anspannung, die auch am Wochenende nicht loslässt. Vielleicht vermeiden Sie Situationen, die früher selbstverständlich waren. Vielleicht haben Sie das Gefühl, dass Ihr Körper längst Signale sendet, die Sie immer noch überhören. Psychologische Beratung in der Nachbarschaft – in Thalwil, nur fünf Minuten von Adliswil entfernt – bedeutet kurze Wege und schnelle Hilfe. Leo Hackl Coaching arbeitet mit einer Methode, die in 30 Jahren über 2'000 Menschen geholfen hat, ihre Blockaden nachhaltig aufzulösen. Ohne Medikamente, ohne Schmerz, oft in nur wenigen Sitzungen."
+      text: "Adliswil liegt am Fuss des Albis – nah an der Natur und doch nah an der Stadt. Wer hier wohnt, schätzt die Balance – und spürt dennoch den Druck des modernen Lebens. Stress, Schlafprobleme, innere Unruhe, Ängste, die sich schleichend aufbauen. Vielleicht spüren Sie eine Anspannung, die auch am Wochenende nicht loslässt. Vielleicht vermeiden Sie Situationen, die früher selbstverständlich waren. Vielleicht haben Sie das Gefühl, dass Ihr Körper längst Signale sendet, die Sie immer noch überhören. Psychologische Beratung in der Nachbarschaft – in Thalwil, nur fünf Minuten von Adliswil entfernt – bedeutet kurze Wege und schnelle Hilfe. Leo Hackl Coaching arbeitet mit einer Methode, die in 30 Jahren über 4'000 Menschen geholfen hat, ihre Blockaden nachhaltig aufzulösen. Ohne Medikamente, ohne Schmerz, oft in nur wenigen Sitzungen."
     },
     whyUs: [
       { headline: "5 Minuten entfernt", description: "Thalwil liegt direkt neben Adliswil – kürzeste Anfahrt." },
@@ -322,7 +322,7 @@ export const regions = [
     ort: "Erlenbach",
     region: "Kanton Zürich",
     metaTitle: "Psychologische Beratung Erlenbach | Leo Hackl Coaching",
-    metaDescription: "Psychologische Beratung in Erlenbach: Burnout, Ängste & Blockaden nachhaltig auflösen. Diskret in Thalwil. Über 2'000 gelöste Fälle.",
+    metaDescription: "Psychologische Beratung in Erlenbach: Burnout, Ängste & Blockaden nachhaltig auflösen. Diskret in Thalwil. Über 4'000 gelöste Fälle.",
     h1: "Psychologische Beratung in Erlenbach – frei und belastbar",
     hero: {
       eyebrow: "Goldküste links",
@@ -330,7 +330,7 @@ export const regions = [
     },
     intro: {
       title: "Wenn Leistung zur Falle wird",
-      text: "Erlenbach ist eine der begehrtesten Gemeinden der Goldküste. Wer hier lebt, hat viel geleistet – und trägt oft eine unsichtbare Last. Der Druck, immer zu funktionieren, die Angst, den Anschein zu verlieren, die Erschöpfung hinter einer perfekten Fassade. Vielleicht spüren Sie, dass Sie sich selbst immer höhere Massstäbe setzen, bis nichts mehr gut genug ist. Vielleicht haben Sie das Gefühl, äusserlich zu leisten, während Sie innerlich längst erschöpft sind. Vielleicht vermeiden Sie Situationen, in denen Sie verletzlich wirken könnten. Psychologische Beratung in der Nachbarschaft – in Thalwil, nur wenige Minuten von Erlenbach entfernt – bietet Ihnen einen geschützten Raum, in dem Sie ohne Masken sein können. Die Methode von Leo Hackl hat in 30 Jahren über 2'000 Menschen geholfen, ihre inneren Blockaden nachhaltig aufzulösen. Ohne Medikamente, ohne Schmerz, oft in nur wenigen Sitzungen."
+      text: "Erlenbach ist eine der begehrtesten Gemeinden der Goldküste. Wer hier lebt, hat viel geleistet – und trägt oft eine unsichtbare Last. Der Druck, immer zu funktionieren, die Angst, den Anschein zu verlieren, die Erschöpfung hinter einer perfekten Fassade. Vielleicht spüren Sie, dass Sie sich selbst immer höhere Massstäbe setzen, bis nichts mehr gut genug ist. Vielleicht haben Sie das Gefühl, äusserlich zu leisten, während Sie innerlich längst erschöpft sind. Vielleicht vermeiden Sie Situationen, in denen Sie verletzlich wirken könnten. Psychologische Beratung in der Nachbarschaft – in Thalwil, nur wenige Minuten von Erlenbach entfernt – bietet Ihnen einen geschützten Raum, in dem Sie ohne Masken sein können. Die Methode von Leo Hackl hat in 30 Jahren über 4'000 Menschen geholfen, ihre inneren Blockaden nachhaltig aufzulösen. Ohne Medikamente, ohne Schmerz, oft in nur wenigen Sitzungen."
     },
     whyUs: [
       { headline: "Wenige Minuten entfernt", description: "Thalwil ist von Erlenbach über die Seestrasse schnell erreichbar." },
@@ -356,15 +356,15 @@ export const regions = [
     ort: "Langnau am Albis",
     region: "Kanton Zürich",
     metaTitle: "Psychologische Beratung Langnau am Albis | Leo Hackl Coaching",
-    metaDescription: "Psychologische Beratung in Langnau am Albis: Ängste & Blockaden nachhaltig auflösen. 5 Min. bis zur Praxis. Über 2'000 gelöste Fälle.",
+    metaDescription: "Psychologische Beratung in Langnau am Albis: Ängste & Blockaden nachhaltig auflösen. 5 Min. bis zur Praxis. Über 4'000 gelöste Fälle.",
     h1: "Psychologische Beratung in Langnau am Albis – Ängste überwinden",
     hero: {
       eyebrow: "Albispass und Dorf",
-      description: "Sie leben in Langnau am Albis und suchen psychologische Beratung in Ihrer Nähe? Leo Hackl Coaching in Thalwil ist in fünf Minuten erreichbar. Wir lösen Ängste, Phobien, Burnout und destruktive Verhaltensmuster nachhaltig – mit über 30 Jahren Erfahrung und mehr als 2'000 gelösten Fällen."
+      description: "Sie leben in Langnau am Albis und suchen psychologische Beratung in Ihrer Nähe? Leo Hackl Coaching in Thalwil ist in fünf Minuten erreichbar. Wir lösen Ängste, Phobien, Burnout und destruktive Verhaltensmuster nachhaltig – mit über 30 Jahren Erfahrung und mehr als 4'000 gelösten Fällen."
     },
     intro: {
       title: "Wenn Dorf und Berg nicht reichen",
-      text: "Langnau am Albis liegt zwischen See und Berg – eine Gemeinde, die ländliche Ruhe und städtische Nähe verbindet. Doch auch hier kennen Menschen Ängste, Lebenskrisen und innere Blockaden. Vielleicht spüren Sie seit einer Veränderung – einem Umzug, einem Berufswechsel, einem Verlust – eine Angst, die sich nicht mit Vernunft beruhigen lässt. Vielleicht stecken Sie in einer Phase, in der alles äusserlich stabil wirkt, während Sie innerlich längst erschöpft sind. Vielleicht haben Sie das Gefühl, dass eine innere Stimme Sie immer wieder bremst, obwohl Sie längst wissen, wohin Sie wollen. Psychologische Beratung in der Nachbarschaft – in Thalwil, nur fünf Minuten von Langnau am Albis entfernt – bedeutet kürzeste Wege und schnelle Hilfe. Leo Hackl Coaching arbeitet mit einer Methode, die in 30 Jahren über 2'000 Menschen geholfen hat, ihre Blockaden nachhaltig aufzulösen. Ohne Medikamente, ohne Schmerz, oft in nur wenigen Sitzungen."
+      text: "Langnau am Albis liegt zwischen See und Berg – eine Gemeinde, die ländliche Ruhe und städtische Nähe verbindet. Doch auch hier kennen Menschen Ängste, Lebenskrisen und innere Blockaden. Vielleicht spüren Sie seit einer Veränderung – einem Umzug, einem Berufswechsel, einem Verlust – eine Angst, die sich nicht mit Vernunft beruhigen lässt. Vielleicht stecken Sie in einer Phase, in der alles äusserlich stabil wirkt, während Sie innerlich längst erschöpft sind. Vielleicht haben Sie das Gefühl, dass eine innere Stimme Sie immer wieder bremst, obwohl Sie längst wissen, wohin Sie wollen. Psychologische Beratung in der Nachbarschaft – in Thalwil, nur fünf Minuten von Langnau am Albis entfernt – bedeutet kürzeste Wege und schnelle Hilfe. Leo Hackl Coaching arbeitet mit einer Methode, die in 30 Jahren über 4'000 Menschen geholfen hat, ihre Blockaden nachhaltig aufzulösen. Ohne Medikamente, ohne Schmerz, oft in nur wenigen Sitzungen."
     },
     whyUs: [
       { headline: "5 Minuten entfernt", description: "Thalwil liegt direkt unterhalb von Langnau am Albis am See." },

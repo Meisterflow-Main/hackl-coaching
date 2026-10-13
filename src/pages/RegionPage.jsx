@@ -237,7 +237,7 @@ export default function RegionPage() {
               Warum Klienten aus {region.ort} uns wählen
             </h2>
             <p className="mt-4 text-center text-lg text-muted-foreground max-w-2xl mx-auto">
-              Über 30 Jahre Erfahrung, über 2'000 gelöste Fälle – und eine Methode, die wirklich wirkt.
+              Über 30 Jahre Erfahrung, über 4'000 gelöste Fälle – und eine Methode, die wirklich wirkt.
             </p>
           </ScrollReveal>
           <motion.div

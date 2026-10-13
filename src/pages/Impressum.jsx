@@ -71,7 +71,7 @@ export default function Impressum() {
                 <div className="flex flex-col sm:flex-row sm:gap-4">
                   <dt className="sm:w-44 shrink-0 text-sm font-semibold text-muted-foreground">Telefon</dt>
                   <dd>
-                    <a href="tel:0447728979" className="text-primary hover:underline">044 772 89 79</a>
+                    <a href="tel:0794335072" className="text-primary hover:underline">079 433 50 72</a>
                   </dd>
                 </div>
                 <div className="flex flex-col sm:flex-row sm:gap-4">

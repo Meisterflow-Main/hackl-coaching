@@ -24,7 +24,7 @@ export const services = [
       { step: "03", title: "Integration", description: "Sie handeln situationsgerecht – ohne Angst, ohne inneren Kampf, dauerhaft." },
     ],
     moneyPageHero: "Ängste und Phobien lassen sich oft in ein bis drei Sitzungen dauerhaft auflösen – ohne Konfrontation, ohne Medikamente. Die Praxis in Thalwil ist von hier aus schnell erreichbar.",
-    moneyPageIntro: "Die hypnosystemische Methode von Leo Hackl löst Ängste nicht durch Konfrontation, sondern an ihrer Wurzel – in den neuronalen Mustern, die die Angst erzeugen. Über 2'000 Klienten haben ihre Ängste in ein bis drei Sitzungen dauerhaft verloren.",
+    moneyPageIntro: "Die hypnosystemische Methode von Leo Hackl löst Ängste nicht durch Konfrontation, sondern an ihrer Wurzel – in den neuronalen Mustern, die die Angst erzeugen. Über 4'000 Klienten haben ihre Ängste in ein bis drei Sitzungen dauerhaft verloren.",
     faq: [
       { question: "Wie lange dauert die Auflösung einer Angst?", answer: "Viele spezifische Ängste und Phobien lassen sich in ein bis drei Sitzungen auflösen. Komplexere Angstformen können mehr Sitzungen erfordern. Wir besprechen den Aufwand offen im Erstgespräch." },
       { question: "Tut die Behandlung weh?", answer: "Nein. Im Gegensatz zur Konfrontationstherapie müssen Sie keine Angst auslösen. Wir arbeiten mit Ihren inneren Bildern auf eine Weise, die sich sicher und kontrollierbar anfühlt. Die meisten Klienten empfinden die Auflösung ihrer Angst als spürbare Erleichterung." },
@@ -54,7 +54,7 @@ export const services = [
       { step: "03", title: "Neue Routinen", description: "Gesunde Verhaltensweisen entstehen natürlich, ohne inneren Kampf." },
     ],
     moneyPageHero: "Selbstsabotage, Prokrastination, emotionales Essen – diese Muster lassen sich an der Wurzel auflösen, nicht nur an der Oberfläche. Die Praxis in Thalwil ist von hier aus schnell erreichbar.",
-    moneyPageIntro: "Verhaltensmuster halten sich, weil ihr Ursprungsmuster intakt ist. Leo Hackl löst dieses Muster an der Wurzel auf – nicht durch Willenskraft, sondern durch hypnosystemische Intervention. Über 2'000 Klienten haben destruktive Gewohnheiten dauerhaft verloren.",
+    moneyPageIntro: "Verhaltensmuster halten sich, weil ihr Ursprungsmuster intakt ist. Leo Hackl löst dieses Muster an der Wurzel auf – nicht durch Willenskraft, sondern durch hypnosystemische Intervention. Über 4'000 Klienten haben destruktive Gewohnheiten dauerhaft verloren.",
     faq: [
       { question: "Was sind typische Verhaltensmuster?", answer: "Prokrastination, emotionales Essen, Kontrollverlust, Selbstsabotage, destruktive Gewohnheiten – alles Muster, die sich hartnäckig wiederholen, obwohl man sie eigentlich ändern will." },
       { question: "Wie viele Sitzungen brauche ich?", answer: "Oft genügen eine bis drei intensive Sitzungen. Das Muster wird an der Wurzel aufgelöst, nicht symptomatisch behandelt. Der genaue Aufwand wird im Erstgespräch geklärt." },
@@ -114,7 +114,7 @@ export const services = [
       { step: "03", title: "Integration", description: "Dauerhafte Lösungen in Partnerschaft, Familie und Beruf." },
     ],
     moneyPageHero: "Partnerschaft, Familie, Beruf – Beziehungskonflikte lassen sich dauerhaft auflösen, wenn die zugrundeliegenden Muster erkannt werden. Die Praxis in Thalwil ist von hier aus schnell erreichbar.",
-    moneyPageIntro: "Beziehungskonflikte wiederholen sich, weil die zugrundeliegenden Muster intakt sind. Leo Hackl löst diese Muster auf – einzeln oder als Paar – und öffnet neue Wege der Verständigung. Über 2'000 Klienten haben dauerhafte Lösungen gefunden.",
+    moneyPageIntro: "Beziehungskonflikte wiederholen sich, weil die zugrundeliegenden Muster intakt sind. Leo Hackl löst diese Muster auf – einzeln oder als Paar – und öffnet neue Wege der Verständigung. Über 4'000 Klienten haben dauerhafte Lösungen gefunden.",
     faq: [
       { question: "Kommen wir als Paar oder einzeln?", answer: "Beides ist möglich. Wir besprechen im Erstgespräch, welche Form für Ihr Anliegen sinnvoll ist. Oft ist eine Kombination aus Einzel- und Paarsitzungen am wirksamsten." },
       { question: "Wie viele Sitzungen brauche ich?", answer: "Das hängt vom Konflikt und der Tiefe der Muster ab. Wir besprechen den voraussichtlichen Aufwand offen im Erstgespräch." },

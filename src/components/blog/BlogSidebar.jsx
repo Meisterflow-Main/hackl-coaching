@@ -32,10 +32,10 @@ export default function BlogSidebar({ currentSlug }) {
             <MessageCircle className="h-4 w-4" /> WhatsApp
           </a>
           <a
-            href="tel:0447728979"
+            href="tel:0794335072"
             className="flex items-center justify-center gap-2 px-5 py-2 text-sm font-semibold text-white/80 hover:text-white transition-colors"
           >
-            <Phone className="h-4 w-4" /> 044 772 89 79
+            <Phone className="h-4 w-4" /> 079 433 50 72
           </a>
         </div>
       </div>

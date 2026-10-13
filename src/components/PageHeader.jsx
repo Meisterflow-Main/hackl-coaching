@@ -37,10 +37,10 @@ export default function PageHeader({ eyebrow, title, subtitle, breadcrumbs }) {
               Termin anfragen <ArrowRight className="h-4 w-4" />
             </Link>
             <a
-              href="tel:0447728979"
+              href="tel:0794335072"
               className="inline-flex items-center gap-2 rounded-full border border-white/30 px-6 py-3 text-sm font-semibold hover:bg-white/10 transition-colors"
             >
-              <Phone className="h-4 w-4" /> 044 772 89 79
+              <Phone className="h-4 w-4" /> 079 433 50 72
             </a>
           </div>
         </ScrollReveal>

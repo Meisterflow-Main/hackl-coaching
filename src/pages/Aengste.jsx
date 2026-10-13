@@ -24,7 +24,7 @@ export default function Aengste() {
       <PageHeader
         eyebrow="Ängste & Phobien"
         title="Ängste loszuwerden ist erstaunlich schnell möglich."
-        subtitle="Für spezifische Ängste, also Phobien, braucht es erfahrungsgemäss zwei bis drei Sitzungen innert vier bis zehn Wochen. Diese Angaben beruhen auf Erfahrung mit über 2'000 gelösten Fällen."
+        subtitle="Für spezifische Ängste, also Phobien, braucht es erfahrungsgemäss zwei bis drei Sitzungen innert vier bis zehn Wochen. Diese Angaben beruhen auf Erfahrung mit über 4'000 gelösten Fällen."
         breadcrumbs={[{ label: "Start", to: "/" }, { label: "Dienstleistungen", to: "/dienstleistungen" }, { label: "Ängste & Phobien" }]}
       />
 

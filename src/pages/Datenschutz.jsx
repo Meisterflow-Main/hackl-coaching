@@ -101,8 +101,8 @@ export default function Datenschutz() {
                     8800 Thalwil, Schweiz
                   </p>
                   <p className="mt-3 space-y-1">
-                    <a href="tel:0447728979" className="flex items-center gap-2 text-primary hover:underline">
-                      <Phone className="h-4 w-4" /> 044 772 89 79
+                    <a href="tel:0794335072" className="flex items-center gap-2 text-primary hover:underline">
+                      <Phone className="h-4 w-4" /> 079 433 50 72
                     </a>
                     <a href="mailto:info@hacklcoaching.ch" className="flex items-center gap-2 text-primary hover:underline">
                       <Mail className="h-4 w-4" /> info@hacklcoaching.ch
@@ -289,7 +289,7 @@ export default function Datenschutz() {
                 </p>
                 <p>
                   Als Alternative zur Kontaktaufnahme über WhatsApp können Sie uns selbstverständlich
-                  telefonisch (044 772 89 79) oder per E-Mail (info@hacklcoaching.ch) erreichen, ohne
+                  telefonisch (079 433 50 72) oder per E-Mail (info@hacklcoaching.ch) erreichen, ohne
                   dass Daten an Meta übermittelt werden.
                 </p>
               </Section>
@@ -504,10 +504,10 @@ export default function Datenschutz() {
                   </p>
                   <div className="flex flex-col sm:flex-row gap-3">
                     <a
-                      href="tel:0447728979"
+                      href="tel:0794335072"
                       className="inline-flex items-center justify-center gap-2 rounded-full bg-accent px-6 py-3 text-sm font-semibold hover:opacity-90 transition-opacity"
                     >
-                      <Phone className="h-4 w-4" /> 044 772 89 79
+                      <Phone className="h-4 w-4" /> 079 433 50 72
                     </a>
                     <a
                       href="mailto:info@hacklcoaching.ch"

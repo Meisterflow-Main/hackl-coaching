@@ -22,7 +22,7 @@ export default function UeberMich() {
       <PageHeader
         eyebrow="Über mich"
         title="Leo Hackl"
-        subtitle="Psychologische Beratung · 30 Jahre praktische Erfahrung · Über 2'000 Klienten begleitet."
+        subtitle="Psychologische Beratung · 30 Jahre praktische Erfahrung · Über 4'000 Klienten begleitet."
         breadcrumbs={[{ label: "Start", to: "/" }, { label: "Über mich" }]}
       />
 
@@ -60,7 +60,7 @@ export default function UeberMich() {
                   </p>
                   <p>
                     Etwas von meiner Erfahrung weiterzugeben ist meine Passion. Ich durfte bis heute
-                    schon über 2'000 Betroffenen beistehen. Dabei helfen mir mein Psychologiestudium,
+                    schon über 4'000 Betroffenen beistehen. Dabei helfen mir mein Psychologiestudium,
                     die Ausbildung in systemischer Hypnotherapie sowie 30 Jahre praktischer Erfahrung
                     in psychologischer Beratung.
                   </p>

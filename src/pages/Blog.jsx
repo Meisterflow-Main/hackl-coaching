@@ -96,7 +96,7 @@ export default function Blog() {
               Menschen, die verstehen möchten, wie psychische Belastungen entstehen und
               wie sie sich dauerhaft auflösen lassen. Regelmässiges Lesen lohnt sich,
               weil Sie Einblicke in eine Methode erhalten, die auf über 30 Jahren Praxis
-              und mehr als 2'000 gelösten Fällen basiert. Sie lernen, Warnsignale früh zu
+              und mehr als 4'000 gelösten Fällen basiert. Sie lernen, Warnsignale früh zu
               erkennen, Zusammenhänge zu verstehen und informierte Entscheidungen für
               Ihre psychische Gesundheit zu treffen. Jeder Artikel verbindet
               wissenschaftliche Erkenntnisse mit praktischer Erfahrung aus meiner Praxis

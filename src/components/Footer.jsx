@@ -59,8 +59,8 @@ export default function Footer() {
                 <span>Zehntenstrasse 17<br />8800 Thalwil, Schweiz</span>
               </li>
               <li>
-                <a href="tel:0447728979" className="flex items-center gap-3 hover:text-white">
-                  <Phone className="h-4 w-4 shrink-0 text-accent" /> 044 772 89 79
+                <a href="tel:0794335072" className="flex items-center gap-3 hover:text-white">
+                  <Phone className="h-4 w-4 shrink-0 text-accent" /> 079 433 50 72
                 </a>
               </li>
               <li>

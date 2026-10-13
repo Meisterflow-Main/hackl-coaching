@@ -137,7 +137,7 @@ export default function ContactForm({ compact = false }) {
       {status === "error" && (
         <div className="rounded-xl border border-destructive/30 bg-destructive/5 p-3 text-sm text-destructive flex items-center gap-2">
           <AlertCircle className="h-4 w-4 shrink-0" />
-          Beim Senden ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut oder rufen Sie an: 044 772 89 79.
+          Beim Senden ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut oder rufen Sie an: 079 433 50 72.
         </div>
       )}
 

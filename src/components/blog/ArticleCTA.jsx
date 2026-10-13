@@ -11,7 +11,7 @@ export default function ArticleCTA({ variant = "soft" }) {
         </h3>
         <p className="mt-2 text-sm text-foreground/70 leading-relaxed max-w-2xl">
           In meiner Praxis in Thalwil löse ich Ängste, Phobien, Verhaltensmuster und Burnout
-          nachhaltig auf. Mit über 2'000 gelösten Fällen und 30 Jahren Erfahrung.
+          nachhaltig auf. Mit über 4'000 gelösten Fällen und 30 Jahren Erfahrung.
         </p>
         <div className="mt-4 flex flex-wrap gap-3">
           <Link
@@ -60,10 +60,10 @@ export default function ArticleCTA({ variant = "soft" }) {
             <MessageCircle className="h-4 w-4" /> WhatsApp schreiben
           </a>
           <a
-            href="tel:0447728979"
+            href="tel:0794335072"
             className="inline-flex items-center gap-2 rounded-full border border-white/30 px-7 py-3.5 text-sm font-semibold hover:bg-white/10 transition-colors"
           >
-            <Phone className="h-4 w-4" /> 044 772 89 79
+            <Phone className="h-4 w-4" /> 079 433 50 72
           </a>
         </div>
       </div>

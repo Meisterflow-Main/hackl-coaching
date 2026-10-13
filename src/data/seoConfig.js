@@ -6,14 +6,14 @@ export const BASE_URL = "https://hacklcoaching.meister-flow.ch";
 export const BUSINESS = {
   name: "Leo Hackl Coaching",
   legalName: "Leo Hackl Coaching",
-  description: "Psychologische Beratung in Thalwil. Auflösung von Ängsten, Phobien, Verhaltensmustern und Burnout – mit über 2'000 gelösten Fällen und 30 Jahren Erfahrung.",
+  description: "Psychologische Beratung in Thalwil. Auflösung von Ängsten, Phobien, Verhaltensmustern und Burnout – mit über 4'000 gelösten Fällen und 30 Jahren Erfahrung.",
   streetAddress: "Zehntenstrasse 17",
   addressLocality: "Thalwil",
   postalCode: "8800",
   addressRegion: "Zürich",
   addressCountry: "CH",
-  phone: "+41447728979",
-  phoneDisplay: "044 772 89 79",
+  phone: "+41794335072",
+  phoneDisplay: "079 433 50 72",
   mobileDisplay: "079 433 50 72",
   email: "info@hacklcoaching.ch",
   url: BASE_URL,
@@ -43,7 +43,7 @@ export const GOOGLE_REVIEWS = {
 export const PAGE_META = {
   "/": {
     title: "Leo Hackl Coaching – Psychologische Beratung Thalwil | Ängste, Phobien, Verhaltensmuster",
-    description: "Psychologische Beratung in Thalwil. Leo Hackl löst Ängste, Phobien, Selbstsabotage und Burnout nachhaltig – mit über 2'000 gelösten Fällen und 30 Jahren Erfahrung.",
+    description: "Psychologische Beratung in Thalwil. Leo Hackl löst Ängste, Phobien, Selbstsabotage und Burnout nachhaltig – mit über 4'000 gelösten Fällen und 30 Jahren Erfahrung.",
     canonicalPath: "/",
   },
   "/aengste": {
@@ -68,7 +68,7 @@ export const PAGE_META = {
   },
   "/ueber-mich": {
     title: "Über Leo Hackl – Psychologische Beratung mit 30 Jahren Erfahrung",
-    description: "Leo Hackl, Psychologe und systemischer Hypnotherapeut in Thalwil. Über 2'000 gelöste Fälle in 30 Jahren Praxisarbeit. Lernen Sie den Menschen hinter der Methode kennen.",
+    description: "Leo Hackl, Psychologe und systemischer Hypnotherapeut in Thalwil. Über 4'000 gelöste Fälle in 30 Jahren Praxisarbeit. Lernen Sie den Menschen hinter der Methode kennen.",
     canonicalPath: "/ueber-mich",
   },
   "/erfahrungsberichte": {
@@ -88,7 +88,7 @@ export const PAGE_META = {
   },
   "/kontakt": {
     title: "Kontakt & Termin anfragen | Leo Hackl Coaching Thalwil",
-    description: "Vereinbaren Sie Ihr persönliches Erstgespräch in Thalwil. Telefon 044 772 89 79 oder Kontaktformular. Praxis an der Zehntenstrasse 17, wenige Minuten vom Bahnhof.",
+    description: "Vereinbaren Sie Ihr persönliches Erstgespräch in Thalwil. Telefon 079 433 50 72 oder Kontaktformular. Praxis an der Zehntenstrasse 17, wenige Minuten vom Bahnhof.",
     canonicalPath: "/kontakt",
   },
   "/impressum": {
@@ -123,7 +123,7 @@ export const PAGE_META = {
   },
   "/blog": {
     title: "Blog | Leo Hackl Coaching – Ratgeber zu Ängsten, Burnout & Psychologie",
-    description: "Fundierte Ratgeber und Tipps rund um Ängste, Phobien, Burnout, Verhaltensmuster und psychologische Beratung. Einblicke aus 30 Jahren Praxis und 2'000 gelösten Fällen.",
+    description: "Fundierte Ratgeber und Tipps rund um Ängste, Phobien, Burnout, Verhaltensmuster und psychologische Beratung. Einblicke aus 30 Jahren Praxis und 4'000 gelösten Fällen.",
     canonicalPath: "/blog",
   },
 };
@@ -231,7 +231,7 @@ export function personSchema() {
     name: "Leo Hackl",
     jobTitle: "Psychologischer Berater & Systemischer Hypnotherapeut",
     description:
-      "Psychologe und systemischer Hypnotherapeut mit über 30 Jahren praktischer Erfahrung. Hat über 2'000 Klienten bei der Auflösung von Ängsten, Phobien, Verhaltensmustern und Burnout begleitet.",
+      "Psychologe und systemischer Hypnotherapeut mit über 30 Jahren praktischer Erfahrung. Hat über 4'000 Klienten bei der Auflösung von Ängsten, Phobien, Verhaltensmustern und Burnout begleitet.",
     image: {
       "@type": "ImageObject",
       url: "https://www.hacklcoaching.ch/wp-content/uploads/2010/10/Leone.jpeg",
