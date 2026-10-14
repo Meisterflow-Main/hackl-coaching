@@ -79,7 +79,7 @@ export default function Home() {
                 <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-[1.04] text-balance">
                   Werde frei davon.
                 </h1>
-                <p className="mt-3 font-heading text-2xl md:text-3xl font-semibold text-accent">
+                <p className="mt-3 font-heading text-2xl md:text-3xl font-semibold text-blue-200">
                   Ängste & Verhaltensmuster auflösen.
                 </p>
               </ScrollReveal>
