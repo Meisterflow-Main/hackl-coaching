@@ -43,8 +43,8 @@ export default function Prinzip() {
                 <p className="mt-5 text-foreground/70 leading-relaxed">
                   Es sind neuronale Netzwerke (eine Art Hirnkarte), welche alles in sich tragen. Auch
                   irreale Ängste haben so ein Netzwerk. Dieses wird durch Neuverdrahten zum kompletten
-                  Verschwinden gebracht. Das braucht weder Hypnose noch psychologische Analysen, und
-                  man muss nicht leiden wie bei der Konfrontationstherapie.
+                  Verschwinden gebracht. Das braucht nur selten Hypnose und keine psychologischen
+                  Analysen, und man muss nicht leiden wie bei der Konfrontationstherapie.
                 </p>
                 <Link
                   to="/kontakt"
