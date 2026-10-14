@@ -41,13 +41,6 @@ const SERVICES = [
       "Wenn Energie und Freude verschwinden. Authentische Lösungen statt blosser Auszeit.",
   },
   {
-    icon: Compass,
-    title: "Standortbestimmung (Passion Test)",
-    to: "/prinzip-der-aufloesung",
-    description:
-      "Viele Menschen wissen gar nicht, was sie eigentlich wollen. Klarheit über das innerste Wesen.",
-  },
-  {
     icon: HeartHandshake,
     title: "Beziehungskonflikte",
     to: "/beziehungskonflikte",

@@ -16,7 +16,6 @@ const NAV_SERVICES = [
   { title: "Ängste & Phobien", to: "/aengste" },
   { title: "Schlafstörungen", to: "/aengste" },
   { title: "Burnout & Belastungsdepression", to: "/burnout" },
-  { title: "Standortbestimmung (Passion Test)", to: "/prinzip-der-aufloesung" },
   { title: "Beziehungskonflikte", to: "/beziehungskonflikte" },
 ];
 
