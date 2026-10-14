@@ -6,7 +6,6 @@ import { regions } from "@/data/regions";
 const NAV_LINKS = [
   { label: "Über mich", to: "/ueber-mich" },
   { label: "Erfahrungsberichte", to: "/erfahrungsberichte" },
-  { label: "Hypnose & Methode", to: "/hypnose-thalwil" },
   { label: "Videos", to: "/videos" },
   { label: "Kontakt", to: "/kontakt" },
 ];
@@ -21,12 +20,20 @@ const NAV_SERVICES = [
   { title: "Beziehungskonflikte", to: "/beziehungskonflikte" },
 ];
 
+// Hypnose & Methode Dropdown
+const NAV_METHODE = [
+  { title: "Hypnose", to: "/hypnose-thalwil" },
+  { title: "Methode", to: "/prinzip-der-aufloesung" },
+];
+
 export default function Navbar() {
   const [open, setOpen] = useState(false);
   const [regionenOpen, setRegionenOpen] = useState(false);
   const [dienstleistungenOpen, setDienstleistungenOpen] = useState(false);
   const [mobileRegionen, setMobileRegionen] = useState(false);
   const [mobileDienstleistungen, setMobileDienstleistungen] = useState(false);
+  const [methodeOpen, setMethodeOpen] = useState(false);
+  const [mobileMethode, setMobileMethode] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const location = useLocation();
 
@@ -104,7 +111,57 @@ export default function Navbar() {
                 </div>
               )}
             </div>
-            {NAV_LINKS.map((l) => {
+            {NAV_LINKS.slice(0, 2).map((l) => {
+              const active = location.pathname === l.to;
+              return (
+                <Link
+                  key={l.to}
+                  to={l.to}
+                  className={`relative whitespace-nowrap px-2 py-2 text-sm font-medium rounded-md transition-colors ${
+                    active ? (scrolled ? "text-primary" : "text-white") : (scrolled ? "text-foreground/80 hover:text-primary" : "text-white/80 hover:text-white")
+                  }`}
+                >
+                  {l.label}
+                  {active && (
+                    <span className="absolute left-3 right-3 -bottom-0.5 h-0.5 bg-accent rounded-full" />
+                  )}
+                </Link>
+              );
+            })}
+            {/* Hypnose & Methode Dropdown */}
+            <div
+              className="relative"
+              onMouseEnter={() => setMethodeOpen(true)}
+              onMouseLeave={() => setMethodeOpen(false)}
+            >
+              <Link
+                to="/hypnose-thalwil"
+                className={`relative flex items-center gap-1 whitespace-nowrap px-2 py-2 text-sm font-medium rounded-md transition-colors ${
+                  ["/hypnose-thalwil", "/prinzip-der-aufloesung"].includes(location.pathname)
+                    ? (scrolled ? "text-primary" : "text-white")
+                    : (scrolled ? "text-foreground/80 hover:text-primary" : "text-white/80 hover:text-white")
+                }`}
+              >
+                Hypnose & Methode
+                <ChevronDown className={`h-3.5 w-3.5 transition-transform ${methodeOpen ? "rotate-180" : ""}`} />
+              </Link>
+              {methodeOpen && (
+                <div className="absolute left-0 top-full pt-2 w-56 z-50">
+                  <div className="rounded-2xl glass border border-border shadow-xl p-2">
+                    {NAV_METHODE.map((s) => (
+                      <Link
+                        key={s.title}
+                        to={s.to}
+                        className="block px-3 py-2.5 rounded-lg text-sm text-foreground/80 hover:bg-primary/10 hover:text-primary transition-colors"
+                      >
+                        {s.title}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </div>
+            {NAV_LINKS.slice(2).map((l) => {
               const active = location.pathname === l.to;
               return (
                 <Link
@@ -230,7 +287,45 @@ export default function Navbar() {
               ))}
             </div>
           )}
-          {NAV_LINKS.map((l) => (
+          {NAV_LINKS.slice(0, 2).map((l) => (
+            <Link
+              key={l.to}
+              to={l.to}
+              className={`px-4 py-3 rounded-lg text-base font-medium transition-colors ${
+                location.pathname === l.to
+                  ? "bg-primary/10 text-primary"
+                  : "text-foreground/80 hover:bg-muted"
+              }`}
+            >
+              {l.label}
+            </Link>
+          ))}
+          {/* Hypnose & Methode mobile */}
+          <button
+            onClick={() => setMobileMethode((v) => !v)}
+            className={`flex items-center justify-between px-4 py-3 rounded-lg text-base font-medium transition-colors ${
+              ["/hypnose-thalwil", "/prinzip-der-aufloesung"].includes(location.pathname)
+                ? "bg-primary/10 text-primary"
+                : "text-foreground/80 hover:bg-muted"
+            }`}
+          >
+            Hypnose & Methode
+            <ChevronDown className={`h-4 w-4 transition-transform ${mobileMethode ? "rotate-180" : ""}`} />
+          </button>
+          {mobileMethode && (
+            <div className="ml-3 pl-3 border-l-2 border-border flex flex-col gap-0.5">
+              {NAV_METHODE.map((s) => (
+                <Link
+                  key={s.title}
+                  to={s.to}
+                  className="px-4 py-2.5 rounded-lg text-sm text-foreground/70 hover:bg-muted hover:text-primary transition-colors"
+                >
+                  {s.title}
+                </Link>
+              ))}
+            </div>
+          )}
+          {NAV_LINKS.slice(2).map((l) => (
             <Link
               key={l.to}
               to={l.to}
