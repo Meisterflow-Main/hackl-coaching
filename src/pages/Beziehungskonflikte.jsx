@@ -65,7 +65,16 @@ export default function Beziehungskonflikte() {
                   {GRUENDE.map((g) => (
                     <li key={g} className="flex items-start gap-3 text-foreground/80">
                       <MessageSquare className="h-4 w-4 text-accent shrink-0 mt-1" />
-                      {g}
+                      <span>
+                        {g}
+                        {g === "Gefangen in einer zirkulären Transaktion" && (
+                          <span className="block mt-1 text-xs text-foreground/55 italic leading-relaxed">
+                            Eine zirkuläre Transaktion in Beziehungskonflikten beschreibt einen
+                            Kreislauf, in dem sich beide Partner durch ihre Reaktionen gegenseitig
+                            beeinflussen und dadurch immer wieder denselben Konflikt verstärken.
+                          </span>
+                        )}
+                      </span>
                     </li>
                   ))}
                 </ul>
