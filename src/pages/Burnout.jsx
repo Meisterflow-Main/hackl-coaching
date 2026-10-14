@@ -31,8 +31,8 @@ export default function Burnout() {
       <Seo {...PAGE_META["/burnout"]} schema={[localBusinessSchema(), serviceSchema(getServiceBySlug("burnout")), faqPageSchema(getServiceBySlug("burnout").faq)]} />
       <PageHeader
         eyebrow="Burnout · Belastungsdepression"
-        title="Burnout ist Belastungsdepression – beides sind Synonyme."
-        subtitle="Burnout und Belastungsdepression bezeichnen dasselbe. Es beginnt schleichend und kann bis zur schweren Depression führen. Oft wird geraten, eine längere Auszeit zu nehmen – ohne an den Umständen etwas zu ändern. Das kann es nicht sein."
+        title="Burnout ist die populäre Bezeichnung für Belastungsdepression."
+        subtitle="Sie beginnt schleichend, ist aber im Endzustand der schweren Depression gleichzusetzen. Oft wird geraten, eine längere Auszeit zu nehmen – ohne an den Umständen etwas zu ändern. Das kann es nicht sein."
         breadcrumbs={[{ label: "Start", to: "/" }, { label: "Dienstleistungen", to: "/dienstleistungen" }, { label: "Burnout" }]}
       />
 
