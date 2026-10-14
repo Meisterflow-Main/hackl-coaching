@@ -30,7 +30,7 @@ export default function Regionen() {
               Psychologische Beratung in Ihrer Region
             </h1>
             <p className="mt-6 text-lg md:text-xl text-white/80 leading-relaxed max-w-3xl">
-              Leo Hackl Coaching betreut Klienten aus dem gesamten Zürichseegebiet. Wählen Sie Ihre Region und erfahren Sie, wie wir Ihnen vor Ort helfen können.
+              Leo Hackl Coaching betreut Klienten aus der gesamten Deutschschweiz. Wählen Sie Ihre Region und erfahren Sie, wie wir Ihnen vor Ort helfen können.
             </p>
           </ScrollReveal>
         </div>
