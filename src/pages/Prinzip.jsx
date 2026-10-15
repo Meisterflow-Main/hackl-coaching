@@ -31,7 +31,7 @@ export default function Prinzip() {
                   poster="https://www.hacklcoaching.ch/wp-content/uploads/2014/11/Leo-Hackl-CD.jpg"
                   className="w-full aspect-video object-cover"
                 >
-                  <source src="https://media.base44.com/videos/public/6ac4ae046d53c41e9b937a32/9b4c979e0_Hirnplastizitatkurz.mov" type="video/quicktime" />
+                  <source src="https://media.base44.com/videos/public/6ac4ae046d53c41e9b937a32/1771fcd39_2026101513481.mp4" type="video/mp4" />
                   Ihr Browser unterstützt das Video-Tag nicht.
                 </video>
               </div>
