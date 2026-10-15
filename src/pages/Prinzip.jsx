@@ -102,6 +102,17 @@ export default function Prinzip() {
                 Wenn Sie mögen, schauen Sie hinein und lernen Sie meine Methode und meine Person
                 kennen.
               </p>
+              <div className="mt-6 overflow-hidden rounded-2xl border border-border bg-navy shadow-xl">
+                <video
+                  controls
+                  controlsList="nodownload"
+                  preload="metadata"
+                  className="w-full aspect-video object-cover"
+                >
+                  <source src="https://media.base44.com/videos/public/6ac4ae046d53c41e9b937a32/b9757668e_VideoAuge-FernsehkameraKopie11.mp4" type="video/mp4" />
+                  Ihr Browser unterstützt das Video-Tag nicht.
+                </video>
+              </div>
             </div>
           </ScrollReveal>
         </div>
