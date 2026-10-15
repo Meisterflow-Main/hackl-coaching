@@ -94,39 +94,6 @@ export default function Prinzip() {
           </div>
 
           <ScrollReveal>
-            <div className="mt-16">
-              <span className="text-sm font-semibold uppercase tracking-[0.2em] text-accent">Hirnplastizität</span>
-              <h3 className="mt-3 font-heading text-2xl md:text-3xl font-bold text-primary leading-tight">
-                Die Neuverdrahtung in Aktion
-              </h3>
-              <p className="mt-4 text-foreground/70 leading-relaxed max-w-3xl">
-                Vier kurze Sequenzen, die veranschaulichen, wie das Gehirn sich umorganisiert und
-                Angst-Netzwerke auflöst.
-              </p>
-              <div className="mt-8 grid gap-6 sm:grid-cols-2">
-                {[
-                  "https://media.base44.com/videos/public/6ac4ae046d53c41e9b937a32/f5c3620c8_Hirn11.mov",
-                  "https://media.base44.com/videos/public/6ac4ae046d53c41e9b937a32/74a32e005_Hirn21.mov",
-                  "https://media.base44.com/videos/public/6ac4ae046d53c41e9b937a32/143e96e17_Hirn31.mov",
-                  "https://media.base44.com/videos/public/6ac4ae046d53c41e9b937a32/65699cb54_Hirn41.mov",
-                ].map((src, i) => (
-                  <div key={i} className="overflow-hidden rounded-2xl border border-border bg-navy shadow-xl">
-                    <video
-                      controls
-                      controlsList="nodownload"
-                      preload="metadata"
-                      className="w-full aspect-video object-cover"
-                    >
-                      <source src={src} type="video/quicktime" />
-                      Ihr Browser unterstützt das Video-Tag nicht.
-                    </video>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </ScrollReveal>
-
-          <ScrollReveal>
             <div className="mt-12 rounded-2xl border-l-4 border-accent bg-secondary/40 p-8 md:p-10">
               <Video className="h-10 w-10 text-accent mb-4" />
               <h3 className="font-heading text-2xl font-bold text-primary">Mein Weg</h3>
