@@ -31,7 +31,7 @@ export default function Prinzip() {
                   poster="https://www.hacklcoaching.ch/wp-content/uploads/2014/11/Leo-Hackl-CD.jpg"
                   className="w-full aspect-video object-cover"
                 >
-                  <source src="https://media.base44.com/videos/public/6ac4ae046d53c41e9b937a32/1771fcd39_2026101513481.mp4" type="video/mp4" />
+                  <source src="https://media.base44.com/videos/public/6ac4ae046d53c41e9b937a32/9b4c979e0_Hirnplastizitatkurz.mov" type="video/quicktime" />
                   Ihr Browser unterstützt das Video-Tag nicht.
                 </video>
               </div>
@@ -92,6 +92,32 @@ export default function Prinzip() {
               </div>
             </ScrollReveal>
           </div>
+
+          <ScrollReveal>
+            <div className="mt-16">
+              <span className="text-sm font-semibold uppercase tracking-[0.2em] text-accent">Hirnplastizität</span>
+              <h3 className="mt-3 font-heading text-2xl md:text-3xl font-bold text-primary leading-tight">
+                Die Neuverdrahtung in Aktion
+              </h3>
+              <p className="mt-4 text-foreground/70 leading-relaxed max-w-3xl">
+                Sechs kurze Sequenzen, die veranschaulichen, wie das Gehirn sich umorganisiert und
+                Angst-Netzwerke auflöst.
+              </p>
+              <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                <div className="overflow-hidden rounded-2xl border border-border bg-navy shadow-xl">
+                  <video
+                    controls
+                    controlsList="nodownload"
+                    preload="metadata"
+                    className="w-full aspect-video object-cover"
+                  >
+                    <source src="https://media.base44.com/videos/public/6ac4ae046d53c41e9b937a32/1771fcd39_2026101513481.mp4" type="video/mp4" />
+                    Ihr Browser unterstützt das Video-Tag nicht.
+                  </video>
+                </div>
+              </div>
+            </div>
+          </ScrollReveal>
 
           <ScrollReveal>
             <div className="mt-12 rounded-2xl border-l-4 border-accent bg-secondary/40 p-8 md:p-10">
