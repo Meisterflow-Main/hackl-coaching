@@ -53,7 +53,7 @@ const STATS = [
   { value: "4'000+", label: "Gelöste Fälle" },
   { value: "30", label: "Jahre Erfahrung" },
   { value: "90%", label: "Erfolgsquote bei Phobien" },
-  { value: "2–3", label: "Abgestimmt auf deine Bedürfnisse" },
+  { value: "2–3 Sitzungen", label: "oder je nach Bedarf" },
 ];
 
 // Testimonials removed per Google Reviews Compliance — only real Google reviews displayed
