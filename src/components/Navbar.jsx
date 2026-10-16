@@ -89,7 +89,7 @@ export default function Navbar() {
               </Link>
               {dienstleistungenOpen && (
                 <div className="absolute left-0 top-full pt-2 w-64 z-50">
-                  <div className="rounded-2xl glass border border-border shadow-xl p-2">
+                  <div className="rounded-2xl bg-white border border-primary/20 shadow-[0_12px_40px_rgba(17,75,143,0.18)] p-2">
                     <Link
                       to="/dienstleistungen"
                       className="flex items-center gap-2 px-3 py-2.5 rounded-lg text-sm font-semibold text-primary hover:bg-primary/10 transition-colors"
@@ -146,7 +146,7 @@ export default function Navbar() {
               </Link>
               {methodeOpen && (
                 <div className="absolute left-0 top-full pt-2 w-56 z-50">
-                  <div className="rounded-2xl glass border border-border shadow-xl p-2">
+                  <div className="rounded-2xl bg-white border border-primary/20 shadow-[0_12px_40px_rgba(17,75,143,0.18)] p-2">
                     {NAV_METHODE.map((s) => (
                       <Link
                         key={s.title}
@@ -197,7 +197,7 @@ export default function Navbar() {
               </Link>
               {regionenOpen && (
                 <div className="absolute right-0 top-full pt-2 w-64 z-50">
-                  <div className="rounded-2xl glass border border-border shadow-xl p-2 max-h-[70vh] overflow-y-auto">
+                  <div className="rounded-2xl bg-white border border-primary/20 shadow-[0_12px_40px_rgba(17,75,143,0.18)] p-2 max-h-[70vh] overflow-y-auto">
                     <Link
                       to="/regionen"
                       className="flex items-center gap-2 px-3 py-2.5 rounded-lg text-sm font-semibold text-primary hover:bg-primary/10 transition-colors"
