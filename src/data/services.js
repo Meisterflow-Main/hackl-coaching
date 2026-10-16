@@ -64,7 +64,7 @@ export const services = [
   },
   {
     slug: "burnout",
-    title: "Burnout & Belastungsdepression",
+    title: "Burnout – auch als Belastungsdepression bezeichnet",
     shortTitle: "Burnout",
     icon: "Flame",
     description:
