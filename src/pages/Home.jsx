@@ -142,7 +142,7 @@ export default function Home() {
             <div className="mt-16 md:mt-24 grid grid-cols-2 md:grid-cols-4 gap-px overflow-hidden rounded-2xl border border-white/10 bg-white/5">
               {STATS.map((s) => (
                 <div key={s.label} className="bg-white/5 px-6 py-7 text-center">
-                  <div className="font-heading text-3xl md:text-4xl font-bold text-accent">{s.value}</div>
+                  <div className="font-heading text-3xl md:text-4xl font-bold text-white">{s.value}</div>
                   <div className="mt-1 text-xs md:text-sm text-white/60 uppercase tracking-wider">{s.label}</div>
                 </div>
               ))}
