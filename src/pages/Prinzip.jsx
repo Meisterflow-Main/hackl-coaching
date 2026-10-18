@@ -27,10 +27,11 @@ export default function Prinzip() {
                 href="https://www.youtube.com/watch?v=ztWEA_0g1JA"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group relative block overflow-hidden rounded-[2rem] border border-border bg-navy shadow-xl"
+                className="group relative block mx-auto max-w-md overflow-hidden rounded-[2rem] border border-border bg-navy shadow-xl"
               >
                 <img
-                  src="https://img.youtube.com/vi/ztWEA_0g1JA/hqdefault.jpg"
+                  src="https://img.youtube.com/vi/ztWEA_0g1JA/maxresdefault.jpg"
+                  onError={(e) => { e.currentTarget.src = "https://img.youtube.com/vi/ztWEA_0g1JA/hqdefault.jpg"; }}
                   alt="Hirnplastizität & Ängste – Video auf YouTube"
                   className="w-full aspect-video object-cover transition-transform duration-500 group-hover:scale-105"
                 />
