@@ -23,18 +23,26 @@ export default function Prinzip() {
         <div className="mx-auto max-w-7xl px-5 lg:px-8">
           <ScrollReveal>
             <div className="grid gap-10 lg:grid-cols-2 lg:gap-16 items-center">
-              <div className="relative overflow-hidden rounded-[2rem] border border-border bg-navy shadow-xl">
-                <video
-                  controls
-                  controlsList="nodownload"
-                  preload="metadata"
-                  poster="https://www.hacklcoaching.ch/wp-content/uploads/2014/11/Leo-Hackl-CD.jpg"
-                  className="w-full aspect-video object-cover"
-                >
-                  <source src="https://media.base44.com/videos/public/6ac4ae046d53c41e9b937a32/9b4c979e0_Hirnplastizitatkurz.mov" type="video/quicktime" />
-                  Ihr Browser unterstützt das Video-Tag nicht.
-                </video>
-              </div>
+              <a
+                href="https://www.youtube.com/watch?v=ztWEA_0g1JA"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group relative block overflow-hidden rounded-[2rem] border border-border bg-navy shadow-xl"
+              >
+                <img
+                  src="https://img.youtube.com/vi/ztWEA_0g1JA/hqdefault.jpg"
+                  alt="Hirnplastizität & Ängste – Video auf YouTube"
+                  className="w-full aspect-video object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-navy/50 via-transparent to-transparent" />
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <span className="flex h-16 w-16 md:h-20 md:w-20 items-center justify-center rounded-full bg-accent/90 shadow-lg shadow-accent/40 transition-transform duration-300 group-hover:scale-110">
+                    <svg viewBox="0 0 24 24" className="h-7 w-7 md:h-9 md:w-9 fill-white" aria-hidden="true">
+                      <path d="M8 5v14l11-7z" />
+                    </svg>
+                  </span>
+                </div>
+              </a>
               <div>
                 <span className="text-sm font-semibold uppercase tracking-[0.2em] text-accent">Erklärt im Video</span>
                 <h2 className="mt-3 font-heading text-3xl md:text-4xl font-bold text-primary leading-tight">
