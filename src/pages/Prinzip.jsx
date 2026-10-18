@@ -115,7 +115,8 @@ export default function Prinzip() {
                 <video
                   controls
                   controlsList="nodownload"
-                  preload="metadata"
+                  preload="none"
+                  poster="https://www.hacklcoaching.ch/wp-content/uploads/2014/11/Leo-Hackl-CD.jpg"
                   className="w-full aspect-video object-cover"
                 >
                   <source src="https://media.base44.com/videos/public/6ac4ae046d53c41e9b937a32/b9757668e_VideoAuge-FernsehkameraKopie11.mp4" type="video/mp4" />
