@@ -120,10 +120,10 @@ export default function Footer() {
               MeisterFlow
             </a>
           </p>
-          <div className="flex flex-wrap gap-x-5 gap-y-2 md:col-start-3 md:justify-end">
+          <div className="flex flex-wrap items-center gap-x-5 gap-y-2 md:col-start-3 md:justify-end">
             <button
               onClick={() => window.dispatchEvent(new Event("reopen-cookie-banner"))}
-              className="hover:text-white text-left"
+              className="hover:text-white p-0 bg-transparent border-0 font-inherit text-inherit cursor-pointer"
             >
               Cookie-Einstellungen
             </button>
