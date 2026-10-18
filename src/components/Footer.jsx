@@ -107,22 +107,20 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 pt-8 border-t border-white/10 flex flex-col gap-4 md:flex-row md:justify-between text-xs text-white/50">
-          <div className="flex flex-col gap-1">
-            <p>© {new Date().getFullYear()} Leo Hackl Coaching. Alle Rechte vorbehalten.</p>
-            <p>
-              Website erstellt von{" "}
-              <a
-                href="https://meister-flow.ch"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-white transition-colors"
-              >
-                MeisterFlow
-              </a>
-            </p>
-          </div>
-          <div className="flex flex-wrap gap-x-5 gap-y-2">
+        <div className="mt-12 pt-8 border-t border-white/10 text-xs text-white/50 grid gap-4 md:grid-cols-3 md:items-center">
+          <p className="md:col-start-1">© {new Date().getFullYear()} Leo Hackl Coaching. Alle Rechte vorbehalten.</p>
+          <p className="md:col-start-2 md:text-center">
+            Website erstellt von{" "}
+            <a
+              href="https://meister-flow.ch"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-white transition-colors"
+            >
+              MeisterFlow
+            </a>
+          </p>
+          <div className="flex flex-wrap gap-x-5 gap-y-2 md:col-start-3 md:justify-end">
             <button
               onClick={() => window.dispatchEvent(new Event("reopen-cookie-banner"))}
               className="hover:text-white text-left"
