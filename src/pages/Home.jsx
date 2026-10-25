@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { ArrowRight, Phone, Brain, ShieldCheck, Moon, Flame, Compass, HeartHandshake, Star } from "lucide-react";
+import { ArrowRight, Phone, Brain, ShieldCheck, Flame, Compass, HeartHandshake, Star } from "lucide-react";
 import ScrollReveal from "@/components/ScrollReveal";
 import ServiceCard from "@/components/ServiceCard";
 import CTASection from "@/components/CTASection";
@@ -25,13 +25,6 @@ const SERVICES = [
     to: "/aengste",
     description:
       "Flugangst, Prüfungsangst, Panikattacken, Platzangst – erstaunlich schnell und nachhaltig auflösbar.",
-  },
-  {
-    icon: Moon,
-    title: "Schlafstörungen",
-    to: "/aengste",
-    description:
-      "Wenn die Nacht zur Belastung wird – wir finden und lösen die Ursache, nicht nur die Symptome.",
   },
   {
     icon: Flame,

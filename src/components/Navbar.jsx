@@ -14,7 +14,6 @@ const NAV_LINKS = [
 const NAV_SERVICES = [
   { title: "Verhaltensmuster & Selbstsabotage", to: "/verhaltensmuster" },
   { title: "Ängste & Phobien", to: "/aengste" },
-  { title: "Schlafstörungen", to: "/aengste" },
   { title: "Burnout – auch als Belastungsdepression bezeichnet", to: "/burnout" },
   { title: "Beziehungskonflikte", to: "/beziehungskonflikte" },
 ];
