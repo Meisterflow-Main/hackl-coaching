@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { ArrowRight, Brain, ShieldAlert, ShieldCheck, Video, MapPin, Star, BookOpen } from "lucide-react";
+import { ArrowRight, Brain, ShieldAlert, ShieldCheck, Video, MapPin, BookOpen } from "lucide-react";
 import PageHeader from "@/components/PageHeader";
 import CTASection from "@/components/CTASection";
 import ScrollReveal from "@/components/ScrollReveal";

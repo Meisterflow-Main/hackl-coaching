@@ -5,7 +5,7 @@ import CTASection from "@/components/CTASection";
 import ScrollReveal from "@/components/ScrollReveal";
 import LinkHub from "@/components/LinkHub";
 import Seo from "@/components/Seo";
-import { ShieldCheck, Brain, Flame, HeartHandshake, Star, MapPin } from "lucide-react";
+import { ShieldCheck, Star, MapPin } from "lucide-react";
 import { PAGE_META, localBusinessSchema, personSchema, organizationSchema } from "@/data/seoConfig";
 
 const PRIVAT = [

@@ -14,7 +14,7 @@ import { regions, sharedRegionData, getRegionByOrt } from "@/data/regions";
 import RegionMoneyPages from "@/components/RegionMoneyPages";
 import LinkHub from "@/components/LinkHub";
 import { GoogleReviewCard } from "@/components/GoogleReviewWidget";
-import { BookOpen, HelpCircle, User } from "lucide-react";
+import { User } from "lucide-react";
 
 const iconMap = { ShieldCheck, HeartHandshake, Zap, Pill };
 

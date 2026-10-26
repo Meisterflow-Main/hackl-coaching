@@ -8,7 +8,6 @@ import {
   Clock,
   HeartHandshake,
   ArrowRight,
-  Star,
   BookOpen,
   MapPin,
   HelpCircle,
@@ -19,12 +18,10 @@ import ScrollReveal from "@/components/ScrollReveal";
 import LinkHub from "@/components/LinkHub";
 import Seo from "@/components/Seo";
 import {
-  PAGE_META,
   localBusinessSchema,
   faqPageSchema,
   serviceSchema,
 } from "@/data/seoConfig";
-import { getServiceBySlug } from "@/data/services";
 
 const HYPNOSE_FAQ = [
   {

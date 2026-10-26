@@ -7,7 +7,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import BlogCard from "@/components/blog/BlogCard";
 import BlogSidebar from "@/components/blog/BlogSidebar";
 import LinkHub from "@/components/LinkHub";
-import { ShieldCheck, MapPin, Star, HelpCircle } from "lucide-react";
+import { ShieldCheck, MapPin, Star } from "lucide-react";
 import { blogPosts, getUsedCategories } from "@/data/blogPosts";
 import { PAGE_META, localBusinessSchema, blogSchema } from "@/data/seoConfig";
 

@@ -1,12 +1,12 @@
 import React from "react";
-import { Flame, AlertTriangle, Activity, ListChecks } from "lucide-react";
+import { AlertTriangle, Activity, ListChecks } from "lucide-react";
 import PageHeader from "@/components/PageHeader";
 import CTASection from "@/components/CTASection";
 import ScrollReveal from "@/components/ScrollReveal";
 import ServiceMoneyPages from "@/components/ServiceMoneyPages";
 import LinkHub from "@/components/LinkHub";
 import Seo from "@/components/Seo";
-import { ShieldCheck, HeartHandshake, Brain, Star, BookOpen, HelpCircle } from "lucide-react";
+import { Brain, Star, BookOpen } from "lucide-react";
 import { PAGE_META, localBusinessSchema, serviceSchema, faqPageSchema } from "@/data/seoConfig";
 import { getServiceBySlug } from "@/data/services";
 

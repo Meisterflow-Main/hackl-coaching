@@ -5,7 +5,7 @@ import PageHeader from "@/components/PageHeader";
 import CTASection from "@/components/CTASection";
 import LinkHub from "@/components/LinkHub";
 import Seo from "@/components/Seo";
-import { ShieldCheck, MapPin, Star, LayoutGrid } from "lucide-react";
+import { MapPin, Star, LayoutGrid } from "lucide-react";
 import { PAGE_META, faqPageSchema, localBusinessSchema } from "@/data/seoConfig";
 
 const FAQ_ITEMS = [

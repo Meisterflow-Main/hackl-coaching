@@ -1,5 +1,5 @@
 import React from "react";
-import { Phone, MapPin, Clock, Mail, ShieldCheck, Star, BookOpen } from "lucide-react";
+import { Phone, MapPin, Clock, Mail, ShieldCheck, BookOpen } from "lucide-react";
 import PageHeader from "@/components/PageHeader";
 import ContactForm from "@/components/ContactForm";
 import ScrollReveal from "@/components/ScrollReveal";

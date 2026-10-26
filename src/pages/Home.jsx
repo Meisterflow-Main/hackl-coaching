@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { ArrowRight, Phone, Brain, ShieldCheck, Flame, Compass, HeartHandshake, Star } from "lucide-react";
+import { ArrowRight, Phone, Brain, ShieldCheck, Flame, HeartHandshake, Star } from "lucide-react";
 import ScrollReveal from "@/components/ScrollReveal";
 import ServiceCard from "@/components/ServiceCard";
 import CTASection from "@/components/CTASection";

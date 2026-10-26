@@ -1,6 +1,5 @@
 import React, { useState, useMemo } from "react";
-import { Link } from "react-router-dom";
-import { Play, ArrowRight, Phone, ShieldCheck, MapPin, BookOpen, Star } from "lucide-react";
+import { ShieldCheck, MapPin, BookOpen } from "lucide-react";
 import PageHeader from "@/components/PageHeader";
 import CTASection from "@/components/CTASection";
 import ScrollReveal from "@/components/ScrollReveal";

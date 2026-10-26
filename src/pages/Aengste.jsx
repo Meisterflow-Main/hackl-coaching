@@ -7,7 +7,7 @@ import ScrollReveal from "@/components/ScrollReveal";
 import ServiceMoneyPages from "@/components/ServiceMoneyPages";
 import LinkHub from "@/components/LinkHub";
 import Seo from "@/components/Seo";
-import { Flame, HeartHandshake, Star, BookOpen } from "lucide-react";
+import { Star, BookOpen } from "lucide-react";
 import { PAGE_META, localBusinessSchema, serviceSchema, faqPageSchema } from "@/data/seoConfig";
 import { getServiceBySlug } from "@/data/services";
 

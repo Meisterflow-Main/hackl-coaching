@@ -6,7 +6,7 @@ import CTASection from "@/components/CTASection";
 import ScrollReveal from "@/components/ScrollReveal";
 import LinkHub from "@/components/LinkHub";
 import Seo from "@/components/Seo";
-import { ShieldCheck, MapPin, LayoutGrid, Brain, Flame, HeartHandshake } from "lucide-react";
+import { ShieldCheck, MapPin, LayoutGrid } from "lucide-react";
 import GoogleReviewWidget from "@/components/GoogleReviewWidget";
 import { PAGE_META, localBusinessSchema } from "@/data/seoConfig";
 

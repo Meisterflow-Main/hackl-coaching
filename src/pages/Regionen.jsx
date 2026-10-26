@@ -5,7 +5,7 @@ import ScrollReveal from "@/components/ScrollReveal";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import LinkHub from "@/components/LinkHub";
 import Seo from "@/components/Seo";
-import { ShieldCheck, Star, BookOpen, Phone } from "lucide-react";
+import { ShieldCheck, Star, BookOpen } from "lucide-react";
 import { PAGE_META, localBusinessSchema, itemListSchema, BASE_URL } from "@/data/seoConfig";
 import { regions } from "@/data/regions";
 

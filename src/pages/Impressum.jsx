@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import {
-  Building, Phone, Mail, Globe, User, Briefcase,
+  Building, Phone, Mail, User, Briefcase,
   Shield, Copyright, FileText, ArrowRight
 } from "lucide-react";
 import PageHeader from "@/components/PageHeader";

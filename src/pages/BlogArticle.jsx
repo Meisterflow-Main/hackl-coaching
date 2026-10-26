@@ -10,9 +10,9 @@ import ArticleCTA from "@/components/blog/ArticleCTA";
 import BlogSidebar from "@/components/blog/BlogSidebar";
 import BlogCard from "@/components/blog/BlogCard";
 import LinkHub from "@/components/LinkHub";
-import { ShieldCheck, MapPin, Star, HelpCircle } from "lucide-react";
+import { ShieldCheck, MapPin, Star } from "lucide-react";
 import { getPostBySlug, getRelatedPosts } from "@/data/blogPosts";
-import { localBusinessSchema, faqPageSchema, blogPostingSchema, BASE_URL } from "@/data/seoConfig";
+import { localBusinessSchema, faqPageSchema, blogPostingSchema } from "@/data/seoConfig";
 
 // ── Inline-Link-Parser: [[Text|/pfad]] → <Link> ────────────────────
 function renderInlineText(text) {
