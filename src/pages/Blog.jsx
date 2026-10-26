@@ -49,8 +49,8 @@ export default function Blog() {
     }
 
     posts.sort((a, b) => {
-      const da = new Date(a.date);
-      const db = new Date(b.date);
+      const da = new Date(a.date).getTime();
+      const db = new Date(b.date).getTime();
       return sort === "newest" ? db - da : da - db;
     });
 

@@ -6,12 +6,13 @@ const WEBHOOK_URL =
   "https://app.meisterflow.ch/api/webhooks/enquiries/a902bb23d7e98901900e3750083b670344a14683633ae15f";
 
 export default function ContactForm({ compact = false }) {
-  const [form, setForm] = useState({ name: "", email: "", phone: "", description: "" });
+  const [form, setForm] = useState({ name: "", email: "", phone: "", description: "", company: "" });
   const [status, setStatus] = useState("idle"); // idle | loading | success | error
-  const [errors, setErrors] = useState({});
+  const [errors, setErrors] = useState(/** @type {Record<string, string | undefined>} */ ({}));
   const [consent, setConsent] = useState(false);
 
   const validate = () => {
+    /** @type {Record<string, string>} */
     const e = {};
     if (!form.name.trim()) e.name = "Bitte geben Sie Ihren Namen ein.";
     if (!form.email.trim()) e.email = "Bitte geben Sie Ihre E-Mail ein.";
@@ -46,7 +47,7 @@ export default function ContactForm({ compact = false }) {
       });
       if (!res.ok) throw new Error("Network");
       setStatus("success");
-      setForm({ name: "", email: "", phone: "", description: "" });
+      setForm({ name: "", email: "", phone: "", description: "", company: "" });
       setConsent(false);
     } catch {
       setStatus("error");
@@ -188,6 +189,10 @@ export default function ContactForm({ compact = false }) {
   );
 }
 
+/**
+ * @param {{ label: string, name: string, type?: string, value: string,
+ *           onChange: (e: any) => void, error?: string, required?: boolean }} props
+ */
 function Field({ label, name, type = "text", value, onChange, error, required }) {
   return (
     <div>

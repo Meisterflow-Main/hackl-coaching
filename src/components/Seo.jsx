@@ -67,7 +67,7 @@ export default function Seo({
     if (schema.length > 0) {
       schema.forEach((obj, i) => {
         const id = `seo-schema-${i}`;
-        let script = document.getElementById(id);
+        let script = /** @type {HTMLScriptElement | null} */ (document.getElementById(id));
         if (!script) {
           script = document.createElement("script");
           script.type = "application/ld+json";

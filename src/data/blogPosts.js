@@ -1267,7 +1267,7 @@ export function getRelatedPosts(slug, limit = 2) {
 
 export function getNewestPosts(limit = 4) {
   return [...blogPosts]
-    .sort((a, b) => new Date(b.date) - new Date(a.date))
+    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
     .slice(0, limit);
 }
 

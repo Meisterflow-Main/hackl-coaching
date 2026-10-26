@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Clock, ArrowRight, Phone, MessageCircle } from "lucide-react";
 import { getNewestPosts, getPopularPosts, getUsedCategories } from "@/data/blogPosts";
 
+/** @param {{ currentSlug?: string }} props */
 export default function BlogSidebar({ currentSlug }) {
   const newest = getNewestPosts(4).filter((p) => p.slug !== currentSlug).slice(0, 3);
   const popular = getPopularPosts(4).filter((p) => p.slug !== currentSlug).slice(0, 3);

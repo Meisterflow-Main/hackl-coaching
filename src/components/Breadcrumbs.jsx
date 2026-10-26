@@ -7,7 +7,7 @@ export default function Breadcrumbs({ items, dark = false }) {
   useEffect(() => {
     if (!items || items.length === 0) return;
     const id = "seo-schema-breadcrumb";
-    let script = document.getElementById(id);
+    let script = /** @type {HTMLScriptElement | null} */ (document.getElementById(id));
     if (!script) {
       script = document.createElement("script");
       script.type = "application/ld+json";
