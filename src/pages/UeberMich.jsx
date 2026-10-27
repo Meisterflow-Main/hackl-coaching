@@ -33,7 +33,7 @@ export default function UeberMich() {
             <ScrollReveal className="lg:col-span-2">
               <div className="relative">
                 <div className="absolute -inset-3 rounded-[2rem] bg-gradient-to-br from-primary/20 to-accent/20 blur-2xl" />
-                <div className="relative overflow-hidden rounded-[2rem] bg-white p-3 shadow-xl">
+                <div className="relative overflow-hidden rounded-[2rem] shadow-xl">
                   <Image
                     src="https://media.base44.com/images/public/6ac4ae046d53c41e9b937a32/c389d2b08_FriendlySeniorExecutiveHeadshot.png"
                     alt="Leo Hackl"
