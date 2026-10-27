@@ -239,7 +239,7 @@ export function personSchema() {
       "Psychologe und systemischer Hypnotherapeut mit über 30 Jahren praktischer Erfahrung. Hat über 4'000 Klienten bei der Auflösung von Ängsten, Phobien, Verhaltensmustern und Burnout begleitet.",
     image: {
       "@type": "ImageObject",
-      url: "https://www.hacklcoaching.ch/wp-content/uploads/2010/10/Leone.jpeg",
+      url: "https://media.base44.com/images/public/6ac4ae046d53c41e9b937a32/c389d2b08_FriendlySeniorExecutiveHeadshot.png",
     },
     url: `${BASE_URL}/ueber-mich`,
     worksFor: {

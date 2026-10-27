@@ -7,6 +7,7 @@ import LinkHub from "@/components/LinkHub";
 import Seo from "@/components/Seo";
 import { ShieldCheck, Star, MapPin } from "lucide-react";
 import { PAGE_META, localBusinessSchema, personSchema, organizationSchema } from "@/data/seoConfig";
+import { Image } from "@/components/ui/image";
 
 const PRIVAT = [
   { icon: Mountain, t: "Natur & Berge", d: "Geht gerne in die Berge, ist viel in der Natur." },
@@ -33,11 +34,10 @@ export default function UeberMich() {
               <div className="relative">
                 <div className="absolute -inset-3 rounded-[2rem] bg-gradient-to-br from-primary/20 to-accent/20 blur-2xl" />
                 <div className="relative overflow-hidden rounded-[2rem] shadow-xl">
-                  <img
-                    src="https://www.hacklcoaching.ch/wp-content/uploads/2010/10/Leone.jpeg"
+                  <Image
+                    src="https://media.base44.com/images/public/6ac4ae046d53c41e9b937a32/c389d2b08_FriendlySeniorExecutiveHeadshot.png"
                     alt="Leo Hackl"
-                    className="w-full h-[520px] object-cover"
-                    loading="lazy"
+                    className="w-full h-[520px]"
                   />
                 </div>
               </div>
