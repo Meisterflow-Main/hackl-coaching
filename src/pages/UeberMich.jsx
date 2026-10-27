@@ -37,7 +37,7 @@ export default function UeberMich() {
                   <Image
                     src="https://media.base44.com/images/public/6ac4ae046d53c41e9b937a32/c389d2b08_FriendlySeniorExecutiveHeadshot.png"
                     alt="Leo Hackl"
-                    className="w-full h-[520px]"
+                    className="w-full aspect-[3/2]"
                   />
                 </div>
               </div>
