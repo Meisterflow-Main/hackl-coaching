@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Loader2, CheckCircle2, AlertCircle, Send } from "lucide-react";
 
 const WEBHOOK_URL =
-  "https://app.meisterflow.ch/api/webhooks/enquiries/a902bb23d7e98901900e3750083b670344a14683633ae15f";
+  "https://app.meisterflow.ch/api/webhooks/enquiries/3ac449ac8c3fca59e6b9c4aebac828c99eebfc9e82a8fd3d";
 
 export default function ContactForm({ compact = false }) {
   const [form, setForm] = useState({ name: "", email: "", phone: "", description: "", company: "" });
