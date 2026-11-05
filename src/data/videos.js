@@ -110,8 +110,7 @@ export const videos = [
     year: "2019",
     category: "Verhaltensmuster",
     description: "Eine grundlegende Einführung in Verhaltensmuster und Glaubenssätze: Wie sie entstehen, wie sie wirken und warum sie sich ohne das richtige Vorgehen nicht verändern lassen.",
-    src: "https://www.hacklcoaching.ch/wp-content/uploads/2019/03/video_was_sind_verhaltensmuster_glaubenss%C3%A4tze_leo_hackl_coaching.mp4",
-    poster: "https://www.hacklcoaching.ch/wp-content/uploads/2019/03/video_was_sind_verhaltensmuster_glaubenss%C3%A4tze_leo_hackl_coaching_poster.jpg",
+    youtubeId: "m8WumbhaWfY",
   },
   {
     id: "leben-sie-das-leben-das-sie-wirklich-wollen",
