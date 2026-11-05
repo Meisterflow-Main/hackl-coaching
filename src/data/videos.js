@@ -126,8 +126,7 @@ export const videos = [
     year: "2019",
     category: "Berufung",
     description: "Ein Aufruf, das Leben zu leben, das Sie wirklich wollen – und wie das Auflösen von Mustern den Weg dorthin frei macht.",
-    src: "https://www.hacklcoaching.ch/wp-content/uploads/2019/03/video_leo_loest_leben_sie_das_leben_das_sie_wirklich_wollen_leo_hackl_coaching.mp4",
-    poster: "https://www.hacklcoaching.ch/wp-content/uploads/2019/03/video_leo_loest_leben_sie_das_leben_das_sie_wirklich_wollen_leo_hackl_coaching_poster.jpg",
+    youtubeId: "LLO23RLqegM",
   },
   {
     id: "rauchen-aufhoeren",
