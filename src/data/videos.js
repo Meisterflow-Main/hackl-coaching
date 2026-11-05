@@ -137,8 +137,7 @@ export const videos = [
     year: "2019",
     category: "Sucht",
     description: "Wie Sie mit dem Rauchen aufhören – ohne Entzug, ohne Ersatzhandlung, durch Auflösung des zugrundeliegenden Suchtmusters an der Wurzel.",
-    src: "https://www.hacklcoaching.ch/wp-content/uploads/2019/03/video_leo_loest_wie_hoere_ich_zu_rauchen_auf_leo_hackl_coaching.mp4",
-    poster: "https://www.hacklcoaching.ch/wp-content/uploads/2019/03/video_leo_loest_wie_hoere_ich_zu_rauchen_auf_leo_hackl_coaching_poster.jpg",
+    youtubeId: "7wPPOqLf4Tw",
   },
   {
     id: "eifersucht",
