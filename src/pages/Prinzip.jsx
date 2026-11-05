@@ -111,18 +111,13 @@ export default function Prinzip() {
                 Wenn Sie mögen, schauen Sie hinein und lernen Sie meine Methode und meine Person
                 kennen.
               </p>
-              <div className="mt-6 overflow-hidden rounded-2xl border border-border bg-navy shadow-xl">
-                <video
-                  controls
-                  controlsList="nodownload"
-                  preload="none"
-                  poster="https://www.hacklcoaching.ch/wp-content/uploads/2014/11/Leo-Hackl-CD.jpg"
-                  className="w-full aspect-video object-cover"
-                >
-                  <source src="https://media.base44.com/videos/public/6ac4ae046d53c41e9b937a32/b9757668e_VideoAuge-FernsehkameraKopie11.mp4" type="video/mp4" />
-                  Ihr Browser unterstützt das Video-Tag nicht.
-                </video>
-              </div>
+              <Link
+                to="/videos"
+                className="mt-6 inline-flex items-center gap-2 rounded-full bg-accent px-6 py-3 text-sm font-semibold text-white hover:opacity-90 transition-opacity"
+              >
+                <Video className="h-4 w-4" /> Video ansehen – zur Videothek
+                <ArrowRight className="h-4 w-4" />
+              </Link>
             </div>
           </ScrollReveal>
         </div>
