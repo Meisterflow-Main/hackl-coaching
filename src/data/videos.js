@@ -94,8 +94,7 @@ export const videos = [
     year: "2019",
     category: "Ängste",
     description: "Prüfungsangst lässt sich auflösen – ohne dass Sie sich dem Angstauslöser aussetzen müssen. Die hypnosystemische Methode arbeitet an der Wurzel.",
-    src: "https://www.hacklcoaching.ch/wp-content/uploads/2019/07/Pruefungsangst_FINAL.mp4",
-    poster: "https://www.hacklcoaching.ch/wp-content/uploads/2019/07/Pruefungsangst_poster.jpg",
+    youtubeId: "tg3JW9PBZto",
   },
   {
     id: "flugangst",
