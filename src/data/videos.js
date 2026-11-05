@@ -148,8 +148,7 @@ export const videos = [
     year: "2019",
     category: "Verhaltensmuster",
     description: "Eifersucht ist ein lästiges Verhaltensmuster. Was es so widerstandsfähig macht, ist, dass es auf weiteren Verhaltensmustern beruht, die erst gelöst werden müssen.",
-    src: "https://www.hacklcoaching.ch/wp-content/uploads/2019/03/video_leo_loest_eifersucht_in_der_partnerschaft_leo_hackl_coaching.mp4",
-    poster: "https://www.hacklcoaching.ch/wp-content/uploads/2019/03/video_leo_loest_eifersucht_in_der_partnerschaft_leo_hackl_coaching_poster.jpg",
+    youtubeId: "H320UhQkMRM",
   },
 ];
 
