@@ -54,8 +54,7 @@ export const videos = [
     year: "2021",
     category: "Verhaltensmuster",
     description: "Wie ein etabliertes Verhaltensmuster an seiner Wurzel aufgelöst wird – nicht durch Willenskraft, sondern durch hypnosystemische Intervention am Ursprung.",
-    src: "https://www.hacklcoaching.ch/wp-content/uploads/2021/01/video_verhaltensmuster_aufloesung_leo_hackl_coaching.mp4",
-    poster: "https://www.hacklcoaching.ch/wp-content/uploads/2023/01/video_verhaltensmuster_aufloesung_leo_hackl_coaching_poster.jpg",
+    youtubeId: "84DBz0UOUDU",
   },
   {
     id: "verhaltensmuster-entstehung",

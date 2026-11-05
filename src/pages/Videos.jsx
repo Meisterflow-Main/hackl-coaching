@@ -5,6 +5,7 @@ import CTASection from "@/components/CTASection";
 import ScrollReveal from "@/components/ScrollReveal";
 import LinkHub from "@/components/LinkHub";
 import VideoCard from "@/components/VideoCard";
+import YouTubeVideoCard from "@/components/YouTubeVideoCard";
 import Seo from "@/components/Seo";
 import { videos, videoCategories } from "@/data/videos";
 import { PAGE_META, localBusinessSchema } from "@/data/seoConfig";
@@ -103,9 +104,13 @@ export default function Videos() {
 
           {/* Video Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-            {filteredVideos.map((video, i) => (
-              <VideoCard key={video.id} video={video} index={i} />
-            ))}
+            {filteredVideos.map((video, i) =>
+              video.youtubeId ? (
+                <YouTubeVideoCard key={video.id} video={video} index={i} />
+              ) : (
+                <VideoCard key={video.id} video={video} index={i} />
+              )
+            )}
           </div>
         </div>
       </section>
