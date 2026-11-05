@@ -100,8 +100,7 @@ export const videos = [
     year: "2019",
     category: "Ängste",
     description: "Flugangst überwinden – ohne Flug, ohne Konfrontation. Die Methode löst die zugrundeliegende Angststruktur direkt in den neuronalen Mustern auf.",
-    src: "https://www.hacklcoaching.ch/wp-content/uploads/2019/07/Flugangst_ohne-Leo-L%C3%B6st_FINAL.mp4",
-    poster: "https://www.hacklcoaching.ch/wp-content/uploads/2019/07/Flugangst_poster-1.jpg",
+    youtubeId: "ztWEA_0g1JA",
   },
   {
     id: "was-sind-verhaltensmuster",
