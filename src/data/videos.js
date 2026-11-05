@@ -43,8 +43,7 @@ export const videos = [
     year: "2021",
     category: "Ängste",
     description: "Wie die Neuroplastizität des Gehirns dabei hilft, Ängste dauerhaft aufzulösen – und warum das Gehirn jederzeit fähig ist, neue neuronale Netzwerke zu bilden.",
-    src: "https://www.hacklcoaching.ch/wp-content/uploads/2021/11/video_aengste_und_hirnplastizitaet_leo_hackl_coaching.mp4",
-    poster: "https://www.hacklcoaching.ch/wp-content/uploads/2021/11/video_aengste_und_hirnplastizitaet_leo_hackl_coaching_poster.jpg",
+    youtubeId: "ztWEA_0g1JA",
   },
   {
     id: "verhaltensmuster-aufloesung",
