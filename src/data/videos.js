@@ -84,8 +84,7 @@ export const videos = [
     year: "2020",
     category: "Berufung",
     description: "Warum es so wichtig ist, das Richtige zu tun – und wie man erkennt, was das Richtige ist, wenn man von Mustern und Erwartungen ablenkt.",
-    src: "https://www.hacklcoaching.ch/wp-content/uploads/2020/04/video_tue_das_richtige_leo_hackl_coaching.mp4",
-    poster: "https://www.hacklcoaching.ch/wp-content/uploads/2020/04/video_tue_das_richtige_leo_hackl_coaching_poster.jpg",
+    youtubeId: "ACnnfBA0t_Y",
   },
   {
     id: "pruefungsangst",
