@@ -10,8 +10,7 @@ export const videos = [
     year: "2019",
     category: "Berufung",
     description: "Teil 1 der Reihe: Warum Leidenschaft im Beruf so entscheidend ist für ein erfülltes Leben und wie Sie Ihre eigene Leidenschaft wiederentdecken.",
-    src: "https://www.hacklcoaching.ch/wp-content/uploads/2019/05/video_leo_loest_leidenschaft_im_beruf_1_leo_hackl_coaching.mp4",
-    poster: "https://www.hacklcoaching.ch/wp-content/uploads/2019/05/video_leo_loest_leidenschaft_im_beruf_1_leo_hackl_coaching_poster.jpg",
+    youtubeId: "AqlGeucyFVE",
   },
   {
     id: "leidenschaft-im-beruf-2",
