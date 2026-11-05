@@ -74,8 +74,7 @@ export const videos = [
     year: "2020",
     category: "Verhaltensmuster",
     description: "Was genau ein Verhaltensmuster ist, wie es sich von einer bloßen Gewohnheit unterscheidet und warum es sich so hartnäckig hält.",
-    src: "https://www.hacklcoaching.ch/wp-content/uploads/2020/12/video_verhaltensmuster_definition_leo_hackl_coaching.mp4",
-    poster: "https://www.hacklcoaching.ch/wp-content/uploads/2020/12/video_verhaltensmuster_definition_leo_hackl_coaching_poster.jpg",
+    youtubeId: "m8WumbhaWfY",
   },
   {
     id: "tue-das-richtige",
