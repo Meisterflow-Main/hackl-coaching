@@ -20,8 +20,7 @@ export const videos = [
     year: "2019",
     category: "Berufung",
     description: "Teil 2 der Reihe: Was Leidenschaft wirklich ist, wie sie sich von Begeisterung unterscheidet und warum sie ein verlässlicher Kompass für berufliche Entscheidungen ist.",
-    src: "https://www.hacklcoaching.ch/wp-content/uploads/2019/05/video_leo_loest_leidenschaft_im_beruf_2_leo_hackl_coaching.mp4",
-    poster: "https://www.hacklcoaching.ch/wp-content/uploads/2019/05/video_leo_loest_leidenschaft_im_beruf_2_leo_hackl_coaching_poster.jpg",
+    youtubeId: "FkK7YzURuRw",
   },
   {
     id: "leidenschaft-im-beruf-3",
