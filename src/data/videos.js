@@ -30,8 +30,7 @@ export const videos = [
     year: "2019",
     category: "Berufung",
     description: "Teil 3 der Reihe über Leidenschaft im Beruf: Wie Sie erkennen, ob Sie am richtigen Ort sind, und was Sie tun können, wenn es an der Zeit ist, etwas Neues zu wagen.",
-    src: "https://www.hacklcoaching.ch/wp-content/uploads/2019/06/video_leo_loest_leidenschaft_im_beruf_3_leo_hackl_coaching.mp4",
-    poster: "https://www.hacklcoaching.ch/wp-content/uploads/2019/06/video_leo_loest_leidenschaft_im_beruf_3_leo_hackl_coaching_poster.jpg",
+    youtubeId: "Bpx3M-n0328",
   },
   {
     id: "aengste-und-hirnplastizitaet",
