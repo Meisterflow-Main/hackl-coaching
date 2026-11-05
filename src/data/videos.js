@@ -64,8 +64,7 @@ export const videos = [
     year: "2020",
     category: "Verhaltensmuster",
     description: "Wie ein Verhaltensmuster entsteht – von der ersten Erfahrung über die Wiederholung bis zur festen neuronalen Bahnung, die das spätere Verhalten steuert.",
-    src: "https://www.hacklcoaching.ch/wp-content/uploads/2020/12/video_verhaltensmuster_entstehung_leo_hackl_coaching.mp4",
-    poster: "https://www.hacklcoaching.ch/wp-content/uploads/2020/12/video_verhaltensmuster_entstehung_leo_hackl_coaching_poster.jpg",
+    youtubeId: "g4ZgRXKsOug",
   },
   {
     id: "verhaltensmuster-definition",
